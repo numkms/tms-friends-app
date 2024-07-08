@@ -7,7 +7,19 @@
 
 import UIKit
 
-class UserMenuViewController: UIViewController {
+class UserMenuViewController: UIViewController, FriendsViewControllerDelegate {
+    
+    func bottomButtonDidTap() {
+        selectedFriendLabel.text = "На экране друзей нажали на нижнию кнопку"
+    }
+    
+    func friendButtonDidTap(friendNumber: Int) {
+        selectedFriendLabel.text = "На экране друзей нажали на друга под номер \(friendNumber)"
+    }
+    
+    func friendScreenDidAppear() {
+        selectedFriendLabel.text = "Экран друзей успешно отобразился"
+    }
     
     struct Config {
         let customTitle: String
@@ -17,6 +29,7 @@ class UserMenuViewController: UIViewController {
     let config: Config
     
     lazy var menuListView = UIStackView()
+    lazy var selectedFriendLabel: UILabel = .init()
     
     lazy var navigateButton: UIButton = .init(primaryAction: .init(handler: { _ in
         self.present(self.config.vcToShow, animated: true)
@@ -63,6 +76,8 @@ class UserMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+            
+        
         navigationController?.setViewControllers([self], animated: true)
         menuListView.axis = .vertical
         menuListView.translatesAutoresizingMaskIntoConstraints = false
@@ -86,11 +101,37 @@ class UserMenuViewController: UIViewController {
                 print("Нажали на рекламу")
             })))
         menuListView.addArrangedSubview(buildMenuItemView(
-            icon: UIImage(systemName: "person")!, title: "Друзья", action: .init(handler: { _ in
-                let friendsViewController = FriendsViewController()
+            icon: UIImage(systemName: "person")!, 
+            title: "Друзья",
+            action: .init(handler: { _ in
+                let friendsViewController = FriendsViewController(
+                    bottomButtonConfig: .init(
+                        title: "Пролистать к 21 другу",
+                        action: nil
+                    ))
+                friendsViewController.delegate = self
                 self.navigationController?.pushViewController(friendsViewController, animated: true)
             })))
-        
+        menuListView.addArrangedSubview(buildMenuItemView(
+            icon: UIImage(systemName: "person")!,
+            title: "Друзья c моим профилем",
+            action: .init(handler: { _ in
+                let friendsViewController = FriendsViewController(
+                    onFriendClick: { friendNumber in
+                        self.selectedFriendLabel.text  = "Друг под номер \(friendNumber)"
+                        self.navigationController?.popViewController(animated: true)
+                    },
+                    bottomButtonConfig: .init(
+                        title: "Открыть мой профиль",
+                        action: {
+                            let profile = UIViewController()
+                            profile.view.backgroundColor = .blue
+                            self.navigationController?.present(profile, animated: true)
+                        }
+                    ))
+                self.navigationController?.pushViewController(friendsViewController, animated: true)
+            })))
+        menuListView.addArrangedSubview(selectedFriendLabel)
         // Do any additional setup after loading the view.
     }
     

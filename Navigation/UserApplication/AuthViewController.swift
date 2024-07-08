@@ -125,6 +125,7 @@ class AuthViewController: UIViewController {
     }
     
     func validate(_ login: String, _ password: String) -> String?  {
+        return ""
         let users: [String: String] = [
             "nikolay@mail.ru": "qwergunsn",
             "vladimir@gmail.com": "123566",

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */; };
 		E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */; };
+		E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */; };
 		E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922882C33096D00DAC182 /* AppDelegate.swift */; };
 		E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228A2C33096D00DAC182 /* SceneDelegate.swift */; };
 		E589228D2C33096D00DAC182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228C2C33096D00DAC182 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditViewController.swift; sourceTree = "<group>"; };
 		E58922852C33096D00DAC182 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58922882C33096D00DAC182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E589228A2C33096D00DAC182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */,
 				E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */,
 				E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */,
+				E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */,
 				E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */,
 				E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */,
+				E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
