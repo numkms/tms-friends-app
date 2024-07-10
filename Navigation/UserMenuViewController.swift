@@ -104,12 +104,7 @@ class UserMenuViewController: UIViewController, FriendsViewControllerDelegate {
             icon: UIImage(systemName: "person")!, 
             title: "Друзья",
             action: .init(handler: { _ in
-                let friendsViewController = FriendsViewController(
-                    bottomButtonConfig: .init(
-                        title: "Пролистать к 21 другу",
-                        action: nil
-                    ))
-                friendsViewController.delegate = self
+                let friendsViewController = FriendsTableViewController()
                 self.navigationController?.pushViewController(friendsViewController, animated: true)
             })))
         menuListView.addArrangedSubview(buildMenuItemView(

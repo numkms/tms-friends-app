@@ -13,9 +13,19 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
         self.statusLabel.text = newStatus
     }
     
-    struct Friend {
+    struct Friend: InfoTableViewCellModel {
+        var title: String { name }
+        var image: UIImage? { avatar }
+        
         let name: String
         let age: Int
+        let avatar: UIImage?
+        
+        init(name: String, age: Int, avatar: UIImage? = nil) {
+            self.name = name
+            self.age = age
+            self.avatar = avatar
+        }
     }
     
     lazy var userInfoView = UIStackView()
@@ -62,9 +72,19 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
             setStatusButton
         ]))
         
+        
+        let imageVIew = UIImageView()
+        imageVIew.image = .init(named: "Image")
+        
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(navigationController?.viewControllers.count)
+    }
 
     /*
     // MARK: - Navigation

@@ -11,7 +11,6 @@
         <!--Auth View Controller-->
         <scene sceneID="amz-yx-t13">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fs4-Aq-mrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="9T4-ND-2No" customClass="AuthViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fkW-EF-P0I">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -21,6 +20,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="d9r-Dq-GdK"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fs4-Aq-mrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2346" y="-846"/>
         </scene>
@@ -28,7 +28,7 @@
         <scene sceneID="vJk-a0-hoj">
             <objects>
                 <navigationController id="TXA-4a-xHP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Auth zone" image="person" catalog="system" id="zhm-xS-S6d"/>
+                    <tabBarItem key="tabBarItem" title="Auth zone" id="zhm-xS-S6d"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BaW-Mb-isW">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,7 +51,7 @@
                         <viewLayoutGuide key="safeArea" id="xGU-p5-Mlu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Guest zone" image="arrowshape.up.fill" selectedImage="person.3.sequence.fill" catalog="system" id="W84-Qc-olI"/>
+                    <tabBarItem key="tabBarItem" title="Guest zone" image="person.3.sequence.fill" catalog="system" selectedImage="person.3.sequence.fill" id="W84-Qc-olI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLU-Qh-Shy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,8 +183,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.up.fill" width="128" height="128"/>
-        <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.3.sequence.fill" catalog="system" width="128" height="63"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

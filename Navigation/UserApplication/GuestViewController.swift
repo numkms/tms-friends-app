@@ -14,7 +14,16 @@ class GuestViewController: UIViewController {
     }
     
     lazy var imageView = UIImageView()
-    lazy var label = UILabel()
+    lazy var label = UIButton(configuration: .plain(), primaryAction: UIAction(handler: { _ in
+        let rootViewController = FriendsViewController(
+            onFriendClick: nil,
+            bottomButtonConfig: .init(title: "Ничего не делает", action: {})
+        )
+        let navigationViewController = UINavigationController(
+            rootViewController: rootViewController
+        )
+        self.present(navigationViewController, animated: true)
+    }))
     lazy var wrapper = UIView()
    
 
@@ -22,13 +31,13 @@ class GuestViewController: UIViewController {
         super.viewDidLoad()
     
         // MARK: - Set data
-        label.text = "Welcome to the club, buddy!"
+        label.setTitle("Welcome to the club, buddy!", for: .normal)
         imageView.image = .checkmark
         // MARK: - Configuring views
         wrapper.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textAlignment = .center
-        label.textColor = .white
+        label.titleLabel?.textAlignment = .center
+        label.titleLabel?.textColor = .white
         imageView.translatesAutoresizingMaskIntoConstraints = false
         wrapper.backgroundColor = .black.withAlphaComponent(0.3)
         wrapper.layer.cornerRadius = Constants.radius

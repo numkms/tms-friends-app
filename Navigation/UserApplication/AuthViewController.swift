@@ -105,11 +105,7 @@ class AuthViewController: UIViewController {
         let password = passwordField.text
         
         if let login = validate(login ?? "", password ?? "") {
-            let viewController = UserMenuViewController(
-                config: .init(
-                    customTitle: login,
-                    vcToShow: UIViewController()
-                ))
+            let viewController = UserMenuTableViewController()
             clear()
             navigationController?.pushViewController(viewController, animated: true)
         } else {

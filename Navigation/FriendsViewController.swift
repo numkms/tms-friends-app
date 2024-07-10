@@ -205,7 +205,10 @@ class FriendsViewController: UIViewController {
         if let onFriendClick {
             onFriendClick(numberFriend)
         } else {
-            let friendViewController = FriendViewController(friend: .init(name: "Друг номер \(numberFriend)", age: numberFriend * 2))
+            let friendViewController = FriendViewController(
+                friend: .init(name: "Друг номер \(numberFriend)", age: numberFriend * 2)
+            )
+
             navigationController?.pushViewController(friendViewController, animated: true)
         }
         delegate?.friendButtonDidTap(friendNumber: numberFriend)
