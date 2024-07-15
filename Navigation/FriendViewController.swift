@@ -20,18 +20,31 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
         let name: String
         let age: Int
         let avatar: UIImage?
+        let gallery: [UIImage]
         
-        init(name: String, age: Int, avatar: UIImage? = nil) {
+        init(name: String, age: Int, avatar: UIImage? = nil, gallery: [UIImage] = [
+            UIImage(systemName: "trash")!,
+            UIImage(systemName: "figure.walk.diamond.fill")!,
+            UIImage(systemName: "airplane.circle")!,
+            UIImage(systemName: "bolt.car.circle")!,
+            UIImage(systemName: "truck.box.badge.clock")!,
+            UIImage(systemName: "fuelpump.fill")!
+        ]) {
             self.name = name
             self.age = age
             self.avatar = avatar
+            self.gallery = gallery
         }
     }
-    
+    lazy var photosStackView: UIStackView = .init()
+    lazy var tableView: UITableView = .init()
     lazy var userInfoView = UIStackView()
     lazy var nameLabel = UILabel()
     lazy var ageLabel = UILabel()
     lazy var statusLabel = UILabel()
+    
+    lazy var collectionView = UICollectionView()
+    
     lazy var setStatusButton = UIButton(primaryAction: UIAction.init(handler: { _ in
         let editStatusViewController = StatusEditViewController(
             status: self.statusLabel.text) { newStatus in
@@ -97,3 +110,5 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
     */
 
 }
+
+

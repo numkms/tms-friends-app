@@ -18,7 +18,7 @@ class UserMenuTableViewController: UIViewController {
             icon: UIImage(systemName: "person"),
             action: { [weak self] in
                 self?.navigationController?.pushViewController(
-                    FriendViewController(friend: .init(name: "Я", age: 100)),
+                    FriendTableViewController(friend: .init(name: "Я", age: 100)),
                     animated: true
                 )
             }

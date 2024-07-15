@@ -13,6 +13,7 @@ class GuestViewController: UIViewController {
         static var radius: CGFloat = 20
     }
     
+    lazy var backgroundImageView = UIImageView()
     lazy var imageView = UIImageView()
     lazy var label = UIButton(configuration: .plain(), primaryAction: UIAction(handler: { _ in
         let rootViewController = FriendsViewController(
@@ -25,13 +26,27 @@ class GuestViewController: UIViewController {
         self.present(navigationViewController, animated: true)
     }))
     lazy var wrapper = UIView()
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // MARK: - Add background
+        view.addSubview(backgroundImageView)
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        backgroundImageView.image = .init(named: "background")
+        backgroundImageView.contentMode = .scaleAspectFill
     
         // MARK: - Set data
         label.setTitle("Welcome to the club, buddy!", for: .normal)
+        label.setTitleColor(.white, for: .normal)
         imageView.image = .checkmark
         // MARK: - Configuring views
         wrapper.translatesAutoresizingMaskIntoConstraints = false
@@ -77,6 +92,10 @@ class GuestViewController: UIViewController {
         ).isActive = true
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        present(CollectionViewController(), animated: true)
+    }
 
     /*
     // MARK: - Navigation

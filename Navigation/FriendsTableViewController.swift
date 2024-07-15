@@ -135,7 +135,7 @@ class FriendsTableViewController: UIViewController {
 
 extension FriendsTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = FriendViewController(
+        let viewController = FriendTableViewController(
             friend: sections[indexPath.section].friends[indexPath.row]
         )
         navigationController?.pushViewController(viewController, animated: true)
