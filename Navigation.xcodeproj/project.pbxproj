@@ -10,22 +10,29 @@
 		E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */; };
 		E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */; };
 		E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */; };
+		E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */; };
 		E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922882C33096D00DAC182 /* AppDelegate.swift */; };
 		E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228A2C33096D00DAC182 /* SceneDelegate.swift */; };
 		E589228D2C33096D00DAC182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228C2C33096D00DAC182 /* ViewController.swift */; };
 		E58922902C33096D00DAC182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E589228E2C33096D00DAC182 /* Main.storyboard */; };
 		E58922922C33096E00DAC182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58922912C33096E00DAC182 /* Assets.xcassets */; };
 		E58922952C33096E00DAC182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58922932C33096E00DAC182 /* LaunchScreen.storyboard */; };
-		E589229D2C3311F500DAC182 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589229C2C3311F500DAC182 /* SecondViewController.swift */; };
+		E589229D2C3311F500DAC182 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589229C2C3311F500DAC182 /* UserMenuViewController.swift */; };
 		E589229F2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */; };
 		E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922A02C3322D200DAC182 /* AuthViewController.swift */; };
 		E58922A32C3322E100DAC182 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922A22C3322E100DAC182 /* GuestViewController.swift */; };
+		E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F8D092C57FC6F00269E3D /* LoadingView.swift */; };
+		E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */; };
+		E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */; };
+		E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */; };
+		E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditViewController.swift; sourceTree = "<group>"; };
+		E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		E58922852C33096D00DAC182 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58922882C33096D00DAC182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E589228A2C33096D00DAC182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +41,15 @@
 		E58922912C33096E00DAC182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58922942C33096E00DAC182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E58922962C33096E00DAC182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E589229C2C3311F500DAC182 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E589229C2C3311F500DAC182 /* UserMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuViewController.swift; sourceTree = "<group>"; };
 		E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginFlowStoryboard.storyboard; sourceTree = "<group>"; };
 		E58922A02C3322D200DAC182 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E58922A22C3322E100DAC182 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
+		E59F8D092C57FC6F00269E3D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSwitchController.swift; sourceTree = "<group>"; };
+		E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
+		E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +90,17 @@
 				E58922912C33096E00DAC182 /* Assets.xcassets */,
 				E58922932C33096E00DAC182 /* LaunchScreen.storyboard */,
 				E58922962C33096E00DAC182 /* Info.plist */,
-				E589229C2C3311F500DAC182 /* SecondViewController.swift */,
+				E589229C2C3311F500DAC182 /* UserMenuViewController.swift */,
+				E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */,
 				E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */,
 				E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */,
 				E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */,
 				E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */,
+				E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */,
+				E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */,
+				E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */,
+				E59F8D092C57FC6F00269E3D /* LoadingView.swift */,
+				E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -168,15 +186,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E589229D2C3311F500DAC182 /* SecondViewController.swift in Sources */,
+				E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */,
+				E589229D2C3311F500DAC182 /* UserMenuViewController.swift in Sources */,
 				E58922A32C3322E100DAC182 /* GuestViewController.swift in Sources */,
 				E589228D2C33096D00DAC182 /* ViewController.swift in Sources */,
 				E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */,
+				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,
+				E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */,
 				E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */,
 				E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */,
 				E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */,
 				E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */,
 				E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */,
+				E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */,
+				E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */,
+				E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

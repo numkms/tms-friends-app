@@ -30,6 +30,35 @@ class AuthViewController: UIViewController {
     lazy var wrapper = UIStackView()
     
     lazy var buttonsStack = UIStackView()
+
+    lazy var toggleSwitch = ToggleSwitchControl(frame: .init(
+        x: view.bounds.width / 2,
+        y: 50,
+        width: 50,
+        height: 50
+    ))
+    
+    lazy var toggleSwitch2 = ToggleSwitchControl(
+        frame: .init(
+            x: view.bounds.width / 2 + 50,
+            y: 50,
+            width: 50,
+            height: 50
+        ),
+        onImage: "square.and.arrow.up.fill",
+        offImage: "square.and.arrow.up"
+    )
+    
+    lazy var toggleSwitch3 = ToggleSwitchControl(
+        onImage: "rectangle.portrait.and.arrow.forward.fill",
+        offImage: "rectangle.portrait.and.arrow.forward"
+    )
+
+    
+    lazy var toggleSwitch4 = ToggleSwitchControl(
+        onImage: "pencil.circle.fill",
+        offImage: "pencil.circle"
+    )
     
     func setupUI() {
         imageView.image = .init(systemName: "person.crop.circle.fill")
@@ -47,7 +76,27 @@ class AuthViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         view.addSubview(wrapper)
+        view.addSubview(toggleSwitch)
+        view.addSubview(toggleSwitch2)
+        view.addSubview(toggleSwitch3)
+        view.addSubview(toggleSwitch4)
+        toggleSwitch4.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            toggleSwitch4.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+            toggleSwitch4.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            toggleSwitch4.heightAnchor.constraint(equalToConstant: 50),
+            toggleSwitch4.widthAnchor.constraint(equalToConstant: 50)
+        ])
         
+        toggleSwitch3.frame = .init(
+            x: view.bounds.width / 2 + 100,
+            y: 50,
+            width: 50,
+            height: 50
+        )
+        
+        toggleSwitch2.set(isOn: true)
+        toggleSwitch4.set(isOn: true)
         // MARK: - Configuring views
         wrapper.translatesAutoresizingMaskIntoConstraints = false
         wrapper.backgroundColor = .black.withAlphaComponent(0.1)
@@ -89,8 +138,20 @@ class AuthViewController: UIViewController {
         wrapper.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
         wrapper.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
         wrapper.heightAnchor.constraint(equalToConstant: 410).isActive = true
-        
+        view.setNeedsLayout()
         addActions()
+    }
+    
+    
+    
+//    view.layoutSubviews()
+    
+    
+    override func viewDidLayoutSubviews() {
+    
+        view.subviews.forEach { a in
+            a.frame
+        }
     }
     
     

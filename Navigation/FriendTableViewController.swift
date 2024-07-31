@@ -209,10 +209,29 @@ class FriendTableViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    lazy var loadingView: LoadingView = LoadingView(frame: .init(
+        x: view.center.x - 25,
+        y: view.center.y - 25,
+        width: 50,
+        height: 50
+    ))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(tableView)
+        view.addSubview(loadingView)
+        self.loadingView.animationDuration = 0.3
+        self.loadingView.startAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.setupView()
+            self.loadingView.endAnimating()
+            self.loadingView.isHidden = true
+        }
+        // Do any additional setup after loading the view.
+    }
+    
+    func setupView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(
             LabelTableViewCell.self,
@@ -238,9 +257,7 @@ class FriendTableViewController: UIViewController {
         ])
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

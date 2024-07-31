@@ -48,7 +48,7 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
     lazy var setStatusButton = UIButton(primaryAction: UIAction.init(handler: { _ in
         let editStatusViewController = StatusEditViewController(
             status: self.statusLabel.text) { newStatus in
-//                self.statusLabel.text = newStatus
+                self.statusLabel.text = newStatus
             }
         editStatusViewController.delegate = self
         self.present(editStatusViewController, animated: true)
@@ -88,15 +88,12 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
         
         let imageVIew = UIImageView()
         imageVIew.image = .init(named: "Image")
-        
-        
         // Do any additional setup after loading the view.
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print(navigationController?.viewControllers.count)
     }
 
     /*
