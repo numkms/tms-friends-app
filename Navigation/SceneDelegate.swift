@@ -19,7 +19,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = buildApplicationBeforeAuth()
+        window?.makeKeyAndVisible()
         
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(userDidLogin),
+            name: NSNotification.Name("userDidLogin"),
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(userDidLogout),
+            name: NSNotification.Name("userDidLogout"),
+            object: nil
+        )
+    }
+    
+    func buildApplicationBeforeAuth() -> UIViewController {
         let rootViewController = UITabBarController()
         
         let guestViewController = GuestViewController()
@@ -34,19 +52,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         gestureViewController.title = "Жесты"
         gestureViewController.tabBarItem.image = UIImage(systemName: "circle.fill")
         
+        let animationsViewController = AnimationsViewController()
+        animationsViewController.title = "Анимации"
+        animationsViewController.tabBarItem.image = UIImage(systemName: "capsule.fill")
+        
         let authNavigation = UINavigationController(rootViewController: authViewController)
         
         rootViewController.setViewControllers([
             guestViewController,
             authNavigation,
-            gestureViewController
+            gestureViewController,
+            animationsViewController
         ], animated: false)
         
         rootViewController.viewControllers?.forEach({ vc in
             vc.view.backgroundColor = .white
         })
-        
-        window?.rootViewController = rootViewController
+        return rootViewController
+    }
+    
+    @objc func userDidLogout() {
+        window?.rootViewController = buildApplicationBeforeAuth()
+        window?.makeKeyAndVisible()
+    }
+    
+    @objc func userDidLogin() {
+        window?.rootViewController = GestureViewController()
         window?.makeKeyAndVisible()
     }
 

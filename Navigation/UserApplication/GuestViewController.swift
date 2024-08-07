@@ -90,8 +90,20 @@ class GuestViewController: UIViewController {
             equalTo: wrapper.bottomAnchor,
             constant: -Constants.padding
         ).isActive = true
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(userDidLogin),
+            name: NSNotification.Name("userDidLogin"),
+            object: nil
+        )
     }
     
+    @objc func userDidLogin(_ notification: Notification) {
+        print(notification.userInfo)
+        guard let userName = notification.userInfo?["userName"] as? String else { return }
+        label.setTitle("You are part of the club, \(userName)!", for: .normal)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
 //        present(CollectionViewController(), animated: true)

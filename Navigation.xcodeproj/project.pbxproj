@@ -25,6 +25,7 @@
 		E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */; };
 		E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */; };
 		E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */; };
+		E5BE6D272C61389D00644836 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D262C61389D00644836 /* AnimationsViewController.swift */; };
 		E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSwitchController.swift; sourceTree = "<group>"; };
 		E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
+		E5BE6D262C61389D00644836 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */,
 				E59F8D092C57FC6F00269E3D /* LoadingView.swift */,
 				E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */,
+				E5BE6D262C61389D00644836 /* AnimationsViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */,
 				E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */,
 				E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */,
+				E5BE6D272C61389D00644836 /* AnimationsViewController.swift in Sources */,
 				E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

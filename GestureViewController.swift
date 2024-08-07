@@ -7,8 +7,28 @@
 
 import UIKit
 
+class MyTapGestureRecognizer: UITapGestureRecognizer {
+    let handler: () -> Void
+    
+    init(handler: @escaping () -> Void) {
+        self.handler = handler
+        super.init(target: nil, action: nil)
+        self.addTarget(self, action: #selector(handle))
+        print("init")
+    }
+    
+    @objc private func handle() {
+        print("handler")
+        self.handler()
+    }
+}
 
 class Square: UIView {
+    
+    enum Constants {
+        static let somethingWidth: CGFloat = 116
+    }
+    
     let name: String
     
     init(name: String) {
@@ -47,6 +67,23 @@ class GestureViewController: UIViewController {
     lazy var bigSquare: Square = Square(name: "big")
     lazy var squareView: Square = Square(name: "square")
     lazy var tinySquare: Square = Square(name: "tiny")
+    lazy var logout: UIButton = .init()
+    
+    lazy var topFrame = CGRect(origin: .zero, size: .init(
+        width: view.bounds.width,
+        height: view.bounds.height / 2
+    ))
+    
+    lazy var bottomFrame = CGRect(
+        origin: .init(
+            x: .zero,
+            y: view.bounds.maxY - (view.bounds.height / 2)
+        ),
+        size: .init(
+            width: view.bounds.width,
+            height: view.bounds.height / 2
+        )
+    )
     
     override func loadView() {
         view = CustomView()
@@ -60,7 +97,24 @@ class GestureViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let myRecongizer = MyTapGestureRecognizer {
+            print("did tap")
+        }
+        view.addGestureRecognizer(myRecongizer)
+        
+        logout.setTitle("Logout", for: .normal)
+        logout.setTitleColor(.white, for: .normal)
+        logout.addAction(UIAction(handler: { _ in
+            NotificationCenter.default.post(
+                Notification(
+                    name: Notification.Name("userDidLogout")
+                )
+            )
+        }), for: .touchUpInside)
+        
+        logout.frame = .init(x: .zero, y: 100, width: 100, height: 50)
+        
         bigSquare.frame = .init(x: 0, y: 100, width: 400, height: 400)
         bigSquare.backgroundColor = .yellow
         
@@ -71,7 +125,7 @@ class GestureViewController: UIViewController {
         squareView.frame = .init(x: .zero, y: .zero, width: 100, height: 100)
         squareView.backgroundColor = .red
         view.addSubview(bigSquare)
-        view.addSubview(overlaySquare)
+//        view.addSubview(overlaySquare)
     
         overlaySquare.backgroundColor = .black.withAlphaComponent(0.3)
         
@@ -90,6 +144,19 @@ class GestureViewController: UIViewController {
         
         let panGestureRecognizer2 = UIPanGestureRecognizer(target: self, action: #selector(viewDidPan))
         tinySquare.addGestureRecognizer(panGestureRecognizer2)
+     
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(userDidLogin),
+            name: NSNotification.Name("userDidLogin"),
+            object: nil
+        )
+        
+        view.addSubview(logout)
+    }
+    
+    @objc func userDidLogin() {
+        bigSquare.frame = .init(origin: .zero, size: bigSquare.frame.size)
     }
     
     @objc func viewDidTapped(_ gesture: UITapGestureRecognizer) {
@@ -138,8 +205,23 @@ class GestureViewController: UIViewController {
         )
         
         switch gesture.state {
+        case .began:
+            UIView.animate(withDuration: 0.5) {
+                let position = gesture.location(in: self.view)
+                view.frame = .init(x: position.x, y: position.y, width: 100, height: 100)
+            }
+            
         case .ended, .failed, .cancelled:
             previousTranslation = nil
+            if view.frame.minY > self.view.frame.midY {
+                UIView.animate(withDuration: 0.5) {
+                    view.frame = self.bottomFrame
+                }
+            } else {
+                UIView.animate(withDuration: 0.5) {
+                    view.frame = self.topFrame
+                }
+            }
         default: break
         }
     }

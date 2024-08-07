@@ -11,6 +11,7 @@ class AuthViewController: UIViewController {
     enum Constants {
         static var padding: CGFloat = 10
         static var radius: CGFloat = 20
+        static var defaultTopWrapperMargin: CGFloat = 60
     }
     
     
@@ -71,22 +72,24 @@ class AuthViewController: UIViewController {
         loginButton.setTitleColor(.blue, for: .normal)
         forgetPasswordButton.setTitleColor(.red, for: .normal)
     }
+    
+    var wrapperTopConstraint: NSLayoutConstraint?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         view.addSubview(wrapper)
-        view.addSubview(toggleSwitch)
-        view.addSubview(toggleSwitch2)
-        view.addSubview(toggleSwitch3)
-        view.addSubview(toggleSwitch4)
-        toggleSwitch4.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            toggleSwitch4.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
-            toggleSwitch4.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            toggleSwitch4.heightAnchor.constraint(equalToConstant: 50),
-            toggleSwitch4.widthAnchor.constraint(equalToConstant: 50)
-        ])
+//        view.addSubview(toggleSwitch)
+//        view.addSubview(toggleSwitch2)
+//        view.addSubview(toggleSwitch3)
+//        view.addSubview(toggleSwitch4)
+//        toggleSwitch4.translatesAutoresizingMaskIntoConstraints = false
+//        NSLayoutConstraint.activate([
+//            toggleSwitch4.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
+//            toggleSwitch4.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            toggleSwitch4.heightAnchor.constraint(equalToConstant: 50),
+//            toggleSwitch4.widthAnchor.constraint(equalToConstant: 50)
+//        ])
         
         toggleSwitch3.frame = .init(
             x: view.bounds.width / 2 + 100,
@@ -134,26 +137,57 @@ class AuthViewController: UIViewController {
         buttonsStack.spacing = 30
         buttonsStack.distribution = .fillEqually
         // MARK: - Wrapper position layout
-        wrapper.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60).isActive = true
+        wrapperTopConstraint = wrapper.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Constants.defaultTopWrapperMargin)
+        wrapperTopConstraint?.isActive = true
+        
         wrapper.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
         wrapper.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
         wrapper.heightAnchor.constraint(equalToConstant: 410).isActive = true
         view.setNeedsLayout()
         addActions()
+        
+        userNameField.delegate = self
+        
+        userNameField.addTarget(self, action: #selector(userNameDidChange), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(userPasswordDidChange), for: .editingChanged)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardDidOpen),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardDidClosed),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
     }
     
+    func isLoginValid(login: String) -> Bool  {
+        return !(login.count > 16)
+    }
     
-    
-//    view.layoutSubviews()
-    
-    
-    override func viewDidLayoutSubviews() {
-    
-        view.subviews.forEach { a in
-            a.frame
+    @objc func userNameDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        let result = isLoginValid(login: text)
+        if result {
+            statusLabel.text = nil
+        } else {
+            statusLabel.text = "Максимальное количество символов 8"
         }
     }
     
+    @objc func userPasswordDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        let result = text.count >= 5
+        if result {
+            statusLabel.text = nil
+        } else {
+            statusLabel.text = "Минимальное количество символов 10"
+        }
+    }
     
     func addActions() {
         loginButton.addAction(UIAction.init(handler: { _ in
@@ -169,9 +203,38 @@ class AuthViewController: UIViewController {
             let viewController = UserMenuTableViewController()
             clear()
             navigationController?.pushViewController(viewController, animated: true)
+            NotificationCenter.default.post(
+                Notification(
+                    name: Notification.Name("userDidLogin"),
+                    userInfo: [
+                        "userName": login,
+                        "password": password
+                    ]
+                )
+            )
         } else {
             clear()
             statusLabel.text = "Не правильный логин или пароль"
+        }
+    }
+    
+    @objc func keyboardDidOpen(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+             let keyboardRectangle = keyboardFrame.cgRectValue
+             let keyboardHeight = keyboardRectangle.height
+            print("Клавиатура открылась, ее высота", keyboardHeight)
+            wrapperTopConstraint?.constant = Constants.defaultTopWrapperMargin - keyboardHeight
+            UIView.animate(withDuration: 0.3, delay: .zero, options: [.curveEaseIn]) { [weak self] in
+                self?.view.layoutIfNeeded()
+            }
+         }
+        
+    }
+    
+    @objc func keyboardDidClosed() {
+        wrapperTopConstraint?.constant = Constants.defaultTopWrapperMargin
+        UIView.animate(withDuration: 0.3, delay: .zero, options: [.curveEaseIn]) { [weak self] in
+            self?.view.layoutIfNeeded()
         }
     }
 
@@ -182,7 +245,6 @@ class AuthViewController: UIViewController {
     }
     
     func validate(_ login: String, _ password: String) -> String?  {
-        return ""
         let users: [String: String] = [
             "nikolay@mail.ru": "qwergunsn",
             "vladimir@gmail.com": "123566",
@@ -208,3 +270,38 @@ class AuthViewController: UIViewController {
     */
 
 }
+
+
+extension AuthViewController: UITextFieldDelegate {
+    // Можем ли мы начать вводить значение в TextField
+//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+//        guard let text = textField.text else { return true }
+//        return !(text.count >= 3)
+//    }
+    
+    func textField(
+        _ textField: UITextField,
+        shouldChangeCharactersIn range: NSRange,
+        replacementString string: String
+    ) -> Bool {
+        print(
+            "Lower bound", range.lowerBound,
+            "Upper bound", range.upperBound,
+            string
+        )
+
+        if range.lowerBound == 0, let string = string.first, !string.isLetter {
+            return false
+        }
+        
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        guard let text = textField.text else { return true }
+        let result = isLoginValid(login: text)
+        return result
+    }
+}
+
+    
