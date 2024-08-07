@@ -14,13 +14,13 @@
 		E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922882C33096D00DAC182 /* AppDelegate.swift */; };
 		E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228A2C33096D00DAC182 /* SceneDelegate.swift */; };
 		E589228D2C33096D00DAC182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228C2C33096D00DAC182 /* ViewController.swift */; };
-		E58922902C33096D00DAC182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E589228E2C33096D00DAC182 /* Main.storyboard */; };
 		E58922922C33096E00DAC182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58922912C33096E00DAC182 /* Assets.xcassets */; };
 		E58922952C33096E00DAC182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58922932C33096E00DAC182 /* LaunchScreen.storyboard */; };
 		E589229D2C3311F500DAC182 /* UserMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589229C2C3311F500DAC182 /* UserMenuViewController.swift */; };
 		E589229F2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */; };
 		E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922A02C3322D200DAC182 /* AuthViewController.swift */; };
 		E58922A32C3322E100DAC182 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922A22C3322E100DAC182 /* GuestViewController.swift */; };
+		E58BD7772C5A9EE70043C1B5 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58BD7762C5A9EE70043C1B5 /* GestureViewController.swift */; };
 		E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F8D092C57FC6F00269E3D /* LoadingView.swift */; };
 		E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */; };
 		E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */; };
@@ -37,7 +37,6 @@
 		E58922882C33096D00DAC182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E589228A2C33096D00DAC182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E589228C2C33096D00DAC182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E589228F2C33096D00DAC182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E58922912C33096E00DAC182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E58922942C33096E00DAC182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E58922962C33096E00DAC182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		E589229E2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginFlowStoryboard.storyboard; sourceTree = "<group>"; };
 		E58922A02C3322D200DAC182 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E58922A22C3322E100DAC182 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
+		E58BD7762C5A9EE70043C1B5 /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		E59F8D092C57FC6F00269E3D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleSwitchController.swift; sourceTree = "<group>"; };
 		E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +66,7 @@
 		E589227C2C33096D00DAC182 = {
 			isa = PBXGroup;
 			children = (
+				E58BD7762C5A9EE70043C1B5 /* GestureViewController.swift */,
 				E58922872C33096D00DAC182 /* Navigation */,
 				E58922862C33096D00DAC182 /* Products */,
 			);
@@ -86,7 +87,6 @@
 				E58922A42C3322E600DAC182 /* UserApplication */,
 				E589228A2C33096D00DAC182 /* SceneDelegate.swift */,
 				E589228C2C33096D00DAC182 /* ViewController.swift */,
-				E589228E2C33096D00DAC182 /* Main.storyboard */,
 				E58922912C33096E00DAC182 /* Assets.xcassets */,
 				E58922932C33096E00DAC182 /* LaunchScreen.storyboard */,
 				E58922962C33096E00DAC182 /* Info.plist */,
@@ -174,7 +174,6 @@
 			files = (
 				E58922952C33096E00DAC182 /* LaunchScreen.storyboard in Resources */,
 				E58922922C33096E00DAC182 /* Assets.xcassets in Resources */,
-				E58922902C33096D00DAC182 /* Main.storyboard in Resources */,
 				E589229F2C3316EC00DAC182 /* LoginFlowStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +189,7 @@
 				E589229D2C3311F500DAC182 /* UserMenuViewController.swift in Sources */,
 				E58922A32C3322E100DAC182 /* GuestViewController.swift in Sources */,
 				E589228D2C33096D00DAC182 /* ViewController.swift in Sources */,
+				E58BD7772C5A9EE70043C1B5 /* GestureViewController.swift in Sources */,
 				E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */,
 				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,
 				E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */,
@@ -207,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E589228E2C33096D00DAC182 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E589228F2C33096D00DAC182 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E58922932C33096E00DAC182 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,7 +348,6 @@
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,7 +374,6 @@
 				INFOPLIST_FILE = Navigation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
