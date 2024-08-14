@@ -11,8 +11,16 @@ class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let person = Person(name: "Vladimir")
+        person.printDescription()
+        
+        PersonStorage.save(person: person)
+        
+        
+        let ownCalculator = OwnCalculator()
+        ownCalculator.multiply()
+        ownCalculator.result()
     }
     
 

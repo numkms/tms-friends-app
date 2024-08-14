@@ -11,6 +11,7 @@
 		E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */; };
 		E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */; };
 		E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */; };
+		E5438FD12C6D32DE0018BB2E /* Alghorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5438FD02C6D32DE0018BB2E /* Alghorithms.swift */; };
 		E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922882C33096D00DAC182 /* AppDelegate.swift */; };
 		E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228A2C33096D00DAC182 /* SceneDelegate.swift */; };
 		E589228D2C33096D00DAC182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228C2C33096D00DAC182 /* ViewController.swift */; };
@@ -26,6 +27,12 @@
 		E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */; };
 		E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */; };
 		E5BE6D272C61389D00644836 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D262C61389D00644836 /* AnimationsViewController.swift */; };
+		E5BE6D292C6A6B5600644836 /* SOLID.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D282C6A6B5600644836 /* SOLID.swift */; };
+		E5BE6D2B2C6A6C5A00644836 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D2A2C6A6C5A00644836 /* TestViewController.swift */; };
+		E5BE6D2E2C6A868200644836 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D2D2C6A868200644836 /* AuthService.swift */; };
+		E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D2F2C6A898000644836 /* AuthNotificator.swift */; };
+		E5BE6D322C6A8BC300644836 /* AuthValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D312C6A8BC300644836 /* AuthValidatorService.swift */; };
+		E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D332C6A8CF400644836 /* AuthFactory.swift */; };
 		E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +41,7 @@
 		E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditViewController.swift; sourceTree = "<group>"; };
 		E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		E5438FD02C6D32DE0018BB2E /* Alghorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alghorithms.swift; sourceTree = "<group>"; };
 		E58922852C33096D00DAC182 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58922882C33096D00DAC182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E589228A2C33096D00DAC182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
 		E5BE6D262C61389D00644836 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
+		E5BE6D282C6A6B5600644836 /* SOLID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLID.swift; sourceTree = "<group>"; };
+		E5BE6D2A2C6A6C5A00644836 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E5BE6D2D2C6A868200644836 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E5BE6D2F2C6A898000644836 /* AuthNotificator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNotificator.swift; sourceTree = "<group>"; };
+		E5BE6D312C6A8BC300644836 /* AuthValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidatorService.swift; sourceTree = "<group>"; };
+		E5BE6D332C6A8CF400644836 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
 		E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +82,8 @@
 		E589227C2C33096D00DAC182 = {
 			isa = PBXGroup;
 			children = (
+				E5438FD02C6D32DE0018BB2E /* Alghorithms.swift */,
+				E5BE6D282C6A6B5600644836 /* SOLID.swift */,
 				E58BD7762C5A9EE70043C1B5 /* GestureViewController.swift */,
 				E58922872C33096D00DAC182 /* Navigation */,
 				E58922862C33096D00DAC182 /* Products */,
@@ -104,6 +120,7 @@
 				E59F8D092C57FC6F00269E3D /* LoadingView.swift */,
 				E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */,
 				E5BE6D262C61389D00644836 /* AnimationsViewController.swift */,
+				E5BE6D2A2C6A6C5A00644836 /* TestViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -111,10 +128,22 @@
 		E58922A42C3322E600DAC182 /* UserApplication */ = {
 			isa = PBXGroup;
 			children = (
-				E58922A02C3322D200DAC182 /* AuthViewController.swift */,
+				E5BE6D2C2C6A865A00644836 /* AuthModule */,
 				E58922A22C3322E100DAC182 /* GuestViewController.swift */,
 			);
 			path = UserApplication;
+			sourceTree = "<group>";
+		};
+		E5BE6D2C2C6A865A00644836 /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				E58922A02C3322D200DAC182 /* AuthViewController.swift */,
+				E5BE6D2D2C6A868200644836 /* AuthService.swift */,
+				E5BE6D2F2C6A898000644836 /* AuthNotificator.swift */,
+				E5BE6D312C6A8BC300644836 /* AuthValidatorService.swift */,
+				E5BE6D332C6A8CF400644836 /* AuthFactory.swift */,
+			);
+			path = AuthModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,14 +218,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A2F7042C4589AC00B12315 /* CollectionViewController.swift in Sources */,
+				E5BE6D2B2C6A6C5A00644836 /* TestViewController.swift in Sources */,
 				E589229D2C3311F500DAC182 /* UserMenuViewController.swift in Sources */,
 				E58922A32C3322E100DAC182 /* GuestViewController.swift in Sources */,
+				E5BE6D322C6A8BC300644836 /* AuthValidatorService.swift in Sources */,
 				E589228D2C33096D00DAC182 /* ViewController.swift in Sources */,
 				E58BD7772C5A9EE70043C1B5 /* GestureViewController.swift in Sources */,
 				E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */,
+				E5BE6D2E2C6A868200644836 /* AuthService.swift in Sources */,
+				E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */,
+				E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */,
 				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,
 				E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */,
 				E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */,
+				E5BE6D292C6A6B5600644836 /* SOLID.swift in Sources */,
 				E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */,
 				E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */,
 				E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */,
@@ -204,6 +239,7 @@
 				E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */,
 				E59F8D0C2C580E0100269E3D /* ToggleSwitchController.swift in Sources */,
 				E5BE6D272C61389D00644836 /* AnimationsViewController.swift in Sources */,
+				E5438FD12C6D32DE0018BB2E /* Alghorithms.swift in Sources */,
 				E5A2F7062C459E5A00B12315 /* FriendTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,7 @@ class AnimationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         view.addSubview(constraintView)
         constraintView.translatesAutoresizingMaskIntoConstraints = false
         constraintView.backgroundColor = .darkGray

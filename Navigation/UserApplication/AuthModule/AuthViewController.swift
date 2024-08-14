@@ -74,7 +74,23 @@ class AuthViewController: UIViewController {
     }
     
     var wrapperTopConstraint: NSLayoutConstraint?
-
+    
+    let authService: AuthProtocol
+    let authValidator: AuthValidatorServiceProtocol
+    
+    init(
+        authService: AuthProtocol,
+        authValidator: AuthValidatorServiceProtocol
+    ) {
+        self.authService = authService
+        self.authValidator = authValidator
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -165,23 +181,19 @@ class AuthViewController: UIViewController {
         )
     }
     
-    func isLoginValid(login: String) -> Bool  {
-        return !(login.count > 16)
-    }
-    
     @objc func userNameDidChange(_ textField: UITextField) {
         guard let text = textField.text else { return }
-        let result = isLoginValid(login: text)
+        let result = authValidator.isValid(login: text)
         if result {
             statusLabel.text = nil
         } else {
-            statusLabel.text = "Максимальное количество символов 8"
+            statusLabel.text = "Максимальное количество символов 16"
         }
     }
     
     @objc func userPasswordDidChange(_ textField: UITextField) {
         guard let text = textField.text else { return }
-        let result = text.count >= 5
+        let result = authValidator.isValid(password: text)
         if result {
             statusLabel.text = nil
         } else {
@@ -203,15 +215,6 @@ class AuthViewController: UIViewController {
             let viewController = UserMenuTableViewController()
             clear()
             navigationController?.pushViewController(viewController, animated: true)
-            NotificationCenter.default.post(
-                Notification(
-                    name: Notification.Name("userDidLogin"),
-                    userInfo: [
-                        "userName": login,
-                        "password": password
-                    ]
-                )
-            )
         } else {
             clear()
             statusLabel.text = "Не правильный логин или пароль"
@@ -245,18 +248,12 @@ class AuthViewController: UIViewController {
     }
     
     func validate(_ login: String, _ password: String) -> String?  {
-        let users: [String: String] = [
-            "nikolay@mail.ru": "qwergunsn",
-            "vladimir@gmail.com": "123566",
-            "nikita@yahoo.com": "JKDIwqi1dnni1@22n##",
-            "1": "1",
-        ]
-        
-        guard 
-            let userPassword = users[login],
-            password == userPassword
-        else { return nil }
-        return login
+        switch authService.auth(login: login, password: password) {
+        case let .success(user):
+            return user.name
+        case .failure(_):
+            return nil
+        }
     }
     
     /*
@@ -299,7 +296,7 @@ extension AuthViewController: UITextFieldDelegate {
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         guard let text = textField.text else { return true }
-        let result = isLoginValid(login: text)
+        let result = authValidator.isValid(login: text)
         return result
     }
 }

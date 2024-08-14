@@ -85,6 +85,19 @@ class GestureViewController: UIViewController {
         )
     )
     
+    let authService: AuthProtocol
+    
+    init(
+        authService: AuthProtocol
+    ) {
+        self.authService = authService
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func loadView() {
         view = CustomView()
     }
@@ -105,12 +118,8 @@ class GestureViewController: UIViewController {
         
         logout.setTitle("Logout", for: .normal)
         logout.setTitleColor(.white, for: .normal)
-        logout.addAction(UIAction(handler: { _ in
-            NotificationCenter.default.post(
-                Notification(
-                    name: Notification.Name("userDidLogout")
-                )
-            )
+        logout.addAction(UIAction(handler: { [weak self] _ in
+            self?.authService.logout()
         }), for: .touchUpInside)
         
         logout.frame = .init(x: .zero, y: 100, width: 100, height: 50)

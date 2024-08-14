@@ -97,6 +97,7 @@ class GuestViewController: UIViewController {
             name: NSNotification.Name("userDidLogin"),
             object: nil
         )
+    
     }
     
     @objc func userDidLogin(_ notification: Notification) {
@@ -106,7 +107,26 @@ class GuestViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
 //        present(CollectionViewController(), animated: true)
+        let uservc = UINavigationController(rootViewController: UserMenuTableViewController())
+        
+        addChild(uservc)
+        view.addSubview(uservc.view)
+        
+        uservc.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            uservc.view.topAnchor.constraint(equalTo: view.topAnchor),
+            uservc.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            uservc.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            uservc.view.heightAnchor.constraint(equalToConstant: 300),
+        ])
+        uservc.didMove(toParent: self)
+        
+//        uservc.willMove(toParent: nil)
+//        uservc.view.removeFromSuperview()
+//        uservc.removeFromParent()
     }
 
     /*

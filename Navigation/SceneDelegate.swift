@@ -36,7 +36,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             object: nil
         )
     }
-    
+    let authService = AuthService(
+        usersStorage: UserStorageService(),
+        authNotificator: AuthNotificator()
+    )
     func buildApplicationBeforeAuth() -> UIViewController {
         let rootViewController = UITabBarController()
         
@@ -44,11 +47,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guestViewController.title = "Гостевой"
         guestViewController.tabBarItem.image = UIImage(systemName: "person.fill.xmark")
         
-        let authViewController = AuthViewController()
+
+        
+        let authViewController = AuthFactory(authService: authService).build()
+        
         authViewController.title = "Аккаунт"
         authViewController.tabBarItem.image = UIImage(systemName: "person.fill.checkmark")
         
-        let gestureViewController = GestureViewController()
+        let gestureViewController = GestureViewController(authService: authService)
         gestureViewController.title = "Жесты"
         gestureViewController.tabBarItem.image = UIImage(systemName: "circle.fill")
         
@@ -77,7 +83,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     @objc func userDidLogin() {
-        window?.rootViewController = GestureViewController()
+        window?.rootViewController = GestureViewController(authService: authService)
         window?.makeKeyAndVisible()
     }
 
