@@ -31,6 +31,15 @@ class AuthViewController: UIViewController {
     lazy var wrapper = UIStackView()
     
     lazy var buttonsStack = UIStackView()
+    
+    lazy var backgroundImageView = UIImageView(
+        image: .authbackground
+    )
+    
+    lazy var blurEffect = UIBlurEffect(style: .light)
+    lazy var wrapperBlurEffect = UIBlurEffect(style: .prominent)
+    lazy var blurEffectView = UIVisualEffectView(effect: blurEffect)
+    lazy var wrapperBlurEffectView = UIVisualEffectView(effect: wrapperBlurEffect)
 
     lazy var toggleSwitch = ToggleSwitchControl(frame: .init(
         x: view.bounds.width / 2,
@@ -62,6 +71,11 @@ class AuthViewController: UIViewController {
     )
     
     func setupUI() {
+        view.addSubview(backgroundImageView)
+        view.addSubview(blurEffectView)
+        
+        backgroundImageView.frame = view.bounds
+        backgroundImageView.contentMode = .scaleAspectFill
         imageView.image = .init(systemName: "person.crop.circle.fill")
         userNamelabel.text = "Username"
         passwordLabel.text = "Password"
@@ -91,21 +105,20 @@ class AuthViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        blurEffectView.frame = view.bounds
+        wrapperBlurEffectView.frame = wrapper.bounds
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
         view.addSubview(wrapper)
-//        view.addSubview(toggleSwitch)
-//        view.addSubview(toggleSwitch2)
-//        view.addSubview(toggleSwitch3)
-//        view.addSubview(toggleSwitch4)
-//        toggleSwitch4.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            toggleSwitch4.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
-//            toggleSwitch4.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            toggleSwitch4.heightAnchor.constraint(equalToConstant: 50),
-//            toggleSwitch4.widthAnchor.constraint(equalToConstant: 50)
-//        ])
+        
+        wrapper.addSubview(wrapperBlurEffectView)
+        wrapper.clipsToBounds = true
         
         toggleSwitch3.frame = .init(
             x: view.bounds.width / 2 + 100,
@@ -118,7 +131,7 @@ class AuthViewController: UIViewController {
         toggleSwitch4.set(isOn: true)
         // MARK: - Configuring views
         wrapper.translatesAutoresizingMaskIntoConstraints = false
-        wrapper.backgroundColor = .black.withAlphaComponent(0.1)
+        wrapper.backgroundColor = .black.withAlphaComponent(0.3)
         wrapper.layer.cornerRadius = Constants.radius
         
         wrapper.axis = .vertical

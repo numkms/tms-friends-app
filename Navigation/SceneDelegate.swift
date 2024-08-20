@@ -68,7 +68,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             guestViewController,
             authNavigation,
             gestureViewController,
-            animationsViewController
+            animationsViewController,
+            AttributedStringViewController()
         ], animated: false)
         
         rootViewController.viewControllers?.forEach({ vc in
