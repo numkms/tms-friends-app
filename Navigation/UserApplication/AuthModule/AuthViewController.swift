@@ -74,6 +74,8 @@ class AuthViewController: UIViewController {
         view.addSubview(backgroundImageView)
         view.addSubview(blurEffectView)
         
+        
+        
         backgroundImageView.frame = view.bounds
         backgroundImageView.contentMode = .scaleAspectFill
         imageView.image = .init(systemName: "person.crop.circle.fill")

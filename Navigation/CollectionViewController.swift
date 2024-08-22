@@ -89,10 +89,8 @@ class CollectionViewController: UIViewController {
             right: spacing
         )
         collectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: imageIdentifier)
-
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .blue
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         

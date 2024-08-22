@@ -151,7 +151,7 @@ class FriendTableViewController: UIViewController {
     
     lazy var tableView = UITableView()
     
-    let friend: FriendViewController.Friend
+    let friendUUID: UUID
     
     var status: String?
     
@@ -166,7 +166,12 @@ class FriendTableViewController: UIViewController {
         let images: [UIImage]?
     }
     
+    var friend: FriendViewController.Friend? {
+        FriendsStorage.myFriends.first { $0.id == friendUUID }
+    }
+    
     var sections: [Section] {
+        guard let friend else { return [] }
         return [
             .init(title: "Личная информация", cells: [
                 .init(
@@ -184,12 +189,34 @@ class FriendTableViewController: UIViewController {
                     labels: (key: "Статус", value: status ?? ""),
                     images: nil
                 ),
+                .init(
+                    cell: .label,
+                    labels: (key: "День рождения", value: friend.dateOfBirthFormatted ?? ""),
+                    images: nil
+                ),
+                .init(
+                    cell: .label,
+                    labels: (key: "Группа", value: friend.group),
+                    images: nil
+                ),
             ]),
             .init(title: "Фотоальбом", cells: [
                 .init(
                     cell: .images,
                     labels: nil,
                     images: friend.gallery
+                )
+            ]),
+            .init(title: "Действия", cells: [
+                .init(
+                    cell: .label,
+                    labels: (key: "Настройки доступа", value: ""), 
+                    images: nil
+                ),
+                .init(
+                    cell: .label,
+                    labels: (key: "Добавить фото", value: ""),
+                    images: nil
                 )
             ])
         ]
@@ -200,8 +227,8 @@ class FriendTableViewController: UIViewController {
         case images
     }
 
-    init(friend: FriendViewController.Friend) {
-        self.friend = friend
+    init(friendUUID: UUID) {
+        self.friendUUID = friendUUID
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -223,7 +250,7 @@ class FriendTableViewController: UIViewController {
         view.addSubview(loadingView)
         self.loadingView.animationDuration = 0.3
         self.loadingView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.setupView()
             self.loadingView.endAnimating()
             self.loadingView.isHidden = true
@@ -268,32 +295,195 @@ class FriendTableViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func makeAlertAction(
+        positiveTitle: String,
+        negativeTitle: String,
+        property: WritableKeyPath<FriendViewController.Friend, Bool>,
+        style: UIAlertAction.Style = .default
+    ) -> UIAlertAction {
+        guard let friend else { return .init() }
+        return UIAlertAction(
+            title: friend[keyPath: property] ? negativeTitle : positiveTitle,
+            style: .default,
+            handler: { [weak self] _ in
+                FriendsStorage.myFriends = FriendsStorage.myFriends.compactMap {
+                    guard let friend = self?.friend else { return nil }
+                    if friend == $0 {
+                        var friendCopy = friend
+                        friendCopy[keyPath: property] = !friend[keyPath: property]
+                        return friendCopy
+                    }
+                    return $0
+                }
+                self?.navigationController?.popViewController(animated: true)
+            }
+        )
+    }
 
+    func presentFriendAccessAlert() {
+        let controller = UIAlertController(
+            title: "Управление доступом",
+            message: "Здесь вы можете ограничить доступ своему другу",
+            preferredStyle: .alert
+        )
+        controller.addAction(UIAlertAction(
+            title: "Удалить из друзей",
+            style: .destructive,
+            handler: { [weak self] _ in
+                FriendsStorage.myFriends = FriendsStorage.myFriends.filter {
+                    guard let friend = self?.friend else { return false }
+                    return $0 != friend
+                }
+                self?.navigationController?.popViewController(animated: true)
+            }
+        ))
+        controller.addAction(makeAlertAction(
+            positiveTitle: "Показывать мои посты",
+            negativeTitle: "Не показывать мои посты",
+            property: \.canSeeMyPosts
+        ))
+        controller.addAction(makeAlertAction(
+            positiveTitle: "Показывать мою галерею",
+            negativeTitle: "Не показывать мою галерею",
+            property: \.canSeeMyGallery
+        ))
+        controller.addAction(makeAlertAction(
+            positiveTitle: "Показывать информацию о моем профиле",
+            negativeTitle: "Не показывать информацию о моем профиле",
+            property: \.canSeeMyPageInfo
+        ))
+        present(controller, animated: true)
+    }
+    
+    func presentSelectDateBirth() {
+        let datePickController = DatePickController()
+        datePickController.delegate = self
+        datePickController.modalTransitionStyle = .crossDissolve
+        datePickController.modalPresentationStyle = .overFullScreen
+        present(datePickController, animated: true)
+    }
+    
+    func presentSelectGroup() {
+        let controller = GroupPickController()
+        controller.delegate = self
+        controller.modalTransitionStyle = .crossDissolve
+        controller.modalPresentationStyle = .overFullScreen
+        present(controller, animated: true)
+        
+    }
+    
+    func presentAddPhoto() {
+        let controller = UIImagePickerController()
+        controller.sourceType = .photoLibrary
+        controller.delegate = self
+        present(controller, animated: true)
+    }
 }
 
+
+extension FriendTableViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.originalImage]  as? UIImage {
+            FriendsStorage.myFriends = FriendsStorage.myFriends.compactMap {
+                guard let friend = self.friend else { return nil }
+                if friend == $0 {
+                    var friendCopy = friend
+                    friendCopy.gallery.append(image)
+                    return friendCopy
+                }
+                return $0
+            }
+            tableView.reloadData()
+        }
+        picker.dismiss(animated: true)
+    }
+}
+
+
+extension FriendTableViewController: GroupPickerControllerDelegate {
+    func groupChanged(group: String) {
+        FriendsStorage.myFriends = FriendsStorage.myFriends.compactMap {
+            guard let friend = self.friend else { return nil }
+            if friend == $0 {
+                var friendCopy = friend
+                friendCopy.group = group
+                return friendCopy
+            }
+            return $0
+        }
+        tableView.reloadData()  
+    }
+    
+    func group() -> String {
+        return friend?.group ?? ""
+    }
+    
+    func selectableGroups() -> [String] {
+        [
+            "Друзья",
+            "Семья",
+            "Работа",
+            "Какие-то челы"
+        ]
+    }
+    
+    
+}
+
+extension FriendTableViewController: DatePickControllerDelegate {
+    func dateChanged(date: Date) {
+        FriendsStorage.myFriends = FriendsStorage.myFriends.map {
+            if friend == $0 {
+                var friendCopy = $0
+                friendCopy.dateOfBirth = date
+                return friendCopy
+            }
+            return $0
+        }
+        tableView.reloadData()
+    }
+    
+    func date() -> Date? {
+        FriendsStorage.myFriends.first { $0 == friend }?.dateOfBirth
+    }
+}
 
 extension FriendTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cellData = sections[indexPath.section].cells[indexPath.row]
-        if cellData.labels?.key == "Статус" {
+        switch cellData.labels?.key {
+        case "Статус":
             let statusEditVC = StatusEditViewController(status: status) { newStatus in
                 self.status = newStatus
             }
             present(statusEditVC, animated: true)
             tableView.deselectRow(at: indexPath, animated: true)
-        } else {
+        case "Настройки доступа":
+            presentFriendAccessAlert()
+            tableView.deselectRow(at: indexPath, animated: true)
+        case "День рождения":
+            presentSelectDateBirth()
+            tableView.deselectRow(at: indexPath, animated: false)
+        case "Группа":
+            presentSelectGroup()
+            tableView.deselectRow(at: indexPath, animated: false)
+        case "Добавить фото":
+            presentAddPhoto()
+            tableView.deselectRow(at: indexPath, animated: false)
+        default:
             tableView.deselectRow(at: indexPath, animated: false)
         }
-        
     }
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        let cellData = sections[indexPath.section].cells[indexPath.row]
-        if cellData.labels?.key == "Статус" {
-            return true
-        } else {
-            return false
-        }
+        return true
+//        let cellData = sections[indexPath.section].cells[indexPath.row]
+//        if cellData.labels?.key == "Статус" || cellData.labels?.key == "Настройки доступа" {
+//            return true
+//        } else {
+//            return false
+//        }
     }
 }
 

@@ -22,6 +22,9 @@
 		E51194202C73B92B002CE686 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5141B2F2C73B7BD008B8E4A /* Roboto-Italic.ttf */; };
 		E51194212C73B92B002CE686 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5141B2E2C73B7BD008B8E4A /* Roboto-ThinItalic.ttf */; };
 		E51194232C73BB7D002CE686 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51194222C73BB7D002CE686 /* CustomFonts.swift */; };
+		E51194252C7652BA002CE686 /* FrinedStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51194242C7652BA002CE686 /* FrinedStorage.swift */; };
+		E51194272C766EDE002CE686 /* DatePickController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51194262C766EDE002CE686 /* DatePickController.swift */; };
+		E51194292C766F16002CE686 /* GroupPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51194282C766F16002CE686 /* GroupPicker.swift */; };
 		E5141B2A2C73ACD9008B8E4A /* AttributedStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5141B292C73ACD9008B8E4A /* AttributedStringViewController.swift */; };
 		E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */; };
 		E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */; };
@@ -54,6 +57,9 @@
 		E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		E51194222C73BB7D002CE686 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		E51194242C7652BA002CE686 /* FrinedStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrinedStorage.swift; sourceTree = "<group>"; };
+		E51194262C766EDE002CE686 /* DatePickController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickController.swift; sourceTree = "<group>"; };
+		E51194282C766F16002CE686 /* GroupPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPicker.swift; sourceTree = "<group>"; };
 		E5141B292C73ACD9008B8E4A /* AttributedStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringViewController.swift; sourceTree = "<group>"; };
 		E5141B2C2C73B7BD008B8E4A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../../../Downloads/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		E5141B2D2C73B7BD008B8E4A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../../../Downloads/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -171,6 +177,9 @@
 				E5BE6D2A2C6A6C5A00644836 /* TestViewController.swift */,
 				E5141B292C73ACD9008B8E4A /* AttributedStringViewController.swift */,
 				E51194222C73BB7D002CE686 /* CustomFonts.swift */,
+				E51194242C7652BA002CE686 /* FrinedStorage.swift */,
+				E51194262C766EDE002CE686 /* DatePickController.swift */,
+				E51194282C766F16002CE686 /* GroupPicker.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -287,13 +296,16 @@
 				E589228D2C33096D00DAC182 /* ViewController.swift in Sources */,
 				E58BD7772C5A9EE70043C1B5 /* GestureViewController.swift in Sources */,
 				E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */,
+				E51194272C766EDE002CE686 /* DatePickController.swift in Sources */,
 				E5BE6D2E2C6A868200644836 /* AuthService.swift in Sources */,
 				E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */,
 				E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */,
 				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,
 				E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */,
 				E51194232C73BB7D002CE686 /* CustomFonts.swift in Sources */,
+				E51194252C7652BA002CE686 /* FrinedStorage.swift in Sources */,
 				E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */,
+				E51194292C766F16002CE686 /* GroupPicker.swift in Sources */,
 				E5BE6D292C6A6B5600644836 /* SOLID.swift in Sources */,
 				E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */,
 				E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */,

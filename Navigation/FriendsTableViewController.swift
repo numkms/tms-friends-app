@@ -40,7 +40,7 @@ class InfoTableViewCell: UITableViewCell {
     private func setupCell() {
         addSubview(loadingView)
         loadingView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.readyLayout()
             self.loadingView.endAnimating()
             self.loadingView.isHidden = true
@@ -88,30 +88,21 @@ class FriendsTableViewController: UIViewController {
     lazy var tableView = UITableView()
     
     let friendsCellIdentifier = "friendsCell"
+
+    var myFriends: [FriendViewController.Friend] {
+        FriendsStorage.myFriends
+    }
     
-    var myFriends: [FriendViewController.Friend] = [
-        .init(name: "Влад", age: 20, avatar: UIImage(systemName: "person")),
-        .init(name: "Наталья", age: 25, avatar: UIImage(systemName: "scribble")),
-        .init(name: "Николай", age: 45, avatar: UIImage(systemName: "eraser")),
-        .init(name: "Вячеслав", age: 20, avatar: UIImage(systemName: "person")),
-        .init(name: "Владимир", age: 25, avatar: UIImage(systemName: "scribble")),
-        .init(name: "Максим", age: 45, avatar: UIImage(systemName: "eraser")),
-        .init(name: "Олег", age: 20, avatar: UIImage(systemName: "person")),
-        .init(name: "Евгений", age: 25, avatar: UIImage(systemName: "scribble")),
-        .init(name: "Алексей", age: 45, avatar: UIImage(systemName: "eraser")),
-    ]
+    var friendsRequests: [FriendViewController.Friend] {
+        FriendsStorage.friendsRequests
+    }
     
-    var friendsRequests: [FriendViewController.Friend] = [
-        .init(name: "Анна", age: 20, avatar: UIImage(systemName: "person")),
-        .init(name: "Наталья", age: 25, avatar: UIImage(systemName: "scribble")),
-        .init(name: "Юлия", age: 45, avatar: UIImage(systemName: "eraser")),
-        .init(name: "Яна", age: 20, avatar: UIImage(systemName: "person")),
-    ]
-    
-    lazy var sections: [FriendsTableSection] = [
-        .init(name: "Мои друзья", friends: myFriends),
-        .init(name: "Запросы в друзья", friends: friendsRequests)
-    ]
+    var sections: [FriendsTableSection] {
+        [
+            .init(name: "Мои друзья", friends: myFriends),
+            .init(name: "Запросы в друзья", friends: friendsRequests)
+        ]
+    }
     
     struct FriendsTableSection {
         let name: String
@@ -133,7 +124,7 @@ class FriendsTableViewController: UIViewController {
         loadingView.animationDuration = 1
         loadingView.startAnimating()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.setupView()
             self.loadingView.endAnimating()
             self.loadingView.isHidden = true
@@ -142,8 +133,12 @@ class FriendsTableViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+    
     func setupView() {
-        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(InfoTableViewCell.self, forCellReuseIdentifier: friendsCellIdentifier)
         
@@ -176,7 +171,7 @@ class FriendsTableViewController: UIViewController {
 extension FriendsTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = FriendTableViewController(
-            friend: sections[indexPath.section].friends[indexPath.row]
+            friendUUID: sections[indexPath.section].friends[indexPath.row].id
         )
         navigationController?.pushViewController(viewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)

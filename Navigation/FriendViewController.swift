@@ -13,27 +13,58 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
         self.statusLabel.text = newStatus
     }
     
-    struct Friend: InfoTableViewCellModel {
+    struct Friend: InfoTableViewCellModel, Equatable {
         var title: String { name }
         var image: UIImage? { avatar }
         
+        
+        var id: UUID
         let name: String
         let age: Int
         let avatar: UIImage?
-        let gallery: [UIImage]
+        var gallery: [UIImage]
+        var canSeeMyPosts: Bool
+        var canSeeMyGallery: Bool
+        var canSeeMyPageInfo: Bool
+        var dateOfBirth: Date?
+        var group: String
         
-        init(name: String, age: Int, avatar: UIImage? = nil, gallery: [UIImage] = [
-            UIImage(systemName: "trash")!,
-            UIImage(systemName: "figure.walk.diamond.fill")!,
-            UIImage(systemName: "airplane.circle")!,
-            UIImage(systemName: "bolt.car.circle")!,
-            UIImage(systemName: "truck.box.badge.clock")!,
-            UIImage(systemName: "fuelpump.fill")!
-        ]) {
+        init(
+            id: UUID = .init(),
+            name: String,
+            age: Int,
+            avatar: UIImage? = nil,
+            gallery: [UIImage] = [
+                UIImage(systemName: "trash")!,
+                UIImage(systemName: "figure.walk.diamond.fill")!,
+                UIImage(systemName: "airplane.circle")!,
+                UIImage(systemName: "bolt.car.circle")!,
+                UIImage(systemName: "truck.box.badge.clock")!,
+                UIImage(systemName: "fuelpump.fill")!
+            ],
+            canSeeMyPosts: Bool = true,
+            canSeeMyGallery: Bool = true,
+            canSeeMyPageInfo: Bool = true,
+            dateOfBirth: Date? = nil,
+            group: String = ""
+        ) {
+            self.id = id
             self.name = name
             self.age = age
             self.avatar = avatar
             self.gallery = gallery
+            self.canSeeMyPosts = canSeeMyPosts
+            self.canSeeMyGallery = canSeeMyGallery
+            self.canSeeMyPageInfo = canSeeMyPageInfo
+            self.dateOfBirth = dateOfBirth
+            self.group = group
+        }
+        
+        var dateOfBirthFormatted: String? {
+            guard let dateOfBirth else { return "" }
+            let dateFormatter = ISO8601DateFormatter()
+            dateFormatter.formatOptions = [.withFullDate]
+            return dateFormatter.string(from: dateOfBirth)
         }
     }
     lazy var photosStackView: UIStackView = .init()
