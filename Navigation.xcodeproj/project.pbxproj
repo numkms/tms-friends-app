@@ -29,6 +29,7 @@
 		E52DAF0E2C3C6C3400D3AAAC /* StatusEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */; };
 		E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */; };
 		E5438FD12C6D32DE0018BB2E /* Alghorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5438FD02C6D32DE0018BB2E /* Alghorithms.swift */; };
+		E55F88C22C7CEBA700894415 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55F88C12C7CEBA700894415 /* WebViewViewController.swift */; };
 		E58922892C33096D00DAC182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58922882C33096D00DAC182 /* AppDelegate.swift */; };
 		E589228B2C33096D00DAC182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228A2C33096D00DAC182 /* SceneDelegate.swift */; };
 		E589228D2C33096D00DAC182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E589228C2C33096D00DAC182 /* ViewController.swift */; };
@@ -76,6 +77,7 @@
 		E52DAF0D2C3C6C3400D3AAAC /* StatusEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEditViewController.swift; sourceTree = "<group>"; };
 		E52DAF112C3EF0F500D3AAAC /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		E5438FD02C6D32DE0018BB2E /* Alghorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alghorithms.swift; sourceTree = "<group>"; };
+		E55F88C12C7CEBA700894415 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		E58922852C33096D00DAC182 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58922882C33096D00DAC182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E589228A2C33096D00DAC182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				E51194242C7652BA002CE686 /* FrinedStorage.swift */,
 				E51194262C766EDE002CE686 /* DatePickController.swift */,
 				E51194282C766F16002CE686 /* GroupPicker.swift */,
+				E55F88C12C7CEBA700894415 /* WebViewViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				E58922A12C3322D200DAC182 /* AuthViewController.swift in Sources */,
 				E51194272C766EDE002CE686 /* DatePickController.swift in Sources */,
 				E5BE6D2E2C6A868200644836 /* AuthService.swift in Sources */,
+				E55F88C22C7CEBA700894415 /* WebViewViewController.swift in Sources */,
 				E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */,
 				E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */,
 				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class AuthViewController: UIViewController {
     enum Constants {
@@ -27,10 +28,24 @@ class AuthViewController: UIViewController {
     
     lazy var loginButton = UIButton()
     lazy var forgetPasswordButton = UIButton()
+    lazy var licenseButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Регистрируясь вы приринмаете публичную оферту", for: .normal)
+        button.setTitleColor(.gray, for: .normal)
+        button.titleLabel?.numberOfLines = 0
+        button.addAction(UIAction(handler: { _ in
+            guard let url = URL(string: "http://google.com") else { return }
+            let safariViewController = SFSafariViewController(url: url)
+            safariViewController.delegate = self
+            self.present(safariViewController, animated: true)
+        }), for: .touchUpInside)
+        return button
+    }()
     
     lazy var wrapper = UIStackView()
     
     lazy var buttonsStack = UIStackView()
+     
     
     lazy var backgroundImageView = UIImageView(
         image: .authbackground
@@ -147,6 +162,8 @@ class AuthViewController: UIViewController {
         imageView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 2).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 2).isActive = true
         
+        licenseButton.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        
         // MARK: - Wrapper Stack layout
         
         wrapper.addArrangedSubview(imageView)
@@ -156,6 +173,7 @@ class AuthViewController: UIViewController {
         wrapper.addArrangedSubview(passwordField)
         wrapper.addArrangedSubview(statusLabel)
         wrapper.addArrangedSubview(buttonsStack)
+        wrapper.addArrangedSubview(licenseButton)
         wrapper.addArrangedSubview(UIView())
         
         wrapper.setCustomSpacing(20, after: buttonsStack)
@@ -283,6 +301,55 @@ class AuthViewController: UIViewController {
 
 }
 
+class MyActivity: UIActivity {
+    
+    override class var activityCategory: UIActivity.Category {
+        return .action
+    }
+    
+    override var activityType: UIActivity.ActivityType? {
+        return .mail
+    }
+    
+    override var activityTitle: String? {
+        return "Отправить email"
+    }
+    
+    override var activityImage: UIImage? {
+        return .checkmark
+    }
+    
+    override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
+        return true
+    }
+    
+    var currentTask: URLSessionDataTask?
+        
+    override func prepare(withActivityItems activityItems: [Any]) {
+        print("нажали на отправить e-mail")
+    }
+    
+}
+
+
+
+extension AuthViewController: SFSafariViewControllerDelegate {
+    func safariViewController(_ controller: SFSafariViewController, didCompleteInitialLoad didLoadSuccessfully: Bool) {
+        print(didLoadSuccessfully)
+    }
+    
+    func safariViewControllerWillOpenInBrowser(_ controller: SFSafariViewController) {
+        print("Ушел в браузер")
+    }
+    
+    func safariViewController(_ controller: SFSafariViewController, initialLoadDidRedirectTo URL: URL) {
+        print(URL)
+    }
+    
+    func safariViewController(_ controller: SFSafariViewController, activityItemsFor URL: URL, title: String?) -> [UIActivity] {
+        return [MyActivity()]
+    }
+}
 
 extension AuthViewController: UITextFieldDelegate {
     // Можем ли мы начать вводить значение в TextField
