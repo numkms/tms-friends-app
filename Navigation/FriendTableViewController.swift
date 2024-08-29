@@ -191,7 +191,7 @@ class FriendTableViewController: UIViewController {
                 ),
                 .init(
                     cell: .label,
-                    labels: (key: "День рождения", value: friend.dateOfBirthFormatted ?? ""),
+                    labels: (key: "Возраст", value: friend.yearsOldFormatted),
                     images: nil
                 ),
                 .init(
@@ -462,7 +462,7 @@ extension FriendTableViewController: UITableViewDelegate {
         case "Настройки доступа":
             presentFriendAccessAlert()
             tableView.deselectRow(at: indexPath, animated: true)
-        case "День рождения":
+        case "Возраст":
             presentSelectDateBirth()
             tableView.deselectRow(at: indexPath, animated: false)
         case "Группа":

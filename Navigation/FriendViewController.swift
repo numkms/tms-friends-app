@@ -59,11 +59,23 @@ class FriendViewController: UIViewController, StatusEditViewControllerDelegate {
             self.dateOfBirth = dateOfBirth
             self.group = group
         }
+        var yearsOldFormatted: String {
+            guard let yearsOld else { return "Не указано" }
+            return "\(yearsOld) лет"
+        }
+        
+        var yearsOld: Int? {
+            let currentDate = Date.now
+            guard let dateOfBirth else { return nil }
+            let dateComponents = Calendar.current.dateComponents([.year], from: dateOfBirth, to: .now)
+            return dateComponents.year
+        }
         
         var dateOfBirthFormatted: String? {
             guard let dateOfBirth else { return "" }
-            let dateFormatter = ISO8601DateFormatter()
-            dateFormatter.formatOptions = [.withFullDate]
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = .init(identifier: "ru-RU")
+            dateFormatter.dateFormat = "d MMM, EEE YYYY года"
             return dateFormatter.string(from: dateOfBirth)
         }
     }
