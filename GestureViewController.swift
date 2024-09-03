@@ -15,6 +15,7 @@ class MyTapGestureRecognizer: UITapGestureRecognizer {
         super.init(target: nil, action: nil)
         self.addTarget(self, action: #selector(handle))
         print("init")
+        
     }
     
     @objc private func handle() {

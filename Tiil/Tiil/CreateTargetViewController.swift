@@ -47,7 +47,7 @@ class CreateTargetViewController: UIViewController {
         return datePicker
     }()
     
-    lazy var stackView: UIStackView = {
+    var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false

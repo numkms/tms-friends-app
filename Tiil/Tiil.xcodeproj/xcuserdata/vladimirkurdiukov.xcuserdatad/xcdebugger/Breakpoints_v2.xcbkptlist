@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "CreateTargetViewController"
-            landmarkType = "3">
+            landmarkName = "saveButton"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "851983B9-80FD-41AA-BBBE-E3B51E6541C0 - 2efe618bd1a318fb"

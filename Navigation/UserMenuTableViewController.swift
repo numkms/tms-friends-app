@@ -12,16 +12,18 @@ class UserMenuTableViewController: UIViewController {
     
     let friendsCellIdentifier = "friendsCell"
     
+    func pushFriendViewController() {
+        navigationController?.pushViewController(
+            FriendTableViewController(friendUUID: FriendsStorage.myFriends.first!.id),
+            animated: true
+        )
+    }
+    
     lazy var menuItems: [MenuItem] = [
         .init(
             name: "Профиль",
             icon: UIImage(systemName: "person"),
-            action: { [weak self] in
-                self?.navigationController?.pushViewController(
-                    FriendTableViewController(friendUUID: FriendsStorage.myFriends.first!.id),
-                    animated: true
-                )
-            }
+            action: pushFriendViewController
         ),
         .init(
             name: "Сообщения",
@@ -78,7 +80,9 @@ class UserMenuTableViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    deinit {
+        print("User menu table view deinited")
+    }
 }
 
 
