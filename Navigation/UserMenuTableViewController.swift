@@ -37,7 +37,8 @@ class UserMenuTableViewController: UIViewController {
                 name: "Друзья",
                 icon: UIImage(systemName: "person.3.sequence.fill"),
                 action: { [weak self] in
-                    let friendsViewController = FriendsTableViewController()
+                    let friendsViewController = FriendsViewController()
+                    friendsViewController.delegate = self
                     self?.navigationController?.pushViewController(friendsViewController, animated: true)
                 }
         )
@@ -85,6 +86,21 @@ class UserMenuTableViewController: UIViewController {
     }
 }
 
+extension UserMenuTableViewController: FriendsViewControllerDelegate {
+    func bottomButtonDidTap() {
+        print("нажали на кнопку внизу")
+    }
+    
+    func friendButtonDidTap(friendNumber: Int) {
+        print("нажали на друга с индексом \(friendNumber)")
+    }
+    
+    func friendScreenDidAppear() {
+        print("экран друга показался")
+    }
+    
+    
+}
 
 extension UserMenuTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

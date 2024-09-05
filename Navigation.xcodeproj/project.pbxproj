@@ -51,6 +51,7 @@
 		E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D2F2C6A898000644836 /* AuthNotificator.swift */; };
 		E5BE6D322C6A8BC300644836 /* AuthValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D312C6A8BC300644836 /* AuthValidatorService.swift */; };
 		E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BE6D332C6A8CF400644836 /* AuthFactory.swift */; };
+		E5C9AD5A2C88CBA30070C2F5 /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C9AD592C88CBA30070C2F5 /* ThreadViewController.swift */; };
 		E5F6FCFA2C3F0DDE0064C07F /* UserMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		E5BE6D2F2C6A898000644836 /* AuthNotificator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNotificator.swift; sourceTree = "<group>"; };
 		E5BE6D312C6A8BC300644836 /* AuthValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidatorService.swift; sourceTree = "<group>"; };
 		E5BE6D332C6A8CF400644836 /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
+		E5C9AD592C88CBA30070C2F5 /* ThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
 		E5F6FCF92C3F0DDE0064C07F /* UserMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 				E51194262C766EDE002CE686 /* DatePickController.swift */,
 				E51194282C766F16002CE686 /* GroupPicker.swift */,
 				E55F88C12C7CEBA700894415 /* WebViewViewController.swift */,
+				E5C9AD592C88CBA30070C2F5 /* ThreadViewController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				E5BE6D2E2C6A868200644836 /* AuthService.swift in Sources */,
 				E55F88C22C7CEBA700894415 /* WebViewViewController.swift in Sources */,
 				E5BE6D302C6A898000644836 /* AuthNotificator.swift in Sources */,
+				E5C9AD5A2C88CBA30070C2F5 /* ThreadViewController.swift in Sources */,
 				E5BE6D342C6A8CF400644836 /* AuthFactory.swift in Sources */,
 				E59F8D0A2C57FC6F00269E3D /* LoadingView.swift in Sources */,
 				E52DAF122C3EF0F500D3AAAC /* FriendsTableViewController.swift in Sources */,
