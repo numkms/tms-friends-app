@@ -19,6 +19,6 @@ class TargetService {
     }
     
     var currentTargets: [Target] {
-        return Storage.shared.preparedTargets()
+        return []
     }
 }
