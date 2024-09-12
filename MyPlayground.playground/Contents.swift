@@ -231,3 +231,53 @@ let myVc = MyViewController(onAppear: {
 })
 
 vc.present(myVc, animated: true)
+
+class Home {
+    let flat: String
+    
+    init(flat: String) {
+        self.flat = a
+    }
+    
+    init() {
+        flat = ""
+    }
+}
+
+class House: Home {
+    init(flat2: Int = 1) {
+        super.init(flat: "\(flat2)")
+    }
+}
+
+class Townhouse: Home {
+    override init(flat: String) {
+        super.init()
+        print(flat)
+    }
+}
+
+let b = Home(flat: "sadsa")
+
+//let townhouse = Townhouse(flat2: "ten")
+//let townhouse2 = Townhouse(flat2: "eight")
+
+//Array.init(repeating: Townhouse(flat: "eight"), count: 1000)
+//let townhouse = Townhouse(flat: "eight")
+//Array.init(repeating: townhouse, count: 1000)
+//let string = "A"
+//Array.init(repeating: string, count: 1000)
+//let house = House()
+
+
+
+
+
+
+
+
+
+
+
+
+

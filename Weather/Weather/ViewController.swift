@@ -7,6 +7,37 @@
 
 import UIKit
 
+class Counter {
+    var count: Int = 0
+    
+    private let queue = DispatchQueue(label: "com.myclass.queue", qos: .userInteractive)
+    
+    func increment() {
+        queue.sync {
+//            print("before: ", count)
+        }
+        
+        queue.sync {
+//            print("queue", count)
+            count += 1
+        }
+        
+        queue.sync {
+            print("after: ", count)
+        }
+    }
+    
+    func getCount() -> Int {
+        return queue.sync { [weak self] in
+            guard let self else {
+                print("0")
+                return 0
+            }
+            return self.count
+        }
+    }
+}
+
 class ViewController: UIViewController {
     /// Массив сити
     /// Тейбл вью
@@ -35,24 +66,44 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
-        loadCities()
+//        let queue = DispatchQueue(label: "default")
+//        print("Считаем")
+//        let item = DispatchWorkItem {
+//            sleep(5)
+//        }
+//        item.notify(queue: .main) {
+//            print("Досчитали")
+//        }
+//        queue.async(execute: item)
+////        queue.sync {
+////            sleep(5)
+////            DispatchQueue.main.async {
+////                print("Досчитали")
+////            }
+////        }
+        Task {
+            await loadCities()
+            let date = Calendar.current.date(byAdding: .init(timeZone: TimeZone(identifier: "Moscow/Russia")), to: .now)
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
     
-    func loadCities() {
-        let thread = Thread { [weak self] in
-            guard let filePath = Bundle.main.path(
-                forResource: "cities",
-                ofType: "json"
-            ) else { return }
-            let fileURL = URL(fileURLWithPath: filePath)
-            guard let data = try? Data(contentsOf: fileURL) else { return }
-            guard let citiesArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] else { return }
-            DispatchQueue.main.async { 
-                self?.cities = citiesArray
-            }
-        }
-        thread.start()
+    @MainActor
+    func presentCities(cities: [[String: Any]]) {
+        self.cities = cities
+    }
+        
+    func loadCities() async {
+        guard let filePath = Bundle.main.path(
+            forResource: "cities",
+            ofType: "json"
+        ) else { return }
+        let fileURL = URL(fileURLWithPath: filePath)
+        guard let data = try? Data(contentsOf: fileURL) else { return }
+        guard let citiesArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] else { return }
+        presentCities(cities: citiesArray)
     }
 }
 
