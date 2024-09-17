@@ -56,3 +56,58 @@ print(3)
 
 
 
+func performTask() {
+    // Update UI on the main thread
+    DispatchQueue.main.async {
+        print("UI updated")
+        // Background task
+        DispatchQueue.global(qos: .background).async {
+            // Simulate a long-running task
+            sleep(2)
+            print("Background task completed")
+        }
+    }
+}
+
+func downloadData() {
+    let dispatchGroup = DispatchGroup()
+    
+    let sources = ["source1", "source2", "source3"]
+    
+    for source in sources {
+        dispatchGroup.enter()
+        DispatchQueue.global(qos: .background).async {
+            // Simulate network call
+            sleep(1)
+            print("\(source) downloaded")
+            dispatchGroup.leave()
+        }
+    }
+    
+    dispatchGroup.notify(queue: DispatchQueue.main) {
+        print("All downloads completed!")
+    }
+}
+
+
+func downloadData() {
+    let dispatchGroup = DispatchGroup()
+    
+    let sources = ["source1", "source2", "source3"]
+    
+    for source in sources {
+        dispatchGroup.enter()
+        DispatchQueue.global(qos: .background).async {
+            // Simulate network call
+            sleep(1)
+            print("\(source) downloaded")
+            dispatchGroup.leave()
+        }
+    }
+    
+    dispatchGroup.notify(queue: DispatchQueue.main) {
+        print("All downloads completed!")
+    }
+}
+
+

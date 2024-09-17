@@ -14,6 +14,9 @@
 		E579536D2C88DC4E003CC97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E579536C2C88DC4E003CC97B /* Assets.xcassets */; };
 		E57953702C88DC4E003CC97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E579536E2C88DC4E003CC97B /* LaunchScreen.storyboard */; };
 		E579537C2C88DE89003CC97B /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = E579537B2C88DE89003CC97B /* cities.json */; };
+		E5E2B0F42C9898D200CE9760 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B0F32C9898D200CE9760 /* City.swift */; };
+		E5E2B0F62C98AE6600CE9760 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B0F52C98AE6600CE9760 /* Network.swift */; };
+		E5E2B0F82C98AFEC00CE9760 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2B0F72C98AFEC00CE9760 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E579536F2C88DC4E003CC97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E57953712C88DC4E003CC97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E579537B2C88DE89003CC97B /* cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		E5E2B0F32C9898D200CE9760 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		E5E2B0F52C98AE6600CE9760 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E5E2B0F72C98AFEC00CE9760 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		E57953572C88DC4D003CC97B = {
 			isa = PBXGroup;
 			children = (
+				E5E2B0F72C98AFEC00CE9760 /* Users.swift */,
 				E57953622C88DC4D003CC97B /* Weather */,
 				E57953612C88DC4D003CC97B /* Products */,
 			);
@@ -66,6 +73,8 @@
 				E579536C2C88DC4E003CC97B /* Assets.xcassets */,
 				E579536E2C88DC4E003CC97B /* LaunchScreen.storyboard */,
 				E57953712C88DC4E003CC97B /* Info.plist */,
+				E5E2B0F32C9898D200CE9760 /* City.swift */,
+				E5E2B0F52C98AE6600CE9760 /* Network.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -142,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E2B0F62C98AE6600CE9760 /* Network.swift in Sources */,
 				E57953682C88DC4D003CC97B /* ViewController.swift in Sources */,
 				E57953642C88DC4D003CC97B /* AppDelegate.swift in Sources */,
+				E5E2B0F42C9898D200CE9760 /* City.swift in Sources */,
+				E5E2B0F82C98AFEC00CE9760 /* Users.swift in Sources */,
 				E57953662C88DC4D003CC97B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

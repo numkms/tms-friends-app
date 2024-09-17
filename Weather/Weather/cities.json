@@ -1,15 +1,16 @@
 [{
   "name": "Wosettown",
-  "established": 1963,
   "area": 83,
   "population": 33955,
-  "growth": -0.24
+  "growth": -0.24,
+  "people_knowledge_index": 100
 }, {
   "name": "Catville",
   "established": 1957,
   "area": 49,
-  "population": 16687,
-  "growth": 4.44
+  "population": "16687",
+  "growth": 4.44,
+  "date_of_last_revolution": "2022-01-31T02:22:40Z"
 }, {
   "name": "Bumble Boat",
   "established": 1974,

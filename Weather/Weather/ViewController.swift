@@ -43,7 +43,13 @@ class ViewController: UIViewController {
     /// Тейбл вью
     /// Ресурс
     ///
-    var cities: [[String: Any]] = [] {
+    var citiesOld: [[String: Any]] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
+    var cities: [City] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -81,38 +87,88 @@ class ViewController: UIViewController {
 ////                print("Досчитали")
 ////            }
 ////        }
+        loadUsers()
         Task {
-            await loadCities()
+            await loadCitiesCodable()
             let date = Calendar.current.date(byAdding: .init(timeZone: TimeZone(identifier: "Moscow/Russia")), to: .now)
             
         }
-        
+        citiesToJson()
         // Do any additional setup after loading the view.
     }
     
     @MainActor
-    func presentCities(cities: [[String: Any]]) {
+    func oldPresentCities(cities: [[String: Any]]) {
+        self.citiesOld = cities
+    }
+    
+    @MainActor
+    func presentCities(cities: [City]) {
         self.cities = cities
     }
-        
-    func loadCities() async {
+    
+    func loadCitiesCodable() async {
+        guard let data = readFile() else { return }
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .iso8601
+        let cities = try! decoder.decode([City].self, from: data)
+        presentCities(cities: cities)
+    }
+    
+    func readFile() -> Data? {
         guard let filePath = Bundle.main.path(
             forResource: "cities",
             ofType: "json"
-        ) else { return }
+        ) else { return nil }
         let fileURL = URL(fileURLWithPath: filePath)
-        guard let data = try? Data(contentsOf: fileURL) else { return }
+        guard let data = try? Data(contentsOf: fileURL) else { return nil }
+        return data
+    }
+        
+    func loadCities() async {
+        guard let data = readFile() else { return }
         guard let citiesArray = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]] else { return }
-        presentCities(cities: citiesArray)
+        oldPresentCities(cities: citiesArray)
+    }
+    
+    func citiesToJson() {
+        let cities: [City] = [
+            City(name: "Kishinev", area: 12323, population: 850000, growthIndex: 2.3),
+            City(name: "Minsk", area: 222323, population: 2000000, growthIndex: 2.4),
+            City(name: "Moscow", area: 1233332, population: 17000000, growthIndex: 2.5),
+            City(name: "Nicosia", established: 1974, area: 123321, population: 200000, growthIndex: 1.3, peopleKnowledgeIndex: 1000, dateOfLastRevolution: .now)
+        ]
+        let encoder = JSONEncoder()
+        guard let result = try? encoder.encode(cities) else { return }
+        print(String(data: result, encoding: .utf8))
+    }
+    
+    func loadUsers() {
+        let network = Network()
+        network.loadUsers { users in
+            DispatchQueue.main.async {
+                print(users)
+            }
+        }
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func makeOldCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        guard let name = citiesOld[indexPath.row]["name"] as? String,
+              let established = citiesOld[indexPath.row]["established"] as? Int else { return UITableViewCell() }
+        cell.textLabel?.text = "\(name), since \(established)"
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        guard let name = cities[indexPath.row]["name"] as? String,
-              let established = cities[indexPath.row]["established"] as? Int else { return UITableViewCell() }
-        cell.textLabel?.text = "\(name), since \(established)"
+        let city = cities[indexPath.row]
+        cell.textLabel?.text = "\(city.name), since \(city.establishedStr), \(city.peopleKnowledgeIndex) \(city.dateOfLastRevolution) \(city.growthIndex) \(city.population)"
+        cell.textLabel?.numberOfLines = 0
         return cell
     }
     
