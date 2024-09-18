@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Target {
+struct Target: Codable, Equatable {
     let name: String
     let date: Date
 }

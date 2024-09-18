@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let targetService: TargetService = .init()
+    let targetService: TargetService = .init(
+        storage: FileManagerStorage()
+    )
     
     lazy var tableView: UITableView = .init()
     
-    var targets: [Target] = []
+    var targets: [Target]  {
+        targetService.currentTargets
+    }
     
     let cellReuseIdentifier = "targetCell"
     
@@ -31,6 +35,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
@@ -46,7 +51,6 @@ class ViewController: UIViewController {
 extension ViewController: CreateTargetViewControllerDelegate {
     func didCreateTarget(name: String, date: Date) {
         _ = targetService.createTarget(name: name, date: date)
-        targets = targetService.currentTargets
         tableView.reloadData()
     }
 }
@@ -69,6 +73,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
         cell.textLabel?.text = targets[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        return  .init(actions: [.init(
+            style: .destructive,
+            title: "Удалить",
+            handler: { [weak self] _, _, _ in
+                guard let self else { return }
+                self.targetService.delete(target: targetService.currentTargets[indexPath.row])
+                tableView.reloadData()
+            }
+        )])
     }
 
 }

@@ -9,16 +9,26 @@ import Foundation
 
 class TargetService {
     
+    let storage: TargetsStorage
+    
+    init(storage: TargetsStorage) {
+        self.storage = storage
+    }
+
     func createTarget(
         name: String,
         date: Date
     ) -> Target {
         let target = Target(name: name, date: date)
-        Storage.shared.add(target: target)
+        storage.add(target: target)
         return target
     }
     
     var currentTargets: [Target] {
-        return Storage.shared.preparedTargets()
+        storage.preparedTargets()
+    }
+    
+    func delete(target: Target) {
+        storage.delete(target: target)
     }
 }
