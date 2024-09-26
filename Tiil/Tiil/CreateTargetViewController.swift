@@ -33,7 +33,8 @@ class CreateTargetViewController: UIViewController {
            self.delegate?.didCreateTarget(name: text, date: self.datePicker.date)
            self.dismiss(animated: true)
        }))
-       button.setTitle("Сохранить", for: .normal)
+       button.setTitle("Сохранить", for
+                       : .normal)
        button.setTitleColor(.black, for: .normal)
        return button
     }()

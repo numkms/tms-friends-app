@@ -6,11 +6,61 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 protocol TargetsStorage {
     func add(target: Target)
     func preparedTargets() -> [Target]
     func delete(target: Target)
+}
+
+class CoreDataStorage: TargetsStorage {
+    
+    var appDelegate: AppDelegate? {
+        UIApplication.shared.delegate as? AppDelegate
+    }
+    
+    var coreDataContext: NSManagedObjectContext? {
+        appDelegate?.persistentContainer.viewContext
+    }
+    
+    private func readTargets() -> [TargetModel] {
+        let request = TargetModel.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        let targets = try? coreDataContext?.fetch(request)
+        guard let targets else { return [] }
+        return targets
+    }
+    
+    func add(target: Target) {
+        guard let coreDataContext else { return }
+        let _ = target.convertToTargetModel(context: coreDataContext)
+        do {
+            try coreDataContext.save()
+        } catch {
+            print(error)
+        }
+    }
+    
+    func preparedTargets() -> [Target] {
+        let targets = readTargets()
+        return targets.convertToTargets()
+    }
+    
+    func getTargetById(id: Int64) -> TargetModel? {
+        let request = TargetModel.fetchRequest()
+        request.fetchLimit = 1
+        request.predicate = NSPredicate(format: "id = %@", argumentArray: [id])
+        let targets = try? coreDataContext?.fetch(request)
+        return targets?.first
+    }
+    
+    func delete(target: Target) {
+        guard let targetToDelete = getTargetById(id: target.id) else { return }
+        coreDataContext?.delete(targetToDelete)
+        try? coreDataContext?.save()
+    }
 }
 
 class FileManagerStorage: TargetsStorage {

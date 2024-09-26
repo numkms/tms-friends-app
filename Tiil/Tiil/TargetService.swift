@@ -19,7 +19,7 @@ class TargetService {
         name: String,
         date: Date
     ) -> Target {
-        let target = Target(name: name, date: date)
+        let target = Target(id: Int64(storage.preparedTargets().count), name: name, date: date)
         storage.add(target: target)
         return target
     }

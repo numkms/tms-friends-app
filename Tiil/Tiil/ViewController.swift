@@ -10,12 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     
     let targetService: TargetService = .init(
-        storage: FileManagerStorage()
+        storage: CoreDataStorage()
     )
     
     lazy var tableView: UITableView = .init()
     
-    var targets: [Target]  {
+    var targets: [Target] {
         targetService.currentTargets
     }
     
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.reloadData()
+        
         // Do any additional setup after loading the view.
     }
     
