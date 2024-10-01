@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let targetService: TargetService = .init(
-        storage: CoreDataStorage()
+        storage: RealmDataStorage()
     )
     
     lazy var tableView: UITableView = .init()
@@ -60,7 +60,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedTarget = targets[indexPath.row]
-        let viewController = TargetViewController(target: selectedTarget)
+        let viewController = TargetViewController(
+            target: selectedTarget,
+            storage: targetService.storage
+        )
         viewController.modalPresentationStyle = .pageSheet
         viewController.sheetPresentationController?.detents = [.medium()]
         present(viewController, animated: true)

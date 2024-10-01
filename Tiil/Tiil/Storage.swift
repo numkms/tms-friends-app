@@ -8,14 +8,62 @@
 import Foundation
 import CoreData
 import UIKit
+import RealmSwift
 
 protocol TargetsStorage {
     func add(target: Target)
     func preparedTargets() -> [Target]
     func delete(target: Target)
+    func addNote(note: Note, to: Target)
+}
+
+class RealmDataStorage: TargetsStorage {
+    
+    var realm: Realm {
+        try! Realm()
+    }
+    
+    func add(target: Target) {
+        let realmTarget = RealmTarget()
+        realmTarget.name = target.name
+        realmTarget.date = target.date
+        try? realm.write {
+            realm.add(realmTarget)
+        }
+    }
+    
+    func preparedTargets() -> [Target] {
+        let targets = realm.objects(RealmTarget.self)
+        return targets.map {
+            .init(
+                id: $0.id.stringValue,
+                name: $0.name,
+                date: $0.date,
+                notes: []
+            )
+        }
+    }
+    
+    func delete(target: Target) {
+        
+    }
+    
+    func addNote(note: Note, to: Target) {
+        
+    }
 }
 
 class CoreDataStorage: TargetsStorage {
+    func addNote(note: Note, to target: Target) {
+        guard let coreDataContext,
+              let target = getTargetById(id: target.id)
+        else { return }
+        let dbNote = TargetNote(context: coreDataContext)
+        dbNote.message = note.message
+        dbNote.createdAt = note.createdAt
+        target.addToNotes(dbNote)
+        try? coreDataContext.save()
+    }
     
     var appDelegate: AppDelegate? {
         UIApplication.shared.delegate as? AppDelegate
@@ -48,7 +96,7 @@ class CoreDataStorage: TargetsStorage {
         return targets.convertToTargets()
     }
     
-    func getTargetById(id: Int64) -> TargetModel? {
+    func getTargetById(id: String) -> TargetModel? {
         let request = TargetModel.fetchRequest()
         request.fetchLimit = 1
         request.predicate = NSPredicate(format: "id = %@", argumentArray: [id])
@@ -64,6 +112,10 @@ class CoreDataStorage: TargetsStorage {
 }
 
 class FileManagerStorage: TargetsStorage {
+    func addNote(note: Note, to target: Target) {
+        
+    }
+    
     private let fileManager: FileManager = FileManager.default
     
     private var documentsPath: URL? {
@@ -122,6 +174,9 @@ class FileManagerStorage: TargetsStorage {
 }
 
 class LocalStorage: TargetsStorage {
+    func addNote(note: Note, to target: Target) {
+    }
+    
     private let defaults = UserDefaults.standard
     private let key = "localstoragekey"
     
@@ -156,6 +211,10 @@ class LocalStorage: TargetsStorage {
 }
 
 class Storage: TargetsStorage {
+    func addNote(note: Note, to target: Target) {
+     
+    }
+    
     static let shared = Storage()
     
     var targets: [Target] = []

@@ -30,8 +30,19 @@ class TargetViewController: UIViewController {
         return stackView
     }()
     
-    init(target: Target) {
+    
+    lazy var textField: UITextField = .init()
+    
+    lazy var addButton: UIButton = .init()
+    
+    let storage: TargetsStorage
+    
+    init(
+        target: Target,
+        storage: TargetsStorage
+    ) {
         self.target = target
+        self.storage = storage
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -39,9 +50,26 @@ class TargetViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc
+    func add() {
+        guard let text = textField.text else { return }
+        storage.addNote(
+            note: .init(
+                message: text,
+                createdAt: .now
+            ),
+            to: target
+        )
+        textField.text = nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = target.name
+        addButton.addTarget(self, action: #selector(add), for: .touchUpInside)
+        addButton.setTitle("Добавить заметку", for: .normal)
+        addButton.backgroundColor = .blue
+        textField.placeholder = "Введите заметку"
         view.addSubview(stackView)
         view.backgroundColor = .white
         NSLayoutConstraint.activate([
@@ -51,6 +79,13 @@ class TargetViewController: UIViewController {
         ])
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(progressLabel)
+        target.notes.forEach { note in
+            let label = UILabel()
+            label.text = note.message
+            stackView.addArrangedSubview(label)
+        }
+        stackView.addArrangedSubview(textField)
+        stackView.addArrangedSubview(addButton)
         
         Timer.scheduledTimer(
             withTimeInterval: 1,

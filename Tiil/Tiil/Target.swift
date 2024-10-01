@@ -9,11 +9,11 @@ import Foundation
 import CoreData
 
 struct Target: Codable, Equatable {
-    let id: Int64
+    let id: String
     let name: String
     let date: Date
+    let notes: [Note]
 }
-
 
 //class TargetModel: NSManagedObject {
 //    @NSManaged var name: String
@@ -34,7 +34,21 @@ extension Target {
 extension TargetModel {
     func convertToTarget() -> Target? {
         guard let name, let date else { return nil }
-        return .init(id: id, name: name, date: date)
+        return .init(
+            id: id!,
+            name: name,
+            date: date,
+            notes: notes?.map { dbNote -> Note? in
+                guard let dbNote = dbNote as? TargetNote else {
+                    return nil
+                }
+
+                return Note(
+                    message: dbNote.message!,
+                    createdAt: dbNote.createdAt!
+                )
+            }.compactMap { $0 }  ?? []
+        )
     }
 }
 
