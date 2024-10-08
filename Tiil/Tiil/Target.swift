@@ -15,12 +15,6 @@ struct Target: Codable, Equatable {
     let notes: [Note]
 }
 
-//class TargetModel: NSManagedObject {
-//    @NSManaged var name: String
-//    @NSManaged var date: Date
-//
-//}
-
 extension Target {
     func convertToTargetModel(context: NSManagedObjectContext) -> TargetModel {
         let model = TargetModel(context: context)

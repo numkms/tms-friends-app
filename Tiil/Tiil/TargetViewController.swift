@@ -30,7 +30,6 @@ class TargetViewController: UIViewController {
         return stackView
     }()
     
-    
     lazy var textField: UITextField = .init()
     
     lazy var addButton: UIButton = .init()

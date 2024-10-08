@@ -13,6 +13,8 @@ protocol CreateTargetViewControllerDelegate: AnyObject {
 
 class CreateTargetViewController: UIViewController {
     
+    var presenter: CreateTargetPresenter?
+    
     lazy var titleLabel: UILabel = {
        let label = UILabel()
        label.text = "Создать цель"
@@ -28,10 +30,9 @@ class CreateTargetViewController: UIViewController {
     }()
     
     lazy var saveButton: UIButton = {
-       let button = UIButton(primaryAction: .init(handler: { _ in
-           guard let text = self.nameTextField.text, !text.isEmpty else { return }
-           self.delegate?.didCreateTarget(name: text, date: self.datePicker.date)
-           self.dismiss(animated: true)
+       let button = UIButton(primaryAction: .init(handler: { [weak self] _ in
+           guard let text = self?.nameTextField.text, !text.isEmpty, let date = self?.datePicker.date else { return }
+           self?.presenter?.createButttonDidTap(with: text, date: date)
        }))
        button.setTitle("Сохранить", for
                        : .normal)
@@ -42,7 +43,7 @@ class CreateTargetViewController: UIViewController {
     lazy var datePicker: UIDatePicker = {
         let datePicker = UIDatePicker()
         datePicker.minimumDate = .now
-        datePicker.datePickerMode = .date
+        datePicker.datePickerMode = .dateAndTime
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.translatesAutoresizingMaskIntoConstraints = false
         return datePicker
@@ -55,7 +56,7 @@ class CreateTargetViewController: UIViewController {
         return stackView
     }()
     
-    weak var delegate: CreateTargetViewControllerDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

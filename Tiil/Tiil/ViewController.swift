@@ -41,11 +41,9 @@ class ViewController: UIViewController {
     }
     
     @objc func createTarget() {
-        let vc = CreateTargetViewController()
-        vc.modalPresentationStyle = .pageSheet
-        vc.sheetPresentationController?.detents = [.medium()]
-        vc.delegate = self
-        present(vc, animated: true)
+        CreateTargetRouter.shared.present(on: self)
+//        vc.delegate = self
+        
     }
 }
 
