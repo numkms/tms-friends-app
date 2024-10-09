@@ -8,6 +8,34 @@
 import UIKit
 
 
+class LaunchesViewController: UIViewController {
+    lazy var launchesView: LaunchesView = .init()
+    
+    let viewModel: LaunchViewModel
+    
+    init(viewModel: LaunchViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        view = launchesView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel.launches.bind { [weak self] launches in
+            guard let launches else { return }
+            self?.launchesView.launches = launches
+        }
+        viewModel.loadLaunch()
+    }
+}
+
 class ViewController: UIViewController {
     let presenter: LaunchPresenter
     

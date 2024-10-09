@@ -19,6 +19,8 @@
 		E574A0992CB6EE1000A296B1 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A0982CB6EE1000A296B1 /* LaunchPresenter.swift */; };
 		E574A09B2CB6EE1A00A296B1 /* LaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09A2CB6EE1A00A296B1 /* LaunchInteractor.swift */; };
 		E574A09D2CB6F1B800A296B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09C2CB6F1B800A296B1 /* MainViewController.swift */; };
+		E574A0A02CB6FBA100A296B1 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09F2CB6FBA100A296B1 /* Bindable.swift */; };
+		E574A0A52CB7033F00A296B1 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E574A0982CB6EE1000A296B1 /* LaunchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
 		E574A09A2CB6EE1A00A296B1 /* LaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
 		E574A09C2CB6F1B800A296B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E574A09F2CB6FBA100A296B1 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		E574A07B2CB6E48B00A296B1 /* SpaceXLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				E574A09E2CB6FB9100A296B1 /* Reactive */,
 				E574A0932CB6E57900A296B1 /* Launches */,
 				E574A07C2CB6E48B00A296B1 /* AppDelegate.swift */,
 				E574A07E2CB6E48B00A296B1 /* SceneDelegate.swift */,
@@ -84,13 +89,46 @@
 		E574A0932CB6E57900A296B1 /* Launches */ = {
 			isa = PBXGroup;
 			children = (
-				E574A0802CB6E48B00A296B1 /* ViewController.swift */,
-				E574A0942CB6E59B00A296B1 /* LaunchTableViewCell.swift */,
+				E574A0A32CB7032E00A296B1 /* MVVM */,
+				E574A0A22CB7031600A296B1 /* VIP */,
+				E574A0A12CB7030400A296B1 /* View */,
 				E574A0962CB6E85600A296B1 /* Models.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		E574A09E2CB6FB9100A296B1 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				E574A09F2CB6FBA100A296B1 /* Bindable.swift */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
+		E574A0A12CB7030400A296B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E574A0942CB6E59B00A296B1 /* LaunchTableViewCell.swift */,
+				E574A0802CB6E48B00A296B1 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E574A0A22CB7031600A296B1 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
 				E574A0982CB6EE1000A296B1 /* LaunchPresenter.swift */,
 				E574A09A2CB6EE1A00A296B1 /* LaunchInteractor.swift */,
 			);
-			path = Launches;
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		E574A0A32CB7032E00A296B1 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,12 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E574A0A02CB6FBA100A296B1 /* Bindable.swift in Sources */,
 				E574A0872CB6E48B00A296B1 /* SpaceXLaunch.xcdatamodeld in Sources */,
 				E574A0952CB6E59B00A296B1 /* LaunchTableViewCell.swift in Sources */,
 				E574A0812CB6E48B00A296B1 /* ViewController.swift in Sources */,
 				E574A0972CB6E85600A296B1 /* Models.swift in Sources */,
 				E574A07D2CB6E48B00A296B1 /* AppDelegate.swift in Sources */,
 				E574A0992CB6EE1000A296B1 /* LaunchPresenter.swift in Sources */,
+				E574A0A52CB7033F00A296B1 /* LaunchViewModel.swift in Sources */,
 				E574A09D2CB6F1B800A296B1 /* MainViewController.swift in Sources */,
 				E574A07F2CB6E48B00A296B1 /* SceneDelegate.swift in Sources */,
 				E574A09B2CB6EE1A00A296B1 /* LaunchInteractor.swift in Sources */,

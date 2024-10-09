@@ -19,19 +19,31 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+//        bindable.value = 10
+//        bindable.value = 11
+//        bindable.value = -20
+        present(buildMVVMModule(), animated: true)
+    }
+    
+    func buildVIPModule() -> UIViewController {
         let presenter = LaunchPresenter()
         let interactor = LaunchInteractor(
             client: URLSession.shared,
             decoder: JSONDecoder(),
             presenter: presenter
         )
-        presenter.interactor = interactor
         let viewController = ViewController(presenter: presenter)
+        presenter.interactor = interactor
         presenter.view = viewController
-        
-        present(viewController, animated: true)
-        
-        
+        return viewController
+    }
+    
+    func buildMVVMModule() -> UIViewController {
+        let viewModel = LaunchViewModel(
+            client: URLSession.shared,
+            decoder: JSONDecoder()
+        )
+        return LaunchesViewController(viewModel: viewModel)
     }
     /*
     // MARK: - Navigation
