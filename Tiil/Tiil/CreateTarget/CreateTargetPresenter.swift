@@ -6,7 +6,10 @@
 //
 
 import Foundation
-
+// VIP
+// - View
+// - Interactor 
+// - Presenter
 class CreateTargetPresenter {
     var interactor: CreateTargetInteractor?
     weak var view: CreateTargetViewController?

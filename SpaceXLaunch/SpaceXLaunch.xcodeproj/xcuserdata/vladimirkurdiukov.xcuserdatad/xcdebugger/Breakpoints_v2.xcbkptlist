@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "54DED3BD-CF31-48D2-A445-BFD1694D61DF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17478148-F864-408D-9532-C2914BBB74B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "launchesDidLoad(models:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "17478148-F864-408D-9532-C2914BBB74B3 - f3bc3ec32e1b0b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SpaceXLaunch.Models.Launch) -&gt; SpaceXLaunch.ViewModels.Launch in SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "17478148-F864-408D-9532-C2914BBB74B3 - 40a11525ae60448e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "17478148-F864-408D-9532-C2914BBB74B3 - 8fea5c6b33a3a0ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor @Sendable () -&gt; () in SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "17478148-F864-408D-9532-C2914BBB74B3 - 337f97ab96ef9a51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "17478148-F864-408D-9532-C2914BBB74B3 - 2aa53613c1e0498d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SpaceXLaunch.Models.Launch) -&gt; SpaceXLaunch.ViewModels.Launch in closure #1 @Swift.MainActor () -&gt; () in SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC1E0159-8712-48F3-9E2B-9C419693476D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "launchesDidLoad(models:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DC1E0159-8712-48F3-9E2B-9C419693476D - 40a11525ae60448e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "DC1E0159-8712-48F3-9E2B-9C419693476D - 40a11525ae604451"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "DC1E0159-8712-48F3-9E2B-9C419693476D - 337f97ab96ef9a8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in SpaceXLaunch.LaunchPresenter.launchesDidLoad(models: Swift.Array&lt;SpaceXLaunch.Models.Launch&gt;) -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE6906D0-A8CD-476B-8263-343B171C6437"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loadLaunches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84837B51-02CF-4FAE-96D3-B84362012CF5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loadLaunches()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84837B51-02CF-4FAE-96D3-B84362012CF5 - f758fbb368c0de10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceXLaunch.LaunchInteractor.loadLaunches() -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "84837B51-02CF-4FAE-96D3-B84362012CF5 - f758fbb368c0de10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceXLaunch.LaunchInteractor.loadLaunches() -&gt; ()"
+                  moduleName = "SpaceXLaunch"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/SpaceXLaunch/SpaceXLaunch/Launches/LaunchInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30208230-7527-46AE-9FEC-216596768288"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadLaunches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7096874-67E7-411F-9833-6DD4A03AD782"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AA12C31-EF3E-48A0-A7F7-3A0A0910F460"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loadLaunches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31025F67-3D64-4FF8-823B-A1F5952D5BB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/LaunchInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadLaunches()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5DD06E2-0000-4A17-8125-AACAC8AC946F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "configure(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34DF10F9-A3D4-4290-A540-3D77DEAB5683"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "launches"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A39A56DE-F84A-4E23-A9FD-79037CB0E0E2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceXLaunch/Launches/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
