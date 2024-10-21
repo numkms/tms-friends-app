@@ -42,9 +42,10 @@ class TargetService {
 
     func createTarget(
         name: String,
-        date: Date
+        date: Date,
+        contact: Target.Contact?
     ) -> Target {
-        let target = Target(id: String(storage.preparedTargets().count), name: name, date: date, notes: [])
+        let target = Target(id: String(storage.preparedTargets().count), name: name, date: date, connectedContact: contact, notes: [])
         storage.add(target: target)
         addToPushSchedule(name: name, date: date)
         return target

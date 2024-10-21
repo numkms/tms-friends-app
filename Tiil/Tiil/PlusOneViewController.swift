@@ -67,6 +67,7 @@ class PlusOneView: UIView {
     func update(value: String) {
         label.text = value
     }
+
 }
 
 class PlusOneViewControllerMVC2: UIViewController, PlusOneViewDelegate {
@@ -87,6 +88,12 @@ class PlusOneViewControllerMVC2: UIViewController, PlusOneViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+    }
+    
+    
+    func didTap() {
+        let vc = PlusOneMVPFactory().build()
+        present(vc, animated: true)
     }
 }
 

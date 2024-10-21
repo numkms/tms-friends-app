@@ -9,9 +9,14 @@ import Foundation
 import CoreData
 
 struct Target: Codable, Equatable {
+    struct Contact: Codable, Equatable {
+        let name: String
+        let phone: String
+    }
     let id: String
     let name: String
     let date: Date
+    let connectedContact: Contact?
     let notes: [Note]
 }
 
@@ -32,6 +37,7 @@ extension TargetModel {
             id: id!,
             name: name,
             date: date,
+            connectedContact: nil,
             notes: notes?.map { dbNote -> Note? in
                 guard let dbNote = dbNote as? TargetNote else {
                     return nil

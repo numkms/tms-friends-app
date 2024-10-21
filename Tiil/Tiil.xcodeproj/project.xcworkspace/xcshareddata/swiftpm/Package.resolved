@@ -17,6 +17,15 @@
         "revision" : "abbe849262c165dbd33b2d1c15c0f04783eb3311",
         "version" : "10.49.3"
       }
+    },
+    {
+      "identity" : "snapkit?tab=readme-ov-file",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit?tab=readme-ov-file",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
     }
   ],
   "version" : 2

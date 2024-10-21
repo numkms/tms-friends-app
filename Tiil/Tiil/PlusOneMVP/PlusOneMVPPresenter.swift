@@ -6,21 +6,20 @@
 //
 
 class PlusOneMVPPresenter {
-    let model: PlusOneMVPModel
-    let viewController: PlusOneMVPViewController
+    var model: PlusOneMVPModel?
+    weak var viewController: PlusOneMVPViewController?
     
-    init(model: PlusOneMVPModel, viewController: PlusOneMVPViewController) {
-        self.model = model
+    init(
+        viewController: PlusOneMVPViewController
+    ) {
         self.viewController = viewController
-        model.presenter = self
     }
     
     func plusDidTap() {
-        model.addValue()
-        
+        model?.addValue()
     }
     
     func valueUpdated(value: Int) {
-        viewController.updated(value: "\(value)")
+        viewController?.updated(value: "\(value)")
     }
 }

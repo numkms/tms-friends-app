@@ -6,6 +6,8 @@
 //
 
 class Bindable<T> {
+    private var handlers: [(T?) -> Void] = []
+    
     var value: T? {
         didSet {
             handlers.forEach { closure in
@@ -14,10 +16,7 @@ class Bindable<T> {
         }
     }
     
-    private var handlers: [(T?) -> Void] = []
-    
     func bind(_ handler: @escaping (T?) -> Void) {
         handlers.append(handler)
     }
 }
-

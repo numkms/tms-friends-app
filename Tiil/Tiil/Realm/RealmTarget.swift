@@ -12,4 +12,6 @@ class RealmTarget: Object {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var name: String
     @Persisted var date: Date
+    @Persisted var contactName: String?
+    @Persisted var contactPhone: String?
 }

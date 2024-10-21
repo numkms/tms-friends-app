@@ -10,12 +10,40 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var deeplinksHandler: DeeplinksHandler?
+    
+    /// com.till://till/create
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        initHandler()
+        guard let url = URLContexts.first?.url else { return }
+        deeplinksHandler?.process(url: url)
+    }
+    
+    func initHandler() {
+        if let rootViewController = window?.rootViewController {
+            deeplinksHandler = .init(rootViewController: rootViewController)
+            deeplinksHandler?.register({
+                if let tabBarController = rootViewController as? UITabBarController, 
+                   let delegate = tabBarController.getCreateTargetViewControllerDelegate() {
+                    return CreateTargetRouter.shared.build(delegate: delegate)
+                } else {
+                    return UIViewController()
+                }
+            }, for: URL(string: DeeplinksHandler.defaultScheme + "till/create"))
+            deeplinksHandler?.register({
+                return AuthViewController()
+            }, for: URL(string: DeeplinksHandler.defaultScheme + "till/auth"))
+            deeplinksHandler?.register({
+                return PlusOneViewController()
+            }, for: URL(string: DeeplinksHandler.defaultScheme + "till/plus-one"))
+        }
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        initHandler()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -50,3 +78,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+private extension UITabBarController {
+    func getCreateTargetViewControllerDelegate() -> CreateTargetViewControllerDelegate? {
+        return (viewControllers?[1] as? UINavigationController)?.viewControllers.first as? CreateTargetViewControllerDelegate
+    }
+}

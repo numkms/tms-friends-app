@@ -33,6 +33,7 @@ class LaunchTableViewCell: UITableViewCell {
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .blue
         return label
     }()
     
@@ -53,6 +54,7 @@ class LaunchTableViewCell: UITableViewCell {
     func setupView() {
         contentView.addSubview(horizontalStack)
         contentView.layer.cornerRadius = 20
+        
         NSLayoutConstraint.activate([
             horizontalStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             horizontalStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),

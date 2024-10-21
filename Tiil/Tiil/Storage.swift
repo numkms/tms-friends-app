@@ -27,6 +27,8 @@ class RealmDataStorage: TargetsStorage {
         let realmTarget = RealmTarget()
         realmTarget.name = target.name
         realmTarget.date = target.date
+        realmTarget.contactName = target.connectedContact?.name
+        realmTarget.contactPhone = target.connectedContact?.phone
         try? realm.write {
             realm.add(realmTarget)
         }
@@ -34,11 +36,21 @@ class RealmDataStorage: TargetsStorage {
     
     func preparedTargets() -> [Target] {
         let targets = realm.objects(RealmTarget.self)
+        
+            
         return targets.map {
-            .init(
+            var contact: Target.Contact?
+            if let contactName = $0.contactName, let contactPhone = $0.contactPhone {
+                contact = .init(
+                    name: contactName,
+                    phone: contactPhone
+                )
+            }
+            return .init(
                 id: $0.id.stringValue,
                 name: $0.name,
                 date: $0.date,
+                connectedContact: contact,
                 notes: []
             )
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53FE4552CBD991200E30595 /* CombineLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FE4542CBD991200E30595 /* CombineLaunchViewModel.swift */; };
 		E574A07D2CB6E48B00A296B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A07C2CB6E48B00A296B1 /* AppDelegate.swift */; };
 		E574A07F2CB6E48B00A296B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A07E2CB6E48B00A296B1 /* SceneDelegate.swift */; };
 		E574A0812CB6E48B00A296B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A0802CB6E48B00A296B1 /* ViewController.swift */; };
@@ -21,9 +22,13 @@
 		E574A09D2CB6F1B800A296B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09C2CB6F1B800A296B1 /* MainViewController.swift */; };
 		E574A0A02CB6FBA100A296B1 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09F2CB6FBA100A296B1 /* Bindable.swift */; };
 		E574A0A52CB7033F00A296B1 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */; };
+		E5AB84D42CC6D1B800AE8089 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB84D32CC6D1B800AE8089 /* LaunchViewController.swift */; };
+		E5AB84D82CC6D39B00AE8089 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB84D72CC6D39B00AE8089 /* API.swift */; };
+		E5BFA2162CC028DE003E6FC4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5BFA2182CC028DE003E6FC4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E53FE4542CBD991200E30595 /* CombineLaunchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineLaunchViewModel.swift; sourceTree = "<group>"; };
 		E574A0792CB6E48B00A296B1 /* SpaceXLaunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXLaunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E574A07C2CB6E48B00A296B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E574A07E2CB6E48B00A296B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,15 @@
 		E574A09C2CB6F1B800A296B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E574A09F2CB6FBA100A296B1 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		E59ABAC42CC025CA00662C97 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E59ABAC52CC025CA00662C97 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E5AB84D32CC6D1B800AE8089 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		E5AB84D72CC6D39B00AE8089 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E5BFA2172CC028DE003E6FC4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E5BFA2192CC028EE003E6FC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E5BFA21A2CC0290F003E6FC4 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		E5BFA21B2CC0290F003E6FC4 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E5BFA21C2CC0290F003E6FC4 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,8 @@
 		E574A07B2CB6E48B00A296B1 /* SpaceXLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				E5AB84D12CC6D10300AE8089 /* Launch */,
+				E5BFA2132CC02889003E6FC4 /* Localization */,
 				E574A09E2CB6FB9100A296B1 /* Reactive */,
 				E574A0932CB6E57900A296B1 /* Launches */,
 				E574A07C2CB6E48B00A296B1 /* AppDelegate.swift */,
@@ -82,6 +98,7 @@
 				E574A08D2CB6E48C00A296B1 /* Info.plist */,
 				E574A0852CB6E48B00A296B1 /* SpaceXLaunch.xcdatamodeld */,
 				E574A09C2CB6F1B800A296B1 /* MainViewController.swift */,
+				E5AB84D72CC6D39B00AE8089 /* API.swift */,
 			);
 			path = SpaceXLaunch;
 			sourceTree = "<group>";
@@ -126,9 +143,26 @@
 		E574A0A32CB7032E00A296B1 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				E53FE4542CBD991200E30595 /* CombineLaunchViewModel.swift */,
 				E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		E5AB84D12CC6D10300AE8089 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB84D32CC6D1B800AE8089 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		E5BFA2132CC02889003E6FC4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E5BFA2182CC028DE003E6FC4 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +207,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				pl,
 			);
 			mainGroup = E574A0702CB6E48B00A296B1;
 			productRefGroup = E574A07A2CB6E48B00A296B1 /* Products */;
@@ -190,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E574A08C2CB6E48C00A296B1 /* LaunchScreen.storyboard in Resources */,
+				E5BFA2162CC028DE003E6FC4 /* Localizable.strings in Resources */,
 				E574A0892CB6E48C00A296B1 /* Assets.xcassets in Resources */,
 				E574A0842CB6E48B00A296B1 /* Main.storyboard in Resources */,
 			);
@@ -202,9 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AB84D42CC6D1B800AE8089 /* LaunchViewController.swift in Sources */,
 				E574A0A02CB6FBA100A296B1 /* Bindable.swift in Sources */,
 				E574A0872CB6E48B00A296B1 /* SpaceXLaunch.xcdatamodeld in Sources */,
 				E574A0952CB6E59B00A296B1 /* LaunchTableViewCell.swift in Sources */,
+				E5AB84D82CC6D39B00AE8089 /* API.swift in Sources */,
+				E53FE4552CBD991200E30595 /* CombineLaunchViewModel.swift in Sources */,
 				E574A0812CB6E48B00A296B1 /* ViewController.swift in Sources */,
 				E574A0972CB6E85600A296B1 /* Models.swift in Sources */,
 				E574A07D2CB6E48B00A296B1 /* AppDelegate.swift in Sources */,
@@ -223,6 +263,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E574A0832CB6E48B00A296B1 /* Base */,
+				E59ABAC42CC025CA00662C97 /* ru */,
+				E5BFA21A2CC0290F003E6FC4 /* pl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -231,8 +273,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				E574A08B2CB6E48C00A296B1 /* Base */,
+				E59ABAC52CC025CA00662C97 /* ru */,
+				E5BFA21B2CC0290F003E6FC4 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E5BFA2182CC028DE003E6FC4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5BFA2172CC028DE003E6FC4 /* ru */,
+				E5BFA2192CC028EE003E6FC4 /* en */,
+				E5BFA21C2CC0290F003E6FC4 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -243,6 +297,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -306,6 +361,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

@@ -22,8 +22,8 @@ class CreateTargetPresenter {
         self.router = router
     }
     
-    func createButttonDidTap(with name: String, date: Date) {
-        self.interactor?.createButttonDidTap(with: name, date: date)
+    func createButttonDidTap(with name: String, date: Date, contact: Target.Contact?){
+        self.interactor?.createButttonDidTap(with: name, date: date, contact: contact)
     }
     
     func close() {

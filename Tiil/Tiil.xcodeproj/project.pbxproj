@@ -29,6 +29,9 @@
 		E574A06B2CB4619100A296B1 /* CreateTargetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A06A2CB4619100A296B1 /* CreateTargetPresenter.swift */; };
 		E574A06D2CB4619A00A296B1 /* CreateTargetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A06C2CB4619A00A296B1 /* CreateTargetInteractor.swift */; };
 		E574A06F2CB461A600A296B1 /* CreateTargetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A06E2CB461A600A296B1 /* CreateTargetRouter.swift */; };
+		E59ABAC32CC01F6A00662C97 /* PlusOneMVPFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ABAC22CC01F6A00662C97 /* PlusOneMVPFactory.swift */; };
+		E5AB84CD2CC6B4C300AE8089 /* DeeplinksHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB84CC2CC6B4C300AE8089 /* DeeplinksHandler.swift */; };
+		E5AB84D02CC6C27A00AE8089 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E5AB84CF2CC6C27A00AE8089 /* SnapKit */; };
 		E5BEA4582CAB13C000DDC288 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BEA4572CAB13C000DDC288 /* Note.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,8 @@
 		E574A06A2CB4619100A296B1 /* CreateTargetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTargetPresenter.swift; sourceTree = "<group>"; };
 		E574A06C2CB4619A00A296B1 /* CreateTargetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTargetInteractor.swift; sourceTree = "<group>"; };
 		E574A06E2CB461A600A296B1 /* CreateTargetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTargetRouter.swift; sourceTree = "<group>"; };
+		E59ABAC22CC01F6A00662C97 /* PlusOneMVPFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOneMVPFactory.swift; sourceTree = "<group>"; };
+		E5AB84CC2CC6B4C300AE8089 /* DeeplinksHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinksHandler.swift; sourceTree = "<group>"; };
 		E5BEA4572CAB13C000DDC288 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E574A0572CAB23BC00A296B1 /* RealmSwift in Frameworks */,
+				E5AB84D02CC6C27A00AE8089 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 				E5BEA4572CAB13C000DDC288 /* Note.swift */,
 				E574A05D2CADAB3800A296B1 /* AuthViewController.swift */,
 				E574A0602CB4489C00A296B1 /* PlusOneViewController.swift */,
+				E5AB84CC2CC6B4C300AE8089 /* DeeplinksHandler.swift */,
 			);
 			path = Tiil;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				E574A0632CB4581200A296B1 /* PlusOneMVPViewController.swift */,
 				E574A0652CB4586C00A296B1 /* PlusOneMVPModel.swift */,
 				E574A0672CB4588300A296B1 /* PlusOneMVPPresenter.swift */,
+				E59ABAC22CC01F6A00662C97 /* PlusOneMVPFactory.swift */,
 			);
 			path = PlusOneMVP;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			name = Tiil;
 			packageProductDependencies = (
 				E574A0562CAB23BC00A296B1 /* RealmSwift */,
+				E5AB84CF2CC6C27A00AE8089 /* SnapKit */,
 			);
 			productName = Tiil;
 			productReference = E55F88CC2C7FA04100894415 /* Tiil.app */;
@@ -192,6 +201,7 @@
 			mainGroup = E55F88C32C7FA04100894415;
 			packageReferences = (
 				E574A0552CAB23BC00A296B1 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				E5AB84CE2CC6C27A00AE8089 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = E55F88CD2C7FA04100894415 /* Products */;
 			projectDirPath = "";
@@ -235,7 +245,9 @@
 				E5BEA4582CAB13C000DDC288 /* Note.swift in Sources */,
 				E55F88EA2C7FA19A00894415 /* CreateTargetViewController.swift in Sources */,
 				E55F88D22C7FA04100894415 /* SceneDelegate.swift in Sources */,
+				E59ABAC32CC01F6A00662C97 /* PlusOneMVPFactory.swift in Sources */,
 				E55F88E62C7FA0C000894415 /* Storage.swift in Sources */,
+				E5AB84CD2CC6B4C300AE8089 /* DeeplinksHandler.swift in Sources */,
 				E574A0612CB4489C00A296B1 /* PlusOneViewController.swift in Sources */,
 				E52E6E922CA47E7200E3ED35 /* Till.xcdatamodeld in Sources */,
 				E574A06F2CB461A600A296B1 /* CreateTargetRouter.swift in Sources */,
@@ -471,6 +483,14 @@
 				version = 10.49.3;
 			};
 		};
+		E5AB84CE2CC6C27A00AE8089 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -478,6 +498,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E574A0552CAB23BC00A296B1 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		E5AB84CF2CC6C27A00AE8089 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5AB84CE2CC6C27A00AE8089 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 

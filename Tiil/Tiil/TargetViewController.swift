@@ -30,6 +30,13 @@ class TargetViewController: UIViewController {
         return stackView
     }()
     
+    
+    lazy var contactLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 16)
+        return label
+    }()
+    
     lazy var textField: UITextField = .init()
     
     lazy var addButton: UIButton = .init()
@@ -78,6 +85,7 @@ class TargetViewController: UIViewController {
         ])
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(progressLabel)
+        stackView.addArrangedSubview(contactLabel)
         target.notes.forEach { note in
             let label = UILabel()
             label.text = note.message
@@ -85,6 +93,12 @@ class TargetViewController: UIViewController {
         }
         stackView.addArrangedSubview(textField)
         stackView.addArrangedSubview(addButton)
+        
+        
+        if let contact = target.connectedContact {
+            contactLabel.isHidden = false
+            contactLabel.text = contact.name + " " + contact.phone
+        }
         
         Timer.scheduledTimer(
             withTimeInterval: 1,

@@ -12,15 +12,12 @@ class PlusOneMVPViewController: UIViewController {
     lazy var label: UILabel = .init()
     
     lazy var button: UIButton = .init(type: .system, primaryAction: .init(handler: { [weak self] _ in
-        self?.presenter.plusDidTap()
+        self?.presenter?.plusDidTap()
     }))
     
     lazy var stack = UIStackView(arrangedSubviews: [label, button])
     
-    lazy var presenter: PlusOneMVPPresenter = .init(
-        model: .init(),
-        viewController: self
-    )
+    var presenter: PlusOneMVPPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()

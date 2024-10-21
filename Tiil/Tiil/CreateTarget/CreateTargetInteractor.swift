@@ -9,7 +9,7 @@ import Foundation
 
 class CreateTargetInteractor {
 
-    let presenter: CreateTargetPresenter
+    weak var presenter: CreateTargetPresenter?
     let networkClient: URLSession
     
     weak var createDelegate: CreateTargetViewControllerDelegate?
@@ -23,9 +23,9 @@ class CreateTargetInteractor {
     }
     
     
-    func createButttonDidTap(with name: String, date: Date) {
-        self.createDelegate?.didCreateTarget(name: name, date: date)
-        self.presenter.close()
+    func createButttonDidTap(with name: String, date: Date, contact: Target.Contact?) {
+        self.createDelegate?.didCreateTarget(name: name, date: date, contact: contact)
+        self.presenter?.close()
     }
     
     
@@ -33,3 +33,4 @@ class CreateTargetInteractor {
     
     }
 }
+

@@ -48,8 +48,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: CreateTargetViewControllerDelegate {
-    func didCreateTarget(name: String, date: Date) {
-        _ = targetService.createTarget(name: name, date: date)
+    func didCreateTarget(name: String, date: Date, contact: Target.Contact?) {
+        _ = targetService.createTarget(name: name, date: date, contact: contact)
         tableView.reloadData()
     }
 }

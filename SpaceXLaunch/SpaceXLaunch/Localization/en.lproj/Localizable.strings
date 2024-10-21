@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  SpaceXLaunch
+
+  Created by Vladimir Kurdiukov on 16.10.2024.
+*/
+"Welcome to launches page" = "Welcome to launches page";
+"You have watched launches" = "You have watched %@ %@ launches ";

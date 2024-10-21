@@ -7,1286 +7,55 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "851983B9-80FD-41AA-BBBE-E3B51E6541C0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/CreateTargetViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "saveButton"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "851983B9-80FD-41AA-BBBE-E3B51E6541C0 - 2efe618bd1a318fb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Tiil.CreateTargetViewController.saveButton.getter : __C.UIButton"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTargetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "384">
-               </Location>
-               <Location
-                  uuid = "851983B9-80FD-41AA-BBBE-E3B51E6541C0 - 2efe618bd1a318fb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Tiil.CreateTargetViewController.saveButton.getter : __C.UIButton"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTargetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "404">
-               </Location>
-               <Location
-                  uuid = "851983B9-80FD-41AA-BBBE-E3B51E6541C0 - 2efe618bd1a318da"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Tiil.CreateTargetViewController.saveButton.getter : __C.UIButton"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTargetViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "404">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "198DB052-EE63-445B-8C69-DECE6E432A64"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "didCreateTarget(name:date:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "198DB052-EE63-445B-8C69-DECE6E432A64 - bb67ca82bec50026"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.ViewController.didCreateTarget(name: Swift.String, date: Foundation.Date) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "198DB052-EE63-445B-8C69-DECE6E432A64 - bb67ca82bec50005"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.ViewController.didCreateTarget(name: Swift.String, date: Foundation.Date) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "200">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "494FFE66-5296-4B10-8D1B-3CBBE95EB1CB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "savedTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "494FFE66-5296-4B10-8D1B-3CBBE95EB1CB - 23cf1984de0388e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "494FFE66-5296-4B10-8D1B-3CBBE95EB1CB - 23cf1984de0388e0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  uuid = "494FFE66-5296-4B10-8D1B-3CBBE95EB1CB - 23cf1984de03b1a8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "185"
-                  endingLineNumber = "185"
-                  offsetFromSymbolStart = "364">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FDC2A099-F68B-42AF-97D5-3E71249A234E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "186"
-            endingLineNumber = "186"
-            landmarkName = "savedTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FDC2A099-F68B-42AF-97D5-3E71249A234E - 23cf1984de038881"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "520">
-               </Location>
-               <Location
-                  uuid = "FDC2A099-F68B-42AF-97D5-3E71249A234E - 23cf1984de038881"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "400">
-               </Location>
-               <Location
-                  uuid = "FDC2A099-F68B-42AF-97D5-3E71249A234E - 23cf1984de03b049"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "186"
-                  endingLineNumber = "186"
-                  offsetFromSymbolStart = "400">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "05838C8C-186F-40FB-A632-2AE7FC93EB8F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "savedTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "05838C8C-186F-40FB-A632-2AE7FC93EB8F - 23cf1984de0388a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "664">
-               </Location>
-               <Location
-                  uuid = "05838C8C-186F-40FB-A632-2AE7FC93EB8F - 23cf1984de0388a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "520">
-               </Location>
-               <Location
-                  uuid = "05838C8C-186F-40FB-A632-2AE7FC93EB8F - 23cf1984de03b06a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "187"
-                  endingLineNumber = "187"
-                  offsetFromSymbolStart = "520">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CF34045F-17A9-4D4B-8498-D24EA4A43778"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "savedTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CF34045F-17A9-4D4B-8498-D24EA4A43778 - 23cf1984de0388cf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  uuid = "CF34045F-17A9-4D4B-8498-D24EA4A43778 - 23cf1984de0388cf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "CF34045F-17A9-4D4B-8498-D24EA4A43778 - 23cf1984de03b197"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.LocalStorage.savedTargets() -&gt; Swift.Array&lt;Tiil.Target&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "184"
-                  endingLineNumber = "184"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "545932D7-EF27-41BC-BA77-DB986F937E50"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "preparedTargets()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "04C53E08-CCF2-416D-A632-6ECAF2740648"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "readTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "04C53E08-CCF2-416D-A632-6ECAF2740648 - 671b99505243fc5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "04C53E08-CCF2-416D-A632-6ECAF2740648 - 671b99505243fc5d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2C1B2C15-1D8F-4BD4-B4E9-6D6460680079"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "readTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2C1B2C15-1D8F-4BD4-B4E9-6D6460680079 - 671b99505243fc7c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "2C1B2C15-1D8F-4BD4-B4E9-6D6460680079 - 671b99505243fc7c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "948F5704-4465-4062-B7E7-F09CE701530B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "readTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "948F5704-4465-4062-B7E7-F09CE701530B - 671b99505243fd9f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "256">
-               </Location>
-               <Location
-                  uuid = "948F5704-4465-4062-B7E7-F09CE701530B - e0c9101b7b55b9e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Tiil.TargetModel) -&gt; () in Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "948F5704-4465-4062-B7E7-F09CE701530B - 671b99505243fd9f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "236">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0D7EF7FD-ADC6-4DEE-B21B-3F10711AC8AA"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "readTargets()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0D7EF7FD-ADC6-4DEE-B21B-3F10711AC8AA - e0c9101b7b55b9e8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Tiil.TargetModel) -&gt; () in Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  uuid = "0D7EF7FD-ADC6-4DEE-B21B-3F10711AC8AA - 671b99505243fdbe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.readTargets() -&gt; Swift.Array&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "276">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3477118D-349E-49F1-9154-C9A34A760664"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
-            landmarkName = "delete(target:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3477118D-349E-49F1-9154-C9A34A760664 - a274e95d5a703c80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  uuid = "3477118D-349E-49F1-9154-C9A34A760664 - a274e95d5a703c80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "3477118D-349E-49F1-9154-C9A34A760664 - a274e95d5a703c80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "3477118D-349E-49F1-9154-C9A34A760664 - a274e95d5a703731"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2183C2E1-03E2-49F8-AD76-0972AC2FBAF9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "delete(target:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2183C2E1-03E2-49F8-AD76-0972AC2FBAF9 - a274e95d5a703ce1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "2183C2E1-03E2-49F8-AD76-0972AC2FBAF9 - a274e95d5a703ce1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "2183C2E1-03E2-49F8-AD76-0972AC2FBAF9 - a274e95d5a703716"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.delete(target: Tiil.Target) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "172">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CE96C592-2598-466A-9332-6B82C09C3893"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "getTargetById(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CE96C592-2598-466A-9332-6B82C09C3893 - f922beed75741a6e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "CE96C592-2598-466A-9332-6B82C09C3893 - f922beed75741a6e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "CE96C592-2598-466A-9332-6B82C09C3893 - ab25c67dc0aeca18"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.String) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "96">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "53953819-B063-4FF2-B6F4-F829513FC5F1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "getTargetById(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "53953819-B063-4FF2-B6F4-F829513FC5F1 - f922beed75741a0f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "100">
-               </Location>
-               <Location
-                  uuid = "53953819-B063-4FF2-B6F4-F829513FC5F1 - f922beed75741a0f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "116">
-               </Location>
-               <Location
-                  uuid = "53953819-B063-4FF2-B6F4-F829513FC5F1 - ab25c67dc0aec5ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.String) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "44DF16B3-838A-40D5-8941-2A242E2AF744"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "getTargetById(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "44DF16B3-838A-40D5-8941-2A242E2AF744 - f922beed75741a28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  uuid = "44DF16B3-838A-40D5-8941-2A242E2AF744 - f922beed75741a28"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "44DF16B3-838A-40D5-8941-2A242E2AF744 - ab25c67dc0aec5de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.String) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "152">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6B1244C6-CD83-4C65-BC13-DAA4E39E34AB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "getTargetById(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6B1244C6-CD83-4C65-BC13-DAA4E39E34AB - f922beed757419c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "372">
-               </Location>
-               <Location
-                  uuid = "6B1244C6-CD83-4C65-BC13-DAA4E39E34AB - f922beed757419c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "54"
-                  endingLineNumber = "54"
-                  offsetFromSymbolStart = "288">
-               </Location>
-               <Location
-                  uuid = "6B1244C6-CD83-4C65-BC13-DAA4E39E34AB - ab25c67dc0aec5bd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.String) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7DF4EF7B-2DA2-4293-A47A-39AFCEABB54A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/Storage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "getTargetById(id:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7DF4EF7B-2DA2-4293-A47A-39AFCEABB54A - f922beed757419ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "516">
-               </Location>
-               <Location
-                  uuid = "7DF4EF7B-2DA2-4293-A47A-39AFCEABB54A - f922beed757419ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.Int64) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "432">
-               </Location>
-               <Location
-                  uuid = "7DF4EF7B-2DA2-4293-A47A-39AFCEABB54A - ab25c67dc0aec59c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.CoreDataStorage.getTargetById(id: Swift.String) -&gt; Swift.Optional&lt;Tiil.TargetModel&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/Storage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "476">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/AuthViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "register(login:password:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29 - 64c32d7e66879427"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.AuthViewController.register(login: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Result&lt;(), Tiil.AuthViewDelegateError&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29 - 64c32d7e66879427"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.AuthViewController.register(login: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Result&lt;(), Tiil.AuthViewDelegateError&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "212">
-               </Location>
-               <Location
-                  uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29 - 64c32d7e66879427"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.AuthViewController.register(login: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Result&lt;(), Tiil.AuthViewDelegateError&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "276">
-               </Location>
-               <Location
-                  uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29 - abcb44a15e38000f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.AuthViewController.register(login: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Result&lt;(), Tiil.AuthViewDelegateRegisterError&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "212">
-               </Location>
-               <Location
-                  uuid = "910915F6-4DB2-4CDE-B54A-E22EAEC7FE29 - abcb44a15e38000f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.AuthViewController.register(login: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; Swift.Result&lt;(), Tiil.AuthViewDelegateRegisterError&gt;"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "276">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C0D5A75D-DEA5-42DB-ABCB-67714BA0B937"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/PlusOneMVP/PlusOneMVPPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "plusDidTap()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C116F8AE-D548-409C-A555-C1E080234599"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/PlusOneMVP/PlusOneMVPPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "valueUpdated(value:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C116F8AE-D548-409C-A555-C1E080234599 - 2eeb083bf82aad89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.PlusOneMVPPresenter.valueUpdated(value: Swift.Int) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/PlusOneMVP/PlusOneMVPPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "296">
-               </Location>
-               <Location
-                  uuid = "C116F8AE-D548-409C-A555-C1E080234599 - 2eeb083bf82aad89"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Tiil.PlusOneMVPPresenter.valueUpdated(value: Swift.Int) -&gt; ()"
-                  moduleName = "Tiil"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/PlusOneMVP/PlusOneMVPPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C1759C42-20DD-4C0A-8AFA-72488311E665"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/PlusOneMVP/PlusOneMVPModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "addValue(value:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "287F71F8-531B-4714-B078-A740374F785E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/PlusOneMVP/PlusOneMVPViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "button"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0B08ADA7-5C58-406C-B528-F8873E59B2DC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/PlusOneMVP/PlusOneMVPViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "updated(value:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1C91870D-BDA3-468D-8184-006FA1D69525"
+            uuid = "C2407F16-6D62-4ACD-A295-96536CF5DB1E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/CreateTarget/CreateTargetViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "saveButton"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "61F0F0E7-076B-4C89-AA78-6358A80E9E69"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tiil/CreateTarget/CreateTargetPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "createButttonDidTap(with:date:)"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "contactPicker(_:didSelect:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2407F16-6D62-4ACD-A295-96536CF5DB1E - 2d942a8f4ca922f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.CreateTargetViewController.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTarget/CreateTargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "C2407F16-6D62-4ACD-A295-96536CF5DB1E - 2d942a8f4ca92396"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.CreateTargetViewController.contactPicker(_: __C.CNContactPickerViewController, didSelect: __C.CNContact) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTarget/CreateTargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "48E199A6-C4AB-465A-A80E-FF6DCCC1EE2F"
+            uuid = "03A1F742-DB9E-4523-85F2-53FD3C75FC21"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1295,14 +64,158 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
-            landmarkName = "createButttonDidTap(with:date:)"
+            landmarkName = "createButttonDidTap(with:date:contact:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5553FD54-AE29-40BF-B589-52376EFCECA7"
+            uuid = "0C030F9F-F5AB-42EE-AB6B-618120E4E63F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/CreateTarget/CreateTargetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "saveButton"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52C67CAA-C7C1-4583-8A54-8C3872F9D91C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/CreateTarget/CreateTargetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "saveButton"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "52C67CAA-C7C1-4583-8A54-8C3872F9D91C - bce3d03438066b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Tiil.CreateTargetViewController.saveButton.getter : __C.UIButton"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTarget/CreateTargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "52C67CAA-C7C1-4583-8A54-8C3872F9D91C - bce3d03438066b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Tiil.CreateTargetViewController.saveButton.getter : __C.UIButton"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/CreateTarget/CreateTargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "528">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2741C0C-DA53-4405-9EFE-726C08B32F48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/TargetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E2741C0C-DA53-4405-9EFE-726C08B32F48 - 39704204710febbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.TargetViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/TargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "4168">
+               </Location>
+               <Location
+                  uuid = "E2741C0C-DA53-4405-9EFE-726C08B32F48 - 39704204710febbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.TargetViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/TargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "3884">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6EF2C1A-5935-4D13-8B6E-D004D01CBE00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/CreateTarget/CreateTargetViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "saveButton"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CF6DF34-5C89-4EC6-9F07-246158C626FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/CreateTarget/CreateTargetPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "createButttonDidTap(with:date:contact:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CAB28170-FE3F-492E-8FB0-A97A9B9309F7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1311,56 +224,645 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "didCreateTarget(name:date:)"
+            landmarkName = "didCreateTarget(name:date:contact:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B747D8D2-D803-46DC-9802-1BDEAC987BC1"
-            shouldBeEnabled = "Yes"
+            uuid = "88E2CA28-FD11-44EB-B866-1FC626F1E677"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tiil/CreateTarget/CreateTargetRouter.swift"
+            filePath = "Tiil/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "dismiss(viewController:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FB60AB0D-9FE6-4EE9-90B0-A23814F0D86C"
+            uuid = "DF7292FA-C897-4ED9-B749-4750F7444EF3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tiil/CreateTarget/CreateTargetInteractor.swift"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "scene(_:openURLContexts:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DF7292FA-C897-4ED9-B749-4750F7444EF3 - 9db27504acbf6cf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.scene(_: __C.UIScene, openURLContexts: Swift.Set&lt;__C.UIOpenURLContext&gt;) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DF7292FA-C897-4ED9-B749-4750F7444EF3 - 9db27504acbf6cf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.scene(_: __C.UIScene, openURLContexts: Swift.Set&lt;__C.UIOpenURLContext&gt;) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "DF7292FA-C897-4ED9-B749-4750F7444EF3 - 9db27504acbf6cf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.scene(_: __C.UIScene, openURLContexts: Swift.Set&lt;__C.UIOpenURLContext&gt;) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "DF7292FA-C897-4ED9-B749-4750F7444EF3 - 9db27504acbf6d70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.scene(_: __C.UIScene, openURLContexts: Swift.Set&lt;__C.UIOpenURLContext&gt;) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "528">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D5DA146-085C-4111-A254-CF447DB1D367"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "createButttonDidTap(with:date:)"
+            landmarkName = "initHandler()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E9DC42E4-9AC0-4E94-9154-F0C73DF2A43A"
+            uuid = "5910C8FE-365A-4A23-8191-7CF223A8F8D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C91C43E5-262F-4210-B8D7-F949D973E495"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67E76EEC-808C-4488-B58C-F063B58B2711"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A486DCC-116B-48E5-928B-3B444D43F019"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tiil/CreateTarget/CreateTargetPresenter.swift"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getCreateTargetViewControllerDelegate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A486DCC-116B-48E5-928B-3B444D43F019 - eed0643d93519158"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UITabBarController.getCreateTargetViewControllerDelegate() -&gt; Swift.Optional&lt;Tiil.CreateTargetViewControllerDelegate&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "9A486DCC-116B-48E5-928B-3B444D43F019 - eed0643d93519022"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.UITabBarController.getCreateTargetViewControllerDelegate() -&gt; Swift.Optional&lt;Tiil.CreateTargetViewControllerDelegate&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE58955C-7DFD-4910-A6F9-68095E6D57A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(rootViewController:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE58955C-7DFD-4910-A6F9-68095E6D57A6 - 19d8914b902bd454"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.init(rootViewController: __C.UIViewController) -&gt; Tiil.DeeplinksHandler"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "BE58955C-7DFD-4910-A6F9-68095E6D57A6 - 19d8914b902bd454"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.init(rootViewController: __C.UIViewController) -&gt; Tiil.DeeplinksHandler"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94D2A473-8FF8-4930-8340-105F2FCAFBD6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "process(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94D2A473-8FF8-4930-8340-105F2FCAFBD6 - 26c1d1937daf2a13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.register(_: () -&gt; __C.UIViewController, for: Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "94D2A473-8FF8-4930-8340-105F2FCAFBD6 - d57a3942d1bbd700"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.process(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49C3F964-095F-492A-887D-8DA0D33CE60F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "register(_:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "714D6E29-D051-448D-8195-640FDD7B2926"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "close()"
+            landmarkName = "register(_:for:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BB5C3D3-38E3-4A7C-B9D2-928D7F281C85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "process(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4BB5C3D3-38E3-4A7C-B9D2-928D7F281C85 - d57a3942d1bbd763"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.process(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "4BB5C3D3-38E3-4A7C-B9D2-928D7F281C85 - d57a3942d1bbd763"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.process(url: Foundation.URL) -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1110767-CDEC-4462-948A-34E44F9C63E4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/DeeplinksHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "init(rootViewController:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B1110767-CDEC-4462-948A-34E44F9C63E4 - 19d8914b902bd473"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.init(rootViewController: __C.UIViewController) -&gt; Tiil.DeeplinksHandler"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "B1110767-CDEC-4462-948A-34E44F9C63E4 - 2fe1340fbbc4a40e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.__allocating_init(rootViewController: __C.UIViewController) -&gt; Tiil.DeeplinksHandler"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "B1110767-CDEC-4462-948A-34E44F9C63E4 - 19d8914b902bdb9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.DeeplinksHandler.init(rootViewController: __C.UIViewController) -&gt; Tiil.DeeplinksHandler"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/DeeplinksHandler.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54CAC13E-FC7B-49AA-AC4A-F49E2D8E09EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D7C2E13-BA67-4519-81CA-218F30042E66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D7C2E13-BA67-4519-81CA-218F30042E66 - d04d6768d153485f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.initHandler() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "928">
+               </Location>
+               <Location
+                  uuid = "5D7C2E13-BA67-4519-81CA-218F30042E66 - 8902fb865cb47c57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; __C.UIViewController in Tiil.SceneDelegate.initHandler() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D9937AF-393C-4378-A4E2-9BBBEF7C0063"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0377A9EE-3C26-43EB-86CA-388FAAD74AEF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88A976CC-370E-4192-8C23-7BC0C9E4126D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16C3A3F6-1E69-4536-9E8A-C434384E3F25"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2FF2E12-FBC6-460B-8018-49445C0B0970"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DE633A9-8A1F-4007-8219-FB73C8986C88"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "initHandler()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8DE633A9-8A1F-4007-8219-FB73C8986C88 - d04d6768d1534920"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.SceneDelegate.initHandler() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "8DE633A9-8A1F-4007-8219-FB73C8986C88 - 84879cf037c187e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIViewController in Tiil.SceneDelegate.initHandler() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

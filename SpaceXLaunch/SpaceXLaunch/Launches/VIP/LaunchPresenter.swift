@@ -19,6 +19,7 @@ class LaunchPresenter {
         DispatchQueue.main.async { [weak self] in
             self?.view?.configure(with: models.map { launchModel in
                 return ViewModels.Launch(
+                    id: launchModel.flightNumber ?? 0,
                     title: launchModel.missionName ?? "NO NAME",
                     subtitle: launchModel.launchDateUTC ?? "UNKNOWN DATE",
                     icon: launchModel.launchSuccess == true ? .checkmark : .remove

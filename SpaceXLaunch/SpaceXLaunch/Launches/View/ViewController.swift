@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import Combine
 
 
 class LaunchesViewController: UIViewController {
-    lazy var launchesView: LaunchesView = .init()
+    lazy var launchesView: LaunchesView = .init { [weak self] launchId in
+        self?.present(LaunchViewController(viewModel: .init(), launchID: launchId), animated: true)
+    }
     
-    let viewModel: LaunchViewModel
+    let viewModel: LaunchesViewModel
     
-    init(viewModel: LaunchViewModel) {
+    init(viewModel: LaunchesViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -36,10 +39,49 @@ class LaunchesViewController: UIViewController {
     }
 }
 
+class CombineViewController: UIViewController {
+    lazy var launchesView: LaunchesView = .init { [weak self] launchId in
+        self?.present(LaunchViewController(viewModel: .init(), launchID: launchId), animated: true)
+    }
+    
+    let viewModel: CombineLaunchViewModel
+    
+    var cancellable: [AnyCancellable] = []
+    
+    init(viewModel: CombineLaunchViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func loadView() {
+        view = launchesView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel.launches.sink { error in
+            print(error)
+        } receiveValue: { [weak self] launches in
+            self?.launchesView.launches = launches
+        }.store(in: &cancellable)
+        viewModel.loadLaunch()
+    }
+    
+    deinit {
+        cancellable.forEach { $0.cancel() }
+    }
+}
+
 class ViewController: UIViewController {
     let presenter: LaunchPresenter
     
-    lazy var launchesView: LaunchesView = .init()
+    lazy var launchesView: LaunchesView = .init { [weak self] launchId in
+        self?.present(LaunchViewController(viewModel: .init(), launchID: launchId), animated: true)
+    }
     
     init(presenter: LaunchPresenter) {
         self.presenter = presenter
@@ -66,6 +108,7 @@ class ViewController: UIViewController {
 }
 
 class LaunchesView: UIView {
+    lazy var titleLabel = UILabel()
     lazy var tableView = UITableView()
     
     let reuseIdentifier = "launch"
@@ -76,7 +119,10 @@ class LaunchesView: UIView {
         }
     }
     
-    init() {
+    let openLaunch: (Int) -> Void
+    
+    init(openLaunch: @escaping (Int) -> Void) {
+        self.openLaunch = openLaunch
         super.init(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.contentInset = .init(
@@ -103,6 +149,23 @@ class LaunchesView: UIView {
 }
 
 extension LaunchesView: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = NSLocalizedString(
+            "Welcome to launches page",
+            comment: "Header of list of launches"
+        )
+        return label
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let label = UILabel()
+        let translatedString = NSLocalizedString("You have watched launches", comment: "Footer of list of launches")
+        label.text = String.localizedStringWithFormat(translatedString, String(launches.count), "10")
+        return label
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return launches.count
     }
@@ -111,6 +174,10 @@ extension LaunchesView: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? LaunchTableViewCell
         cell?.configure(model: launches[indexPath.row])
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        openLaunch(launches[indexPath.row].id)
     }
 }
 

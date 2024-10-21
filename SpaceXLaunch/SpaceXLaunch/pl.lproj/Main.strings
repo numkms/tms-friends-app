@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Nta-16-npo"; */
+"Nta-16-npo.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "QlV-gm-ndS"; */
+"QlV-gm-ndS.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QlV-gm-ndS"; */
+"QlV-gm-ndS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "om0-th-wgy"; */
+"om0-th-wgy.text" = "Name";

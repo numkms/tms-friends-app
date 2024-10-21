@@ -19,10 +19,7 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        bindable.value = 10
-//        bindable.value = 11
-//        bindable.value = -20
-        present(buildMVVMModule(), animated: true)
+        present(buildMVVMCombineModule(), animated: true)
     }
     
     func buildVIPModule() -> UIViewController {
@@ -39,12 +36,18 @@ class MainViewController: UIViewController {
     }
     
     func buildMVVMModule() -> UIViewController {
-        let viewModel = LaunchViewModel(
+        let viewModel = LaunchesViewModel()
+        return LaunchesViewController(viewModel: viewModel)
+    }
+    
+    func buildMVVMCombineModule() -> UIViewController {
+        let viewModel = CombineLaunchViewModel(
             client: URLSession.shared,
             decoder: JSONDecoder()
         )
-        return LaunchesViewController(viewModel: viewModel)
+        return CombineViewController(viewModel: viewModel)
     }
+    
     /*
     // MARK: - Navigation
 
