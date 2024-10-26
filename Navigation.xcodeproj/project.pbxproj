@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E500EE2C2CC9715B00FE31E6 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E500EE2B2CC9715B00FE31E6 /* music.mp3 */; };
+		E500EE302CC9793000FE31E6 /* light.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E500EE2F2CC9793000FE31E6 /* light.mp4 */; };
 		E501E5E52C35CB1C006A06D9 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */; };
 		E501E5E72C35CDD5006A06D9 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */; };
 		E51194162C73B92B002CE686 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5141B352C73B7BD008B8E4A /* Roboto-Regular.ttf */; };
@@ -56,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E500EE2B2CC9715B00FE31E6 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		E500EE2F2CC9793000FE31E6 /* light.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = light.mp4; sourceTree = "<group>"; };
 		E501E5E42C35CB1C006A06D9 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E501E5E62C35CDD5006A06D9 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		E51194222C73BB7D002CE686 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				E5A2F7032C4589AC00B12315 /* CollectionViewController.swift */,
 				E5A2F7052C459E5A00B12315 /* FriendTableViewController.swift */,
 				E59F8D092C57FC6F00269E3D /* LoadingView.swift */,
+				E500EE2F2CC9793000FE31E6 /* light.mp4 */,
 				E59F8D0B2C580E0100269E3D /* ToggleSwitchController.swift */,
 				E5BE6D262C61389D00644836 /* AnimationsViewController.swift */,
 				E5BE6D2A2C6A6C5A00644836 /* TestViewController.swift */,
@@ -186,6 +191,7 @@
 				E51194282C766F16002CE686 /* GroupPicker.swift */,
 				E55F88C12C7CEBA700894415 /* WebViewViewController.swift */,
 				E5C9AD592C88CBA30070C2F5 /* ThreadViewController.swift */,
+				E500EE2B2CC9715B00FE31E6 /* music.mp3 */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -273,10 +279,12 @@
 				E511941A2C73B92B002CE686 /* Roboto-Thin.ttf in Resources */,
 				E58922952C33096E00DAC182 /* LaunchScreen.storyboard in Resources */,
 				E511941C2C73B92B002CE686 /* Roboto-Bold.ttf in Resources */,
+				E500EE302CC9793000FE31E6 /* light.mp4 in Resources */,
 				E58922922C33096E00DAC182 /* Assets.xcassets in Resources */,
 				E511941E2C73B92B002CE686 /* Roboto-MediumItalic.ttf in Resources */,
 				E51194182C73B92B002CE686 /* Roboto-Light.ttf in Resources */,
 				E511941F2C73B92B002CE686 /* Roboto-BlackItalic.ttf in Resources */,
+				E500EE2C2CC9715B00FE31E6 /* music.mp3 in Resources */,
 				E511941D2C73B92B002CE686 /* Roboto-Black.ttf in Resources */,
 				E51194192C73B92B002CE686 /* Roboto-Medium.ttf in Resources */,
 				E511941B2C73B92B002CE686 /* Roboto-LightItalic.ttf in Resources */,

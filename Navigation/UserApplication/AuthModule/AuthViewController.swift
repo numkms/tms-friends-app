@@ -7,6 +7,8 @@
 
 import UIKit
 import SafariServices
+import AVFoundation
+import AVKit
 
 class AuthViewController: UIViewController {
     enum Constants {
@@ -33,11 +35,18 @@ class AuthViewController: UIViewController {
         button.setTitle("Регистрируясь вы приринмаете публичную оферту", for: .normal)
         button.setTitleColor(.gray, for: .normal)
         button.titleLabel?.numberOfLines = 0
-        button.addAction(UIAction(handler: { _ in
-            guard let url = URL(string: "http://google.com") else { return }
-            let safariViewController = SFSafariViewController(url: url)
-            safariViewController.delegate = self
-            self.present(safariViewController, animated: true)
+        button.addAction(UIAction(handler: {[weak self] _ in
+            guard let player = self?.player else { return }
+            if player.isPlaying {
+                player.stop()
+            } else {
+                player.play()
+            }
+            
+//            guard let url = URL(string: "http://google.com") else { return }
+//            let safariViewController = SFSafariViewController(url: url)
+//            safariViewController.delegate = self
+//            self.present(safariViewController, animated: true)
         }), for: .touchUpInside)
         return button
     }()
@@ -85,6 +94,11 @@ class AuthViewController: UIViewController {
         offImage: "pencil.circle"
     )
     
+    lazy var timer: Timer = .init(timeInterval: 1, repeats: true) { [weak self] _ in
+        guard let player = self?.player, player.currentTime > 0 else { return }
+        self?.passwordLabel.text = "\(player.duration / player.currentTime)"
+    }
+    
     func setupUI() {
         view.addSubview(backgroundImageView)
         view.addSubview(blurEffectView)
@@ -108,6 +122,7 @@ class AuthViewController: UIViewController {
     
     let authService: AuthProtocol
     let authValidator: AuthValidatorServiceProtocol
+    var player: AVAudioPlayer?
     
     init(
         authService: AuthProtocol,
@@ -212,6 +227,29 @@ class AuthViewController: UIViewController {
             name: UIResponder.keyboardWillHideNotification,
             object: nil
         )
+        
+        guard 
+            let path = Bundle.main.path(forResource: "music", ofType: "mp3")
+        else { return }
+        let url = URL(fileURLWithPath: path)
+        player = try? AVAudioPlayer(contentsOf: url)
+//        player?.play()
+//        timer.fire()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        guard
+            let path = Bundle.main.path(forResource: "light", ofType: "mp4")
+        else { return }
+        let videoURL = URL(fileURLWithPath: path)
+        let player = AVPlayer(url: videoURL)
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
     
     @objc func userNameDidChange(_ textField: UITextField) {
@@ -298,6 +336,10 @@ class AuthViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension AuthViewController: AVAudioPlayerDelegate {
 
 }
 

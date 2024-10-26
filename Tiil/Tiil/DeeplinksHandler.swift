@@ -27,7 +27,10 @@ class DeeplinksHandler {
     }
     
     // Добавляет диплинк в хранилище диплинков для послед обработки
-    func register(_ factory: @escaping () -> UIViewController, for url: URL?) {
+    func register(
+        _ factory: @escaping () -> UIViewController,
+        for url: URL?
+    ) {
         guard let url else { return }
         registredRoutes[url] = factory
     }

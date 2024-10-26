@@ -16,22 +16,23 @@ class LaunchViewModel {
     }
     
     var screen: PassthroughSubject<Screen, API.ApiError> = .init()
+    var imagesStore: [UIImage] = []
+    
+    let queue = DispatchQueue(label: "com.launches", attributes: .concurrent)
     
     func loadLaunch(flightNumber: Int) {
         API.shared.getLaunch(flightNumber: flightNumber) { result in
             switch result {
             case let .success(launch):
-                DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-                    let images = self?.makeImages(
-                        urls: launch.links?.flickrImages?.compactMap { URL(string: $0) } ?? []
-                    )
-                    DispatchQueue.main.async {
-                        self?.screen.send(.init(
-                            title: launch.missionName ?? "NAME IS UNKNOWN",
-                            gallery: images ?? []
-                        ))
+                    DispatchQueue.main.async { [weak self] in
+                        self?.updateScreen(launch: launch)
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            self?.loadImages(
+                                launch: launch,
+                                urls: launch.links?.flickrImages?.compactMap { URL(string: $0) } ?? []
+                            )
+                        }
                     }
-                }
             case .failure(let failure):
                 self.screen.send(completion: .failure(failure))
             }
@@ -39,11 +40,27 @@ class LaunchViewModel {
     }
     
     
-    private func makeImages(urls: [URL]) -> [UIImage] {
-        return urls.map {
-            guard let data = try? Data(contentsOf: $0) else { return nil }
-            return UIImage(data: data)
-        }.compactMap { $0 }
+    private func updateScreen(
+        launch: LaunchModels.Launch
+    ) {
+        screen.send(.init(
+            title: launch.missionName ?? "NAME IS UNKNOWN",
+            gallery: imagesStore
+        ))
+    }
+    
+    
+    private func loadImages(
+        launch: LaunchModels.Launch,
+        urls: [URL]
+    ) {
+        urls.forEach {
+            guard let data = try? Data(contentsOf: $0), let image = UIImage(data: data) else { return }
+            imagesStore.append(image)
+            DispatchQueue.main.async { [weak self] in
+                self?.updateScreen(launch: launch)
+            }
+        }
     }
     
 }

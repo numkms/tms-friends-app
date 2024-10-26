@@ -45,6 +45,10 @@ class API {
         fetch(request: request, completion: completion)
     }
     
+    // completion: @escaping (Result<[Models.Launch], ApiError>) -> Void
+    
+    // completion: @escaping (Result<T, ApiError>) -> Void
+    
     func fetch<T: Decodable>(
         request: URLRequest,
         completion: @escaping (Result<T, ApiError>) -> Void

@@ -254,8 +254,8 @@
             filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "350"
-            endingLineNumber = "350"
+            startingLineNumber = "392"
+            endingLineNumber = "392"
             landmarkName = "safariViewController(_:activityItemsFor:title:)"
             landmarkType = "7">
             <Locations>
@@ -338,6 +338,293 @@
             endingLineNumber = "41"
             landmarkName = "menuItems"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2611863-858D-4410-BF04-E5B0CB45F5BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "AuthViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B2611863-858D-4410-BF04-E5B0CB45F5BA - c36733fe7bf16b80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Navigation.AuthViewController.licenseButton.getter : __C.UIButton"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "B2611863-858D-4410-BF04-E5B0CB45F5BA - c36733fe7bf16ba3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAction) -&gt; () in closure #1 () -&gt; __C.UIButton in Navigation.AuthViewController.licenseButton.getter : __C.UIButton"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27155AB2-4463-41E1-B5BB-D202DC00B642"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "init(timeInterval:repeats:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27155AB2-4463-41E1-B5BB-D202DC00B642 - 54d062dbccac8d86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Navigation.AuthViewController.timer.getter : __C.NSTimer"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "27155AB2-4463-41E1-B5BB-D202DC00B642 - 54d062dbccac8d86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Navigation.AuthViewController.timer.getter : __C.NSTimer"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "27155AB2-4463-41E1-B5BB-D202DC00B642 - 54d062dbccac8da5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Navigation.AuthViewController.timer.getter : __C.NSTimer"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C5DC3FC-7303-46C2-9A28-2612A06D72DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A34C94A-B14D-4B4E-B0E7-42F1BF63F275"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0A34C94A-B14D-4B4E-B0E7-42F1BF63F275 - 67adae8565dbeb13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "0A34C94A-B14D-4B4E-B0E7-42F1BF63F275 - 67adae8565dbeb13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C277F88-4ACF-4338-8190-80315CA2595A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C277F88-4ACF-4338-8190-80315CA2595A - 67adae8565dbeb30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "620">
+               </Location>
+               <Location
+                  uuid = "8C277F88-4ACF-4338-8190-80315CA2595A - 67adae8565dbeb30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "246"
+                  endingLineNumber = "246"
+                  offsetFromSymbolStart = "704">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE560C9A-2CD0-4CEF-AC47-C8D7F71A3BB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE560C9A-2CD0-4CEF-AC47-C8D7F71A3BB0 - 67adae8565dbead1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "1040">
+               </Location>
+               <Location
+                  uuid = "BE560C9A-2CD0-4CEF-AC47-C8D7F71A3BB0 - 67adae8565dbead1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Navigation.AuthViewController.viewDidAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Navigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Navigation/UserApplication/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "1124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B9724BF-B31D-4126-8A55-1F3A0FA2E3C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Navigation/UserApplication/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

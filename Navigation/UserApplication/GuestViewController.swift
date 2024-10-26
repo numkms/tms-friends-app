@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 class GuestViewController: UIViewController {
+    
     enum Constants {
         static var padding: CGFloat = 10
         static var radius: CGFloat = 20
@@ -26,9 +29,23 @@ class GuestViewController: UIViewController {
         self.present(navigationViewController, animated: true)
     }))
     lazy var wrapper = UIView()
+    
+    private let locationManager = CLLocationManager()
+    
+    lazy var mapView: MKMapView = .init()
+    var userOverlay: MKCircle?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.startUpdatingLocation()
+        }
         
         // MARK: - Add background
         view.addSubview(backgroundImageView)
@@ -98,6 +115,9 @@ class GuestViewController: UIViewController {
             object: nil
         )
     
+        view.addSubview(mapView)
+        mapView.frame = view.bounds
+        mapView.delegate = self
     }
     
     @objc func userDidLogin(_ notification: Notification) {
@@ -125,4 +145,31 @@ class GuestViewController: UIViewController {
     }
     */
 
+}
+
+
+extension GuestViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+           var circle = MKCircleRenderer(overlay: overlay)
+           circle.strokeColor = UIColor.red
+           circle.fillColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.1)
+           circle.lineWidth = 1
+           return circle
+    }
+}
+
+extension GuestViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let coordinate = locations.first?.coordinate {
+            mapView.setCenter(coordinate, animated: true)
+            mapView.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1000), animated: true)
+            if let userOverlay {
+                mapView.removeOverlay(userOverlay)
+            }
+            userOverlay = .init(center: coordinate, radius: 10)
+            if let userOverlay {
+                mapView.addOverlay(userOverlay)
+            }
+        }
+    }
 }
