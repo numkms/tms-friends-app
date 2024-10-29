@@ -34,6 +34,11 @@ class GuestViewController: UIViewController {
     
     lazy var mapView: MKMapView = .init()
     var userOverlay: MKCircle?
+    lazy var slider: UISlider = .init(frame: .zero)
+    
+    @objc func sliderChanged() {
+        mapView.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: zoomValue), animated: false)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +51,8 @@ class GuestViewController: UIViewController {
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
+        slider.value = 1
+        slider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
         
         // MARK: - Add background
         view.addSubview(backgroundImageView)
@@ -114,10 +121,19 @@ class GuestViewController: UIViewController {
             name: NSNotification.Name("userDidLogin"),
             object: nil
         )
-    
+        
         view.addSubview(mapView)
+        
         mapView.frame = view.bounds
         mapView.delegate = self
+        
+        view.addSubview(slider)
+        slider.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            slider.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            slider.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            slider.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+        ])
     }
     
     @objc func userDidLogin(_ notification: Notification) {
@@ -159,17 +175,20 @@ extension GuestViewController: MKMapViewDelegate {
 }
 
 extension GuestViewController: CLLocationManagerDelegate {
+    
+    var zoomValue: Double {
+        Double(slider.value) * 10000
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let coordinate = locations.first?.coordinate {
-            mapView.setCenter(coordinate, animated: true)
-            mapView.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 1000), animated: true)
-            if let userOverlay {
-                mapView.removeOverlay(userOverlay)
-            }
+            mapView.setCenter(coordinate, animated: false)
+            print("Zoom value", zoomValue)
+            mapView.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: zoomValue), animated: true)
+            if let userOverlay { mapView.removeOverlay(userOverlay) }
             userOverlay = .init(center: coordinate, radius: 10)
-            if let userOverlay {
-                mapView.addOverlay(userOverlay)
-            }
+            if let userOverlay { mapView.addOverlay(userOverlay) }
         }
     }
 }

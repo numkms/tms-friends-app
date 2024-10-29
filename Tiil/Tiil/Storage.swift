@@ -9,16 +9,56 @@ import Foundation
 import CoreData
 import UIKit
 import RealmSwift
+import FirebaseFirestore
 
 protocol TargetsStorage {
-    func add(target: Target)
-    func preparedTargets() -> [Target]
-    func delete(target: Target)
-    func addNote(note: Note, to: Target)
+    func add(target: Target) async
+    func preparedTargets() async -> [Target]
+    func delete(target: Target) async
+    func addNote(note: Note, to: Target) async
+}
+
+class TillFirebaseStorage: TargetsStorage {
+    
+    lazy var db: Firestore = Firestore.firestore()
+    
+    func add(target: Target) async {
+        
+    }
+    
+    func preparedTargets() async -> [Target] {
+        do {
+          let querySnapshot = try await db.collection("targets").getDocuments()
+            return querySnapshot.documents.map {
+                let data = $0.data()
+                let timestamp = (data["date"] as? Double)
+                return Target(
+                    id: $0.documentID,
+                    name: (data["name"] as? String) ?? "",
+                    date: Date(timeIntervalSince1970: timestamp ?? .zero),
+                    connectedContact: .init(
+                        name: "",
+                        phone: ""
+                    ),
+                    notes: []
+                )
+            }
+        } catch {
+          return []
+        }
+    }
+    
+    func delete(target: Target) async {
+        
+    }
+    
+    func addNote(note: Note, to: Target)  async {
+        
+    }
 }
 
 class RealmDataStorage: TargetsStorage {
-    
+
     var realm: Realm {
         try! Realm()
     }

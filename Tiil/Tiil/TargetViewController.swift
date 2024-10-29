@@ -59,13 +59,16 @@ class TargetViewController: UIViewController {
     @objc
     func add() {
         guard let text = textField.text else { return }
-        storage.addNote(
-            note: .init(
-                message: text,
-                createdAt: .now
-            ),
-            to: target
-        )
+        Task {
+            await storage.addNote(
+                note: .init(
+                    message: text,
+                    createdAt: .now
+                ),
+                to: target
+            )
+        }
+        
         textField.text = nil
     }
     

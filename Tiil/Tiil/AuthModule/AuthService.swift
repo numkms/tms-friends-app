@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 struct User {
     let name: String
@@ -16,7 +19,7 @@ enum AuthError: Error {
 }
 
 protocol AuthProtocol {
-    func auth(login: String, password: String) -> Result<User, AuthError>
+    func auth(login: String, password: String) async -> Result<User, AuthError>
     func logout()
 }
 
@@ -31,6 +34,24 @@ class UserStorageService: UserStorageProtocol {
         "nikita@yahoo.com": "JKDIwqi1dnni1@22n##",
         "1": "1",
     ]
+}
+
+class AuthServiceFirebase: AuthProtocol {
+    func auth(
+        login: String,
+        password: String
+    ) async -> Result<User, AuthError> {
+        do {
+            let result = try await Auth.auth().createUser(withEmail: login, password: password)
+            return .success(.init(name: result.user.uid))
+        } catch {
+            return .failure(.wrongPassword)
+        }
+    }
+    
+    func logout() {
+        
+    }
 }
 
 class AuthService: AuthProtocol {

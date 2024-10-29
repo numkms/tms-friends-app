@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -31,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 }
             }, for: URL(string: DeeplinksHandler.defaultScheme + "till/create"))
             deeplinksHandler?.register({
-                return AuthViewController()
+                return AuthViewControllerSecurity()
             }, for: URL(string: DeeplinksHandler.defaultScheme + "till/auth"))
             deeplinksHandler?.register({
                 return PlusOneViewController()
@@ -44,6 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         initHandler()
+        FirebaseApp.configure()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

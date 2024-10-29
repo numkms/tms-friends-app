@@ -278,18 +278,31 @@ class AuthViewController: UIViewController {
         }), for: .touchUpInside)
     }
     
+    @MainActor
+    func showCreateTarget() {
+        
+        let viewController = CreateTargetViewController()
+        clear()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @MainActor
+    func error() {
+        clear()
+        statusLabel.text = "Не правильный логин или пароль"
+    }
+    
     func login() {
         let login = userNameField.text
         let password = passwordField.text
-        
-        if let login = validate(login ?? "", password ?? "") {
-            let viewController = UserMenuTableViewController()
-            clear()
-            navigationController?.pushViewController(viewController, animated: true)
-        } else {
-            clear()
-            statusLabel.text = "Не правильный логин или пароль"
+        Task {
+            if let login =  await validate(login ?? "", password ?? "") {
+                showCreateTarget()
+            } else {
+                error()
+            }
         }
+        
     }
     
     @objc func keyboardDidOpen(_ notification: Notification) {
@@ -318,8 +331,8 @@ class AuthViewController: UIViewController {
         passwordField.text = nil
     }
     
-    func validate(_ login: String, _ password: String) -> String?  {
-        switch authService.auth(login: login, password: password) {
+    func validate(_ login: String, _ password: String) async -> String?  {
+        switch await authService.auth(login: login, password: password) {
         case let .success(user):
             return user.name
         case .failure(_):
@@ -425,4 +438,39 @@ extension AuthViewController: UITextFieldDelegate {
     }
 }
 
-    
+
+
+
+
+
+protocol ProfileEditDelegate {
+    func didChangedField(name: String, value: String)
+}
+
+protocol ProfileEditFactory {
+    init(delegate: ProfileEditDelegate)
+}
+
+protocol ProfileEditViewController {
+    var delegate: ProfileEditDelegate? { get set }
+    func savedSuccessfuly()
+}
+protocol ProfileEditInteractor {
+    func validate(value: String)
+}
+protocol ProfileEditPresenter {
+    func didInput(value: String)
+    func updateView(error: String?)
+}
+
+
+class Profile1ViewController {}
+protocol Profile1Interactor {}
+protocol Profile1Presenter {}
+
+
+extension Profile1ViewController: ProfileEditDelegate {
+    func didChangedField(name: String, value: String) {
+        
+    }
+}

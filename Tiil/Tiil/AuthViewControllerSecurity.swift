@@ -8,12 +8,12 @@
 import UIKit
 import Security
 
-struct User {
+struct SecurityUser {
     let login: String
 }
 
 protocol AuthViewDelegate: AnyObject {
-    func login(login: String?, password: String?) -> Result<User, AuthViewDelegateLoginError>
+    func login(login: String?, password: String?) -> Result<SecurityUser, AuthViewDelegateLoginError>
     func register(login: String?, password: String?) -> Result<Void, AuthViewDelegateRegisterError>
 }
 enum AuthViewDelegateLoginError: Error {
@@ -47,7 +47,7 @@ enum AuthViewDelegateRegisterError: Error {
     }
 }
 
-final class AuthViewController: UIViewController {
+final class AuthViewControllerSecurity: UIViewController {
     var contentView: AuthView = .init()
     
     override func loadView() {
@@ -60,11 +60,11 @@ final class AuthViewController: UIViewController {
     }
 }
 
-extension AuthViewController: AuthViewDelegate {
+extension AuthViewControllerSecurity: AuthViewDelegate {
     func login(
         login: String?,
         password: String?
-    ) -> Result<User, AuthViewDelegateLoginError> {
+    ) -> Result<SecurityUser, AuthViewDelegateLoginError> {
         guard let password, !password.isEmpty else {
             return .failure(.emptyPassword)
         }
@@ -84,7 +84,7 @@ extension AuthViewController: AuthViewDelegate {
         let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
         
         if status == errSecSuccess, let retrievedData = dataTypeRef as? Data, let retrievedPassword = String(data: retrievedData, encoding: .utf8), password == retrievedPassword {
-            return .success(User(login: login))
+            return .success(SecurityUser(login: login))
         } else {
             return .failure(.wrongLoginOrPassword)
         }

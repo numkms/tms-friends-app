@@ -16,6 +16,7 @@ class TargetService {
         self.storage = storage
     }
     
+    @MainActor
     private func addToPushSchedule(name: String, date: Date) {
         let message = "\(name) наступило! Отпразднуйте с нами! 🥳"
         let content = UNMutableNotificationContent()
@@ -44,18 +45,21 @@ class TargetService {
         name: String,
         date: Date,
         contact: Target.Contact?
-    ) -> Target {
-        let target = Target(id: String(storage.preparedTargets().count), name: name, date: date, connectedContact: contact, notes: [])
-        storage.add(target: target)
-        addToPushSchedule(name: name, date: date)
-        return target
+    ) {
+        Task { [weak self] in
+            let count = await storage.preparedTargets().count
+            let target = Target(id: String(count), name: name, date: date, connectedContact: contact, notes: [])
+            await storage.add(target: target)
+            await self?.addToPushSchedule(name: name, date: date)
+        }
     }
     
-    var currentTargets: [Target] {
-        storage.preparedTargets()
-    }
+    
     
     func delete(target: Target) {
-        storage.delete(target: target)
+        Task {
+            await storage.delete(target: target)
+        }
+
     }
 }
