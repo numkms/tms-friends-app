@@ -54,8 +54,6 @@ class TargetService {
         }
     }
     
-    
-    
     func delete(target: Target) {
         Task {
             await storage.delete(target: target)

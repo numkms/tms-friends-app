@@ -302,7 +302,7 @@ class AuthViewController: UIViewController {
                 error()
             }
         }
-        
+        print("Task setted")
     }
     
     @objc func keyboardDidOpen(_ notification: Notification) {
@@ -331,7 +331,7 @@ class AuthViewController: UIViewController {
         passwordField.text = nil
     }
     
-    func validate(_ login: String, _ password: String) async -> String?  {
+    func validate(_ login: String, _ password: String) async -> String?  { 
         switch await authService.auth(login: login, password: password) {
         case let .success(user):
             return user.name

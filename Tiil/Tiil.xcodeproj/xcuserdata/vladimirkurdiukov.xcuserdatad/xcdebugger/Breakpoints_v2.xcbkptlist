@@ -177,6 +177,21 @@
                   endingLineNumber = "98"
                   offsetFromSymbolStart = "3884">
                </Location>
+               <Location
+                  uuid = "E2741C0C-DA53-4405-9EFE-726C08B32F48 - 39704204710febd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.TargetViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/TargetViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "3884">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -468,7 +483,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BE58955C-7DFD-4910-A6F9-68095E6D57A6"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/DeeplinksHandler.swift"
@@ -516,7 +531,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "94D2A473-8FF8-4930-8340-105F2FCAFBD6"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/DeeplinksHandler.swift"
@@ -596,7 +611,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4BB5C3D3-38E3-4A7C-B9D2-928D7F281C85"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/DeeplinksHandler.swift"
@@ -644,7 +659,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B1110767-CDEC-4462-948A-34E44F9C63E4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/DeeplinksHandler.swift"
@@ -819,7 +834,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "16C3A3F6-1E69-4536-9E8A-C434384E3F25"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tiil/SceneDelegate.swift"
@@ -989,6 +1004,497 @@
                   offsetFromSymbolStart = "112">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00823BC7-B614-41CB-8C73-7F8C9B7D80DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "300"
+            endingLineNumber = "300"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "00823BC7-B614-41CB-8C73-7F8C9B7D80DC - 4959c7f2b5ea96a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "00823BC7-B614-41CB-8C73-7F8C9B7D80DC - b782f496bc580878"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "00823BC7-B614-41CB-8C73-7F8C9B7D80DC - 54d82561ab242aa5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "00823BC7-B614-41CB-8C73-7F8C9B7D80DC - 54d82561ab242aa5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "300"
+                  endingLineNumber = "300"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5801E32D-F991-4FD1-AB07-A22E4D3AFC80"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5801E32D-F991-4FD1-AB07-A22E4D3AFC80 - 54d82561ab242b67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "5801E32D-F991-4FD1-AB07-A22E4D3AFC80 - 54d82561ab242b67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "302"
+                  endingLineNumber = "302"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE0C429F-444E-45A8-94EE-CFCCB4A0A51C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FE0C429F-444E-45A8-94EE-CFCCB4A0A51C - 63ad081529f8e195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "FE0C429F-444E-45A8-94EE-CFCCB4A0A51C - 63ad081529f8e195"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "297"
+                  endingLineNumber = "297"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "261066E6-1A23-4E1C-B04B-4BA8C2CE4850"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "261066E6-1A23-4E1C-B04B-4BA8C2CE4850 - 54d82561ab242b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "261066E6-1A23-4E1C-B04B-4BA8C2CE4850 - 54d82561ab242b39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6F09484-EC0C-442F-AA7F-08A9B755A7C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "306"
+            endingLineNumber = "306"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89DEB32D-4943-4F78-8425-3BB690C86DB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
+            landmarkName = "login()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "89DEB32D-4943-4F78-8425-3BB690C86DB2 - 54d82561ab242b18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "89DEB32D-4943-4F78-8425-3BB690C86DB2 - 63ad081529f8e08d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tiil.AuthViewController.login() -&gt; ()"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "720">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F2BFE5E-6E8A-452F-8D7C-927059A9300E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "auth(login:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "652BEB79-3945-4068-9ADC-DC3E877AFBD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "validate(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "652BEB79-3945-4068-9ADC-DC3E877AFBD5 - 23ca6c6cb17eb443"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tiil.AuthViewController.validate(Swift.String, Swift.String) async -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "652BEB79-3945-4068-9ADC-DC3E877AFBD5 - 296481cef11af877"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Tiil.AuthViewController.validate(Swift.String, Swift.String) async -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "652BEB79-3945-4068-9ADC-DC3E877AFBD5 - 6f03e6e08a47e845"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tiil.AuthViewController.validate(Swift.String, Swift.String) async -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "335"
+                  endingLineNumber = "335"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A76D863-A23B-44C9-93F3-61B9CF277BB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "auth(login:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A76D863-A23B-44C9-93F3-61B9CF277BB7 - 644b427c19c0c8ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tiil.AuthServiceFirebase.auth(login: Swift.String, password: Swift.String) async -&gt; Swift.Result&lt;Tiil.User, Tiil.AuthError&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1A76D863-A23B-44C9-93F3-61B9CF277BB7 - e15572a40c72cddb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Tiil.AuthServiceFirebase.auth(login: Swift.String, password: Swift.String) async -&gt; Swift.Result&lt;Tiil.User, Tiil.AuthError&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "1A76D863-A23B-44C9-93F3-61B9CF277BB7 - cedb9fbfcd24249b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tiil.AuthServiceFirebase.auth(login: Swift.String, password: Swift.String) async -&gt; Swift.Result&lt;Tiil.User, Tiil.AuthError&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "1A76D863-A23B-44C9-93F3-61B9CF277BB7 - 85920e5ed8dbd690"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Tiil.AuthServiceFirebase.auth(login: Swift.String, password: Swift.String) async -&gt; Swift.Result&lt;Tiil.User, Tiil.AuthError&gt;"
+                  moduleName = "Tiil"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Tiil/Tiil/AuthModule/AuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2ECC02A-1044-4192-8E0E-8612496109D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "validate(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A136060-D955-43B9-8657-C2A7990A5DE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "validate(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82E97CC6-86F1-4CA9-8DED-E46AD03E1286"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tiil/AuthModule/AuthViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "validate(_:_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

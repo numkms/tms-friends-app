@@ -36,7 +36,7 @@ class UserStorageService: UserStorageProtocol {
     ]
 }
 
-class AuthServiceFirebase: AuthProtocol {
+actor AuthServiceFirebase: AuthProtocol {
     func auth(
         login: String,
         password: String
@@ -49,7 +49,7 @@ class AuthServiceFirebase: AuthProtocol {
         }
     }
     
-    func logout() {
+    nonisolated func logout() {
         
     }
 }

@@ -29,19 +29,20 @@ class TillFirebaseStorage: TargetsStorage {
     func preparedTargets() async -> [Target] {
         do {
           let querySnapshot = try await db.collection("targets").getDocuments()
-            return querySnapshot.documents.map {
-                let data = $0.data()
-                let timestamp = (data["date"] as? Double)
-                return Target(
-                    id: $0.documentID,
-                    name: (data["name"] as? String) ?? "",
-                    date: Date(timeIntervalSince1970: timestamp ?? .zero),
-                    connectedContact: .init(
-                        name: "",
-                        phone: ""
-                    ),
-                    notes: []
-                )
+            
+          return querySnapshot.documents.compactMap {
+                return try? $0.data(as: Target.self)
+//                let timestamp = (data["date"] as? Double)
+//                return Target(
+//                    id: $0.documentID,
+//                    name: (data["name"] as? String) ?? "",
+//                    date: Date(timeIntervalSince1970: timestamp ?? .zero),
+//                    connectedContact: .init(
+//                        name: "",
+//                        phone: ""
+//                    ),
+//                    notes: []
+//                )
             }
         } catch {
           return []

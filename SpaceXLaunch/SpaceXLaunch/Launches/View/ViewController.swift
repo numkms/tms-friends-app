@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import CoreMotion
 
 
 class LaunchesViewController: UIViewController {
@@ -40,6 +41,9 @@ class LaunchesViewController: UIViewController {
 }
 
 class CombineViewController: UIViewController {
+    
+    let motion = CMMotionManager()
+    
     lazy var launchesView: LaunchesView = .init { [weak self] launchId in
         self?.present(LaunchViewController(viewModel: .init(), launchID: launchId), animated: true)
     }
@@ -61,6 +65,10 @@ class CombineViewController: UIViewController {
         view = launchesView
     }
     
+    let pointView = UIView()
+    
+    let queue = OperationQueue()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.launches.sink { error in
@@ -69,6 +77,44 @@ class CombineViewController: UIViewController {
             self?.launchesView.launches = launches
         }.store(in: &cancellable)
         viewModel.loadLaunch()
+        
+        motion.gyroUpdateInterval = 0.8
+        motion.accelerometerUpdateInterval = 0.5
+        motion.deviceMotionUpdateInterval = 0.5
+        
+        motion.startGyroUpdates(to: queue) { data, error in
+            DispatchQueue.main.async {
+                guard let data else { return }
+//                let size = 100 - (data.rotationRate.z * 50)
+//                self.pointView.frame = .init(origin: .init(x: data.rotationRate.x, y: data.rotationRate.y), size: .init(width: size, height: size))
+//                print("X: \(data.rotationRate.x), Y: \(data.rotationRate.y), Z: \(data.rotationRate.z)")
+            }
+        }
+        
+        
+        motion.startAccelerometerUpdates(to: queue, withHandler: { data, error in
+            DispatchQueue.main.async {
+                guard let z = data?.acceleration.z, let x = data?.acceleration.x, let y = data?.acceleration.y else { return }
+                let size = 100 - ( z * 50)
+                self.pointView.frame = .init(origin: .init(x: x, y: y), size: .init(width: size, height: size))
+                print("X: \(x), Y: \(y), Z: \(z)")
+            }
+        })
+        
+        motion.startDeviceMotionUpdates(to: queue, withHandler: { data, error in
+            if let error {
+                print("Error:", error)
+            }
+            guard let data else { return }
+            DispatchQueue.main.async {
+                print("Magnetic field: ", data.magneticField)
+                print("Magnetic field: ", data.magneticField)
+            }
+        })
+        
+        view.addSubview(pointView)
+        pointView.backgroundColor = .red
+        pointView.frame = .init(origin: .zero, size: .init(width: 10, height: 10))
     }
     
     deinit {
