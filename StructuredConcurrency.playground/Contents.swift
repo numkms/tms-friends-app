@@ -20,16 +20,18 @@ class B {
 }
 
 print("Task placed")
+
+print("A")
 Task {
     let a = A()
-    print("A Created")
-    await a.start()
-    print("A did count")
     await a.start()
     await a.start()
     await a.start()
     await a.start()
+    await a.start()
+    print("B")
 }
+print("C")
 
 Task {
     let a = A()
@@ -47,6 +49,10 @@ Task {
             await a.start()
         }
     }
+    /// Загрузилось
 }
 print("After task placed")
+
+
+
 

@@ -25,7 +25,6 @@ class LaunchesViewModel {
             case .failure:
                 self?.launches.value = []
             }
-            
         }
     }
 }

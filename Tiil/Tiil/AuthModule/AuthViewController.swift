@@ -50,21 +50,15 @@ class AuthViewController: UIViewController {
         }), for: .touchUpInside)
         return button
     }()
-    
     lazy var wrapper = UIStackView()
-    
     lazy var buttonsStack = UIStackView()
-     
-    
     lazy var backgroundImageView = UIImageView(
         image: .authbackground
     )
-    
     lazy var blurEffect = UIBlurEffect(style: .light)
     lazy var wrapperBlurEffect = UIBlurEffect(style: .prominent)
     lazy var blurEffectView = UIVisualEffectView(effect: blurEffect)
     lazy var wrapperBlurEffectView = UIVisualEffectView(effect: wrapperBlurEffect)
-
     lazy var toggleSwitch = ToggleSwitchControl(frame: .init(
         x: view.bounds.width / 2,
         y: 50,

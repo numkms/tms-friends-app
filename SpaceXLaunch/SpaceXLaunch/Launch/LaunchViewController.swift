@@ -9,37 +9,34 @@ import UIKit
 import Combine
 
 class LaunchViewModel {
-    
     struct Screen {
         let title: String
         let gallery: [UIImage]
     }
     
+    @MainActor
     var screen: PassthroughSubject<Screen, API.ApiError> = .init()
+    
     var imagesStore: [UIImage] = []
     
     let queue = DispatchQueue(label: "com.launches", attributes: .concurrent)
     
     func loadLaunch(flightNumber: Int) {
-        API.shared.getLaunch(flightNumber: flightNumber) { result in
+        Task {
+            let result = await API.shared.getLaunch(flightNumber: flightNumber)
             switch result {
             case let .success(launch):
-                    DispatchQueue.main.async { [weak self] in
-                        self?.updateScreen(launch: launch)
-                        DispatchQueue.global(qos: .userInitiated).async {
-                            self?.loadImages(
-                                launch: launch,
-                                urls: launch.links?.flickrImages?.compactMap { URL(string: $0) } ?? []
-                            )
-                        }
-                    }
+                await updateScreen(launch: launch)
+                if  let urls = launch.links?.flickrImages?.compactMap({ URL(string: $0) }), urls.count > 0 {
+                        await self.loadImages(launch: launch, urls:  urls)
+                }
             case .failure(let failure):
-                self.screen.send(completion: .failure(failure))
+                await self.screen.send(completion: .failure(failure))
             }
         }
     }
     
-    
+    @MainActor
     private func updateScreen(
         launch: LaunchModels.Launch
     ) {
@@ -49,16 +46,18 @@ class LaunchViewModel {
         ))
     }
     
-    
     private func loadImages(
         launch: LaunchModels.Launch,
         urls: [URL]
-    ) {
-        urls.forEach {
-            guard let data = try? Data(contentsOf: $0), let image = UIImage(data: data) else { return }
-            imagesStore.append(image)
-            DispatchQueue.main.async { [weak self] in
-                self?.updateScreen(launch: launch)
+    ) async {
+        await withTaskGroup(of: UIImage?.self) { group in
+            urls.forEach { url in
+                group.addTask {
+                    guard let data = try? Data(contentsOf: url), let image = UIImage(data: data) else { return nil }
+                    self.imagesStore.append(image)
+                    await self.updateScreen(launch: launch)
+                    return image
+                }
             }
         }
     }

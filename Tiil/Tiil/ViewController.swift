@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     let cellReuseIdentifier = "targetCell"
     
+    @MainActor
     var targets: [Target] = [] {
         didSet {
             tableView.reloadData()
@@ -61,17 +62,17 @@ class ViewController: UIViewController {
     }
     
     @objc func login() {
-        let factory = AuthFactory(
-            authService: AuthServiceFirebase()
-        )
+        let factory = AuthFactory(authService: AuthServiceFirebase())
         self.present(factory.build(), animated: true)
     }
 }
 
 extension ViewController: CreateTargetViewControllerDelegate {
     func didCreateTarget(name: String, date: Date, contact: Target.Contact?) {
-        _ = targetService.createTarget(name: name, date: date, contact: contact)
-        tableView.reloadData()
+        Task {
+            _ = await targetService.createTarget(name: name, date: date, contact: contact)
+            targets = await targetService.storage.preparedTargets()
+        }
     }
 }
 

@@ -23,26 +23,20 @@ class TillFirebaseStorage: TargetsStorage {
     lazy var db: Firestore = Firestore.firestore()
     
     func add(target: Target) async {
-        
+        do {
+            try db.collection("targets").document().setData(from: target)
+        } catch {
+            print(error)
+        }
     }
     
     func preparedTargets() async -> [Target] {
         do {
           let querySnapshot = try await db.collection("targets").getDocuments()
-            
           return querySnapshot.documents.compactMap {
-                return try? $0.data(as: Target.self)
-//                let timestamp = (data["date"] as? Double)
-//                return Target(
-//                    id: $0.documentID,
-//                    name: (data["name"] as? String) ?? "",
-//                    date: Date(timeIntervalSince1970: timestamp ?? .zero),
-//                    connectedContact: .init(
-//                        name: "",
-//                        phone: ""
-//                    ),
-//                    notes: []
-//                )
+                var target = try! $0.data(as: Target.self)
+                target.id = $0.documentID
+                return target
             }
         } catch {
           return []

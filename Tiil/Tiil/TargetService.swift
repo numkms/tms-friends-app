@@ -45,13 +45,11 @@ class TargetService {
         name: String,
         date: Date,
         contact: Target.Contact?
-    ) {
-        Task { [weak self] in
-            let count = await storage.preparedTargets().count
-            let target = Target(id: String(count), name: name, date: date, connectedContact: contact, notes: [])
-            await storage.add(target: target)
-            await self?.addToPushSchedule(name: name, date: date)
-        }
+    ) async {
+        let count = await storage.preparedTargets().count
+        let target = Target(id: String(count), name: name, date: date, connectedContact: contact, notes: [])
+        await storage.add(target: target)
+        await addToPushSchedule(name: name, date: date)
     }
     
     func delete(target: Target) {

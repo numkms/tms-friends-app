@@ -30,6 +30,7 @@
 		E574A06D2CB4619A00A296B1 /* CreateTargetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A06C2CB4619A00A296B1 /* CreateTargetInteractor.swift */; };
 		E574A06F2CB461A600A296B1 /* CreateTargetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A06E2CB461A600A296B1 /* CreateTargetRouter.swift */; };
 		E5973EBD2CD9388400030C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5973EBC2CD9388400030C43 /* GoogleService-Info.plist */; };
+		E5973EC32CDBEE3F00030C43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5973EC22CDBEE3F00030C43 /* GoogleService-Info.plist */; };
 		E59ABAC32CC01F6A00662C97 /* PlusOneMVPFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ABAC22CC01F6A00662C97 /* PlusOneMVPFactory.swift */; };
 		E5A6905D2CD0020600DA44B8 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A690582CD0020600DA44B8 /* AuthViewController.swift */; };
 		E5A6905E2CD0020600DA44B8 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A690592CD0020600DA44B8 /* AuthFactory.swift */; };
@@ -92,6 +93,7 @@
 		E574A06C2CB4619A00A296B1 /* CreateTargetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTargetInteractor.swift; sourceTree = "<group>"; };
 		E574A06E2CB461A600A296B1 /* CreateTargetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTargetRouter.swift; sourceTree = "<group>"; };
 		E5973EBC2CD9388400030C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E5973EC22CDBEE3F00030C43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E59ABAC22CC01F6A00662C97 /* PlusOneMVPFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusOneMVPFactory.swift; sourceTree = "<group>"; };
 		E5A690582CD0020600DA44B8 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		E5A690592CD0020600DA44B8 /* AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				E55F88EB2C7FA8E700894415 /* TargetViewController.swift */,
 				E5A690642CD0085700DA44B8 /* GoogleService-Info.plist */,
 				E5973EBC2CD9388400030C43 /* GoogleService-Info.plist */,
+				E5973EC22CDBEE3F00030C43 /* GoogleService-Info.plist */,
 				E5BEA4572CAB13C000DDC288 /* Note.swift */,
 				E574A05D2CADAB3800A296B1 /* AuthViewControllerSecurity.swift */,
 				E574A0602CB4489C00A296B1 /* PlusOneViewController.swift */,
@@ -323,6 +326,7 @@
 				E5973EBD2CD9388400030C43 /* GoogleService-Info.plist in Resources */,
 				E55F88D92C7FA04300894415 /* Assets.xcassets in Resources */,
 				E55F88D72C7FA04100894415 /* Main.storyboard in Resources */,
+				E5973EC32CDBEE3F00030C43 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

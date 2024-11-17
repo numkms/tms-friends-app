@@ -22,6 +22,8 @@
 		E574A09D2CB6F1B800A296B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09C2CB6F1B800A296B1 /* MainViewController.swift */; };
 		E574A0A02CB6FBA100A296B1 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A09F2CB6FBA100A296B1 /* Bindable.swift */; };
 		E574A0A52CB7033F00A296B1 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */; };
+		E5973EBF2CDBC7A300030C43 /* GyroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5973EBE2CDBC7A300030C43 /* GyroViewController.swift */; };
+		E5973EC12CDBC84C00030C43 /* AccViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5973EC02CDBC84C00030C43 /* AccViewController.swift */; };
 		E5AB84D42CC6D1B800AE8089 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB84D32CC6D1B800AE8089 /* LaunchViewController.swift */; };
 		E5AB84D82CC6D39B00AE8089 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB84D72CC6D39B00AE8089 /* API.swift */; };
 		E5BFA2162CC028DE003E6FC4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E5BFA2182CC028DE003E6FC4 /* Localizable.strings */; };
@@ -45,6 +47,8 @@
 		E574A09C2CB6F1B800A296B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E574A09F2CB6FBA100A296B1 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		E574A0A42CB7033F00A296B1 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		E5973EBE2CDBC7A300030C43 /* GyroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroViewController.swift; sourceTree = "<group>"; };
+		E5973EC02CDBC84C00030C43 /* AccViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccViewController.swift; sourceTree = "<group>"; };
 		E59ABAC42CC025CA00662C97 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		E59ABAC52CC025CA00662C97 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E5AB84D32CC6D1B800AE8089 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				E574A0852CB6E48B00A296B1 /* SpaceXLaunch.xcdatamodeld */,
 				E574A09C2CB6F1B800A296B1 /* MainViewController.swift */,
 				E5AB84D72CC6D39B00AE8089 /* API.swift */,
+				E5973EBE2CDBC7A300030C43 /* GyroViewController.swift */,
+				E5973EC02CDBC84C00030C43 /* AccViewController.swift */,
 			);
 			path = SpaceXLaunch;
 			sourceTree = "<group>";
@@ -247,10 +253,12 @@
 				E53FE4552CBD991200E30595 /* CombineLaunchViewModel.swift in Sources */,
 				E574A0812CB6E48B00A296B1 /* ViewController.swift in Sources */,
 				E574A0972CB6E85600A296B1 /* Models.swift in Sources */,
+				E5973EC12CDBC84C00030C43 /* AccViewController.swift in Sources */,
 				E574A07D2CB6E48B00A296B1 /* AppDelegate.swift in Sources */,
 				E574A0992CB6EE1000A296B1 /* LaunchPresenter.swift in Sources */,
 				E574A0A52CB7033F00A296B1 /* LaunchViewModel.swift in Sources */,
 				E574A09D2CB6F1B800A296B1 /* MainViewController.swift in Sources */,
+				E5973EBF2CDBC7A300030C43 /* GyroViewController.swift in Sources */,
 				E574A07F2CB6E48B00A296B1 /* SceneDelegate.swift in Sources */,
 				E574A09B2CB6EE1A00A296B1 /* LaunchInteractor.swift in Sources */,
 			);

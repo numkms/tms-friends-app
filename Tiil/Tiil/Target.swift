@@ -13,7 +13,7 @@ struct Target: Codable, Equatable {
         let name: String
         let phone: String
     }
-    let id: String
+    var id: String!
     let name: String
     let date: Date
     let connectedContact: Contact?
