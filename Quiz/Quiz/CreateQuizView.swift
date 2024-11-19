@@ -17,6 +17,31 @@ struct Quiz: Codable, Identifiable {
     var id: String { name }
     let name: String
     let items: [QuizItem]
+    
+    #if DEBUG
+    static func makeMock() -> Quiz {
+        return .init(name: "Ну что там с деньгами?", items: [
+            .init(question: "С какими деньгами? 1", answers: [
+                .init(id: 0, text: "Который я вложил", isCorrect: true),
+                .init(id: 1, text: "Что?", isCorrect: false),
+                .init(id: 2, text: "Где?", isCorrect: false),
+                .init(id: 2, text: "Когда?", isCorrect: false)
+            ]),
+            .init(question: "С какими деньгами? 2", answers: [
+                .init(id: 0, text: "Который я вложил", isCorrect: true),
+                .init(id: 1, text: "Что?", isCorrect: false),
+                .init(id: 2, text: "Где?", isCorrect: false),
+                .init(id: 2, text: "Когда?", isCorrect: false)
+            ]),
+            .init(question: "С какими деньгами? 3", answers: [
+                .init(id: 0, text: "Который я вложил", isCorrect: true),
+                .init(id: 1, text: "Что?", isCorrect: false),
+                .init(id: 2, text: "Где?", isCorrect: false),
+                .init(id: 2, text: "Когда?", isCorrect: false)
+            ])
+        ])
+    }
+    #endif
 }
 
 class CreateQuizViewModel: ObservableObject {

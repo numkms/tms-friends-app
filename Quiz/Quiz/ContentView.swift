@@ -20,7 +20,6 @@ struct HelloWorldView: View {
             helloWorldMessage = "asdas"
             something = "1111"
         }
-        
     }
 }
 

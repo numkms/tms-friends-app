@@ -21,15 +21,15 @@ struct QuizList: View {
                 NavigationLink("Добавить квиз", isActive: $isNewQuizFormShowed, destination: {
                     CreateQuizView(hideToggle: $isNewQuizFormShowed)
                 }).foregroundStyle(Color.blue)
-                ForEach(storage.list()) { item in
-                    NavigationLink(
-                        destination: Text(item.items.reduce("", { partialResult, item in
-                        item.answers.reduce("") { partialResult, answer in
-                            partialResult + ", " + answer.text
-                        }
-                    }))) { Text(item.name) }
-                }
+                ForEach(storage.list()) { renderLink(quiz: $0) }
+                #if DEBUG
+                renderLink(quiz: .makeMock())
+                #endif
             }.navigationTitle("Квизы")
         })
+    }
+    
+    func renderLink(quiz: Quiz) -> some View {
+        NavigationLink(destination: QuizView(quiz: quiz)) { Text(quiz.name) }
     }
 }

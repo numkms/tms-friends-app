@@ -12,6 +12,12 @@ struct QuizApp: App {
     var body: some Scene {
         WindowGroup {
             QuizList().environmentObject(Storage())
+//            QuizView(quiz: Quiz.makeMock())
         }
     }
+}
+
+
+#Preview {
+    QuizList().environmentObject(Storage())
 }

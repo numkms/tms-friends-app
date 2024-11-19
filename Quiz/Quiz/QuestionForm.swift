@@ -8,10 +8,33 @@
 import SwiftUI
 import Combine
 
+// @State
+// @Published
+// @StateObject
+// @Binding
+
+// @ObservedObject
+
+
+// ObservableObject
+
 struct Answer: Identifiable, Codable {
     var id: Int
     var text: String
     var isCorrect: Bool
+}
+
+
+struct SomeView: View {
+    @Binding
+    var id: Int
+    
+    var body: some View  {
+        Text("\(id)")
+        Button("Minus id") {
+            id = id - 1
+        }
+    }
 }
 
 class QuestionFormViewModel: ObservableObject {
@@ -46,8 +69,15 @@ struct QuestionForm: View {
     @Binding
     var hideToggle: Bool
     
+    @State
+    var id: Int = 0
+    
     var body: some View {
         ScrollView {
+            SomeView(id: $id)
+            Button("Plus id ") {
+                id = id + 1
+            }
             Image("cat", bundle: .main)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
