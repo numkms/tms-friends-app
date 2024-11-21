@@ -19,6 +19,17 @@ struct QuizView: View {
             }) {
                 Text("Начать")
             }
+            NavigationLink(destination: {
+                QuizSettingsView(
+                    quiz: quiz,
+                    isSecondsCountEnabled: quiz.settings.isSecondsCountEnabled,
+                    questionTimeCoefficient: Float(quiz.settings.questionTime) / QuizSettingsView.maximumQuestionTime,
+                    answersRandomOrder: quiz.settings.answersRandomOrder,
+                    backgroundColor: .white
+                )
+            }) {
+                Text("Настройки")
+            }
         }.navigationBarTitleDisplayMode(.inline)
     }
 }

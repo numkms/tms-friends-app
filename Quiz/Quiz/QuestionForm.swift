@@ -25,6 +25,47 @@ struct Answer: Identifiable, Codable {
 }
 
 
+protocol ComponentProtocol {
+    func plusValue()
+}
+
+
+struct Component: View, ComponentProtocol {
+    
+    @Binding
+    var value: Int
+    
+    var body: some View {
+        Button("Add one") {
+            plusValue()
+        }
+    }
+    
+    func plusValue() {
+        value = value + 1
+    }
+}
+
+struct Component2: View, ComponentProtocol {
+
+    @State
+    var value: Int = 0
+    
+    var body: some View {
+        Button("Add one") {
+            plusValue()
+        }
+        Text("\(value)")
+    }
+    
+    func plusValue() {
+        value = value + 1
+    }
+}
+
+
+
+
 struct SomeView: View {
     @Binding
     var id: Int

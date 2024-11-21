@@ -13,10 +13,41 @@ struct QuizItem: Codable, Identifiable {
     let answers: [Answer]
 }
 
+struct QuizSettings: Codable {
+    let isSecondsCountEnabled: Bool
+    let questionTime: Int
+    let answersRandomOrder: Bool
+//    let backgroundColor: ColorInfo
+    
+    struct ColorInfo: Codable {
+        let green: CGFloat
+        let blue: CGFloat
+        let red: CGFloat
+        let alpha: CGFloat
+    }
+    
+    static let initial: Self = .init(
+        isSecondsCountEnabled: true,
+        questionTime: 100,
+        answersRandomOrder: false
+    )
+}
+
 struct Quiz: Codable, Identifiable {
     var id: String { name }
     let name: String
     let items: [QuizItem]
+    let settings: QuizSettings
+    
+    init(
+        name: String,
+        items: [QuizItem],
+        settings: QuizSettings = .initial
+    ) {
+        self.name = name
+        self.items = items
+        self.settings = settings
+    }
     
     #if DEBUG
     static func makeMock() -> Quiz {

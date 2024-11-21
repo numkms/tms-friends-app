@@ -15,26 +15,31 @@ final class QuizGameViewViewModel: ObservableObject {
     
     @Published
     var currentQuestion: QuizItem?
+    @Published
+    var secondsLeft: TimeInterval = 0
     var currentQuestionIndex: CurrentValueSubject<Int, Never> = .init(0)
     var subscribers: [AnyCancellable] = []
     var timerSubscribes: [AnyCancellable] = []
-    @Published
-    var secondsLeft: TimeInterval = 0
-        
+    
     func start(quiz: Quiz) {
         currentQuestionIndex.sink { [weak self] index in
-            guard quiz.items.count > index else {
-                self?.gameover()
-                return
-            }
-            self?.currentQuestion = quiz.items[index]
+            self?.indexChanged(index, quiz: quiz)
         }.store(in: &subscribers)
+    }
+    
+    func indexChanged(_ index: Int, quiz: Quiz) {
+        guard quiz.items.count > index else {
+            gameover()
+            return
+        }
+        currentQuestion = quiz.items[index]
         invalidateTimer()
     }
     
     func invalidateTimer() {
         timerSubscribes.removeAll()
         secondsLeft = Config.defaultTimerValue
+        
         Timer.publish(every: 1, on: .main, in: .default)
         .autoconnect()
         .sink { [weak self] value in
@@ -50,7 +55,7 @@ final class QuizGameViewViewModel: ObservableObject {
     }
     
     func gameover() {
-        
+        timerSubscribes.removeAll()
     }
     
     func answer(answer: Answer) {
@@ -59,7 +64,6 @@ final class QuizGameViewViewModel: ObservableObject {
     
     func next() {
         currentQuestionIndex.send(currentQuestionIndex.value + 1)
-        invalidateTimer()
     }
 }
 
@@ -88,8 +92,6 @@ struct QuizGameView: View {
         }.onAppear {
             viewModel.start(quiz: quiz)
         }
-        
-        
     }
 }
 #if DEBUG
