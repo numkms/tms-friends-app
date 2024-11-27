@@ -23,15 +23,18 @@ class Storage: ObservableObject {
     }
     
     func update(settings: QuizSettings, for quiz: Quiz) {
-        let updatedQuizes = list().map {
+        let quizes = list()
+        let updatedQuizes = quizes.map {
             if $0.id == quiz.id {
-                Quiz(
+                print($0)
+                return Quiz(
                     name: $0.name,
                     items: $0.items,
                     settings: settings
                 )
-                
-            } else { $0 }
+            } else { 
+                return $0
+            }
         }
         guard let data = try? encoder.encode(updatedQuizes) else { return }
         UserDefaults.standard.setValue(data, forKey: key)

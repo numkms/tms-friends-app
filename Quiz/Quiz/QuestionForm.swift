@@ -18,7 +18,7 @@ import Combine
 
 // ObservableObject
 
-struct Answer: Identifiable, Codable {
+struct Answer: Identifiable, Codable, Equatable, Hashable {
     var id: Int
     var text: String
     var isCorrect: Bool

@@ -92,42 +92,10 @@
             filePath = "Quiz/QuizGameView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "gameover()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "26B465E2-01BA-446F-B02A-8DA05B0406DB - 46608d432954d72a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Quiz.QuizGameViewViewModel.answer(answer: Quiz.Answer) -&gt; ()"
-                  moduleName = "Quiz"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/QuizGameView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "26B465E2-01BA-446F-B02A-8DA05B0406DB - 2eb94547364de2cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Quiz.QuizGameViewViewModel.gameover() -&gt; ()"
-                  moduleName = "Quiz"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/QuizGameView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "88">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -144,6 +112,290 @@
             endingLineNumber = "14"
             landmarkName = "QuizItem"
             landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 7dac170e79bf7904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 7dac170e79bf7904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "216DAD70-A5CA-470D-9AA3-A9A9D6842B47"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "573E9794-42F5-4EC5-A695-FC3F51BD4344"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57A33C05-5E9E-4EDA-BF73-36E4B6F2D34D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A06B47A-FE4D-4693-8FBF-B33A738DD60F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7384FD6A-5C46-4EB0-83B3-5F7FAB6808AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7384FD6A-5C46-4EB0-83B3-5F7FAB6808AD - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "7384FD6A-5C46-4EB0-83B3-5F7FAB6808AD - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "7384FD6A-5C46-4EB0-83B3-5F7FAB6808AD - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3368C72D-6125-42B3-8261-198D1F3CE0D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/Storage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "update(settings:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3368C72D-6125-42B3-8261-198D1F3CE0D1 - 7dac170e79bf4688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "3368C72D-6125-42B3-8261-198D1F3CE0D1 - 7dac170e79bf4688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "3368C72D-6125-42B3-8261-198D1F3CE0D1 - 7dac170e79bf4688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2749542-9A69-4ABE-967F-431774076912"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Quiz/QuizGameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "indexChanged(_:quiz:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

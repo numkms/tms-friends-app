@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+class VM: ObservableObject {
+    
+}
 
 struct QuizList: View {
     @EnvironmentObject
@@ -15,16 +18,23 @@ struct QuizList: View {
     @State
     var isNewQuizFormShowed: Bool = false
     
+    @Binding var isTabBarHidden: Bool
+    
     var body: some View {
         NavigationView(content: {
             List {
-                NavigationLink("Добавить квиз", isActive: $isNewQuizFormShowed, destination: {
-                    CreateQuizView(hideToggle: $isNewQuizFormShowed)
-                }).foregroundStyle(Color.blue)
+                NavigationLink(
+                    "Добавить квиз",
+                    isActive: $isNewQuizFormShowed,
+                    destination: {
+                       CreateQuizView(hideToggle: $isNewQuizFormShowed).onAppear {
+                           isTabBarHidden = true
+                       }.onDisappear {
+                           isTabBarHidden = false
+                       }
+                    }
+                ).foregroundStyle(Color.blue)
                 ForEach(storage.list()) { renderLink(quiz: $0) }
-                #if DEBUG
-                renderLink(quiz: .makeMock())
-                #endif
             }.navigationTitle("Квизы")
         })
     }

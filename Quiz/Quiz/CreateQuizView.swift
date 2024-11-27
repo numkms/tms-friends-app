@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuizItem: Codable, Identifiable {
+struct QuizItem: Codable, Identifiable, Hashable {
     var id: String { question }
     let question: String
     let answers: [Answer]
@@ -17,7 +17,7 @@ struct QuizSettings: Codable {
     let isSecondsCountEnabled: Bool
     let questionTime: Int
     let answersRandomOrder: Bool
-//    let backgroundColor: ColorInfo
+    let backgroundColor: Data?
     
     struct ColorInfo: Codable {
         let green: CGFloat
@@ -29,7 +29,8 @@ struct QuizSettings: Codable {
     static let initial: Self = .init(
         isSecondsCountEnabled: true,
         questionTime: 100,
-        answersRandomOrder: false
+        answersRandomOrder: false,
+        backgroundColor: Color.white.toData()
     )
 }
 
@@ -137,7 +138,7 @@ struct CreateQuizView: View {
                 QuestionForm(
                     quizViewModel: viewModel,
                     hideToggle: $isQuestionFormShowed
-                )
+                ).presentationDetents([.medium, .large])
         })
         
     }

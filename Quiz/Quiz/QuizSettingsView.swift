@@ -16,41 +16,30 @@ import SwiftUI
  **/
 
 struct QuizSettingsView: View {
+    static let maximumQuestionTime: Float = 100
     
     @EnvironmentObject
     var storage: Storage
     
-    static let maximumQuestionTime: Float = 100
-    
     var quiz: Quiz
     
-    @State
-    var isSecondsCountEnabled: Bool = true
-    
-    @State
-    var questionTimeCoefficient: Float = 1
-    
-    @State
-    var answersRandomOrder: Bool = false
-    
+    @State var isSecondsCountEnabled: Bool = true
+    @State var questionTimeCoefficient: Float = 1
+    @State var answersRandomOrder: Bool = false
     @State var backgroundColor: Color = .white
     
-    
-    
+
     var currentSelectedQuestionTime: Int {
         Int(Self.maximumQuestionTime * questionTimeCoefficient)
     }
     
     var body: some View {
         List {
-            
-            
             HStack {
                 Toggle(isOn: $answersRandomOrder, label: {
                     Text("Рандомная сортировка ответов")
                 })
             }
-            
             ColorPicker("Цвет фона", selection: $backgroundColor)
             HStack {
                 Toggle(isOn: $isSecondsCountEnabled, label: {
@@ -76,7 +65,8 @@ struct QuizSettingsView: View {
             storage.update(settings: .init(
                 isSecondsCountEnabled: isSecondsCountEnabled,
                 questionTime: currentSelectedQuestionTime,
-                answersRandomOrder: answersRandomOrder
+                answersRandomOrder: answersRandomOrder,
+                backgroundColor: backgroundColor.toData()
             ), for: quiz)
         }
     }

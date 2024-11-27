@@ -20,6 +20,7 @@
 		E5605E9A2CE27C5A00B683DD /* QuestionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5605E992CE27C5A00B683DD /* QuestionForm.swift */; };
 		E5605E9C2CE28A0A00B683DD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5605E9B2CE28A0A00B683DD /* Storage.swift */; };
 		E5605E9E2CE28DEB00B683DD /* QuizList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5605E9D2CE28DEB00B683DD /* QuizList.swift */; };
+		E5AEE5192CF795B800ABCF6D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AEE5182CF795B800ABCF6D /* Color+Extension.swift */; };
 		E5DAD0CB2CEBA53C00D0F32C /* PlusMinusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DAD0CA2CEBA53C00D0F32C /* PlusMinusView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		E5605E992CE27C5A00B683DD /* QuestionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionForm.swift; sourceTree = "<group>"; };
 		E5605E9B2CE28A0A00B683DD /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		E5605E9D2CE28DEB00B683DD /* QuizList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizList.swift; sourceTree = "<group>"; };
+		E5AEE5182CF795B800ABCF6D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E5DAD0CA2CEBA53C00D0F32C /* PlusMinusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				E53C72E02CEBB59200565D40 /* QuizView.swift */,
 				E50CB8D72CEBBA940094EDC4 /* QuizGameView.swift */,
 				E55803E62CEE634F00F58258 /* QuizSettingsView.swift */,
+				E5AEE5182CF795B800ABCF6D /* Color+Extension.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				E50CB8D82CEBBA940094EDC4 /* QuizGameView.swift in Sources */,
 				E5605E9C2CE28A0A00B683DD /* Storage.swift in Sources */,
 				E5605E8E2CE26F9B00B683DD /* ContentView.swift in Sources */,
+				E5AEE5192CF795B800ABCF6D /* Color+Extension.swift in Sources */,
 				E5332FEA2CE51DEB00250212 /* CreateQuizView.swift in Sources */,
 				E5605E8C2CE26F9B00B683DD /* QuizApp.swift in Sources */,
 			);
