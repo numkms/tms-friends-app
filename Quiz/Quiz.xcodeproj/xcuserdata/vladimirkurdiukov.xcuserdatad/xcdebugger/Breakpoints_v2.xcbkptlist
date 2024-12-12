@@ -189,6 +189,36 @@
                   endingLineNumber = "28"
                   offsetFromSymbolStart = "104">
                </Location>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 7dac170e79bf7904"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "A0CF4036-BADB-4C13-88DC-73C0C14E1B8F - 373b58ca21bb95fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "128">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -316,6 +346,21 @@
                   endingLineNumber = "28"
                   offsetFromSymbolStart = "104">
                </Location>
+               <Location
+                  uuid = "7384FD6A-5C46-4EB0-83B3-5F7FAB6808AD - 373b58ca21bb95dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Quiz.Quiz) -&gt; Quiz.Quiz in Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "140">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -378,6 +423,21 @@
                   startingLineNumber = "39"
                   endingLineNumber = "39"
                   offsetFromSymbolStart = "504">
+               </Location>
+               <Location
+                  uuid = "3368C72D-6125-42B3-8261-198D1F3CE0D1 - 7dac170e79bf4688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Quiz.Storage.update(settings: Quiz.QuizSettings, for: Quiz.Quiz) -&gt; ()"
+                  moduleName = "Quiz"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladimirkurdiukov/Desktop/Navigation/Quiz/Quiz/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "540">
                </Location>
             </Locations>
          </BreakpointContent>

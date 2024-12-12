@@ -72,7 +72,7 @@ struct QuizSettingsView: View {
     }
 }
 
-
-#Preview {
-    QuizSettingsView(quiz: .makeMock())
-}
+//
+//#Preview {
+//    QuizSettingsView(quiz: .makeMock())
+//}
