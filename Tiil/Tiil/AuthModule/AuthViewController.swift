@@ -107,6 +107,12 @@ class AuthViewController: UIViewController {
         userNameField.placeholder = "Enter your username"
         passwordField.placeholder = "Enter your password"
         loginButton.setTitle("Login", for: .normal)
+        
+        loginButton.addAction(UIAction(handler: { _ in
+            let vc = UIViewController()
+            present(vc)
+        }), for: .touchUpInside)
+        
         forgetPasswordButton.setTitle("Reset password?", for: .normal)
         loginButton.setTitleColor(.blue, for: .normal)
         forgetPasswordButton.setTitleColor(.red, for: .normal)
